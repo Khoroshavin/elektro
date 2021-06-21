@@ -1,17 +1,7 @@
-/* 
-
--reseter
--variables
--utilities
-
-
-*/
-
 
 /* -------------------------------- resetter -------------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -102,6 +92,17 @@ img {
 	/* padding: 0 40px; */
 }
 
+._title {
+	margin-bottom: 50px;
+	font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+	color: var(--black_light);
+}
+
 .btn__cta_first {
 	background-color: var(--btn_first);
   font-size: 14px;
@@ -151,19 +152,11 @@ img {
 /* ------------------------------- / utilities ------------------------------ */
 
 
+
+/* ------------------------------ page kuchyne ------------------------------ */
 /* -------------------------------- category -------------------------------- */
 .category {
 	padding: 0 40px;
-}
-.cat__title {
-	margin-bottom: 50px;
-	font-size: 40px;
-  font-weight: 800;
-  letter-spacing: -1px;
-  line-height: 48px;
-  text-align: center;
-  text-transform: uppercase;
-	color: var(--black_light);
 }
 
 .cat__title_desc {
@@ -177,7 +170,7 @@ img {
 .cat__paragraph {
 	margin-bottom: 20px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
   line-height: 1.4;
   color: var(--dark);
 }
@@ -406,17 +399,12 @@ img {
 	justify-content: space-between;
 	border-radius: 2px;
 	background-color: var(--gray_light);
-	/* position: relative; */
 }
 
-.upper__one {
-	/* max-width: calc(1600px - 20px);
-	margin-right: auto; */
-	/* padding-right: 20px; */
-}
-
-.upper__two {
-	/* padding-left: 20px; */
+.upper .btn__cta_second {
+	margin-bottom: 10px;
+	display: inline-block;
+	/* width: auto; */
 }
 
 .up__content {
@@ -425,7 +413,7 @@ img {
 	margin-bottom: 20px;
 }
 
-.up__content h3 {
+.up__content h2 {
 	margin-bottom: 25px;
 	font-size: 30px;
 	font-weight: 700;
@@ -433,10 +421,41 @@ img {
 	margin-right: auto;
 }
 
+.up__content h3 {
+	margin-bottom: 25px;
+	font-size: 30px;
+	font-weight: 500;
+	text-align: left;
+	margin-right: auto;
+}
+
 .up__content p {
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 20px;
 	padding-bottom: 35px;
+}
+
+.up__content p a{
+	color: var(--btn_second);
+	font-weight: 600;
+}
+
+.upper span {
+	display: block;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.up__content ul{
+	padding-left: 20px;
+	list-style-type: disc;
+	font-size: 14px;
+	line-height: 20px;
+	padding-bottom: 20px;
+}
+
+.up__content b {
+	font-weight: 600;
 }
 
 .up__img {
@@ -492,23 +511,11 @@ img {
 
 
 /* -------------------------------- upper two ------------------------------- */
-.upper__two h3 {
+/* .upper__two h3 {
 	margin-bottom: 7px;
-}
-
-.upper__two span {
-	display: block;
-	font-size: 24px;
-	margin-bottom: 20px;
-}
-
-/* @media screen and (max-width: 1640px) {
-	.upper__two {
-		margin-left: 40px;
-		margin-right: 20px;
-		padding: 0;
-	}
 } */
+
+
 
 @media screen and (max-width: 992px) {
 	.upper {
@@ -592,8 +599,7 @@ img {
 	left: 0;
 	width: 100%;
 	position: absolute;
-	/*margin-top: -2px;
-	*/padding: 10px 0;
+	padding: 10px 0;
 	font-size: 12px;
 	font-weight: 600;
 	text-align: center;
@@ -737,10 +743,6 @@ img {
 	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 16%);
 }
 
-/* .idea:not(:last-child) {
-	margin-right: 10px;
-} */
-
 .idea > a {
 	width: 100%;
 	height: 100%;
@@ -774,7 +776,6 @@ img {
 		padding: 0 10px;
 	}
 }
-
 
 @media screen and (max-width: 576px) {
 	.idea {
@@ -854,3 +855,22 @@ img {
 }
 
 /* -------------------------------- / interes ------------------------------- */
+/* ----------------------------- / page kuchyne ----------------------------- */
+
+
+
+
+/* ------------------------ page Pred nakupem kuchyne ----------------------- */
+/* -------------------------------- page hero ------------------------------- */
+.before__buy {
+	display: flex;
+	flex-direction: column;
+ align-items: center;
+}
+
+.before__buy .btn__cta_first{
+	margin-bottom: 15px;
+}
+/* ------------------------------- / page hero ------------------------------ */
+
+/* ---------------------- / page Pred nakupem kuchyne ----------------------- */
