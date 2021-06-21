@@ -265,7 +265,7 @@ img {
 
 /* ! TODO */
 .content__cat_name:after {
-	content: url(../img/next.png);
+	content: url(../img/icons/next.png);
 	width: 10px;
 	height: 10px;
 	position: absolute;
