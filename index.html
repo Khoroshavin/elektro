@@ -22,8 +22,8 @@
   <meta property="og:image:height" content="630" />
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <!-- swiper slider -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!--  slider -->
+  <link rel="stylesheet" href="css/splide.min.css">
   <!-- styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -143,16 +143,6 @@
   <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
   <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
 </nav>
-<!-- .promo__right_top,
-.promo__right_bot,
-.main__promo_left {
-  height: auto;
-}
-.promo__right_top,
-.promo__right_bot {
-	max-height: 210px;
-	overflow: hidden;
-} -->
 
 <section class="container trends">
   <h2 class="choose__title">Objevte nejnovější trendy pro kuchyně a koupelny</h2>
@@ -264,69 +254,98 @@
 </div>
 
 
-<!-- <section class="news">
-  <div class="container">
+<section class="news">
+  <div class="container news__inner">
     <h2 class="choose__title">Novinky</h2>
 
-    <div class="swiper-container swiper-container_news">
-      <div class="swiper-wrapper swiper-wrapper_news">
-        <div class="swiper-slide swiper-slide_new">
-        <a href="#" class="news__item_link">
-          <span class="news__label">NEW</span>
-          <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
-          <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-          <span class="news__price">2 990 Kč</span>
-        </a>
-        </div>
-        <div class="swiper-slide swiper-slide_new">
-        <a href="#" class="news__item_link">
-          <span class="news__label">NEW</span>
-          <img class="news__img" src="img/new1.jpeg" alt="img desc">
-          <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-          <span class="news__price">2 990 Kč</span>
-        </a>
-        </div>
-        <div class="swiper-slide swiper-slide_new">
-        <a href="#" class="news__item_link">
-          <span class="news__label">NEW</span>
-          <img class="news__img" src="img/new1.jpeg" alt="img desc">
-          <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-          <span class="news__price">2 990 Kč</span>
-        </a>
-        </div>
-        <div class="swiper-slide swiper-slide_new">
-        <a href="#" class="news__item_link">
-          <span class="news__label">NEW</span>
-          <img class="news__img" src="img/new1.jpeg" alt="img desc">
-          <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-          <span class="news__price">2 990 Kč</span>
-        </a>
-        </div>
-        <div class="swiper-slide swiper-slide_new">
-        <a href="#" class="news__item_link">
-          <span class="news__label">NEW</span>
-          <img class="news__img" src="img/new1.jpeg" alt="img desc">
-          <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-          <span class="news__price">2 990 Kč</span>
-        </a>
-        </div>
+
+
+
+
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a href="#" class="news__item_link">
+              <span class="news__label">NEW</span>
+              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
+              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
+              <span class="news__price">2 990 Kč</span>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="#" class="news__item_link">
+              <span class="news__label">NEW</span>
+              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
+              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
+              <span class="news__price">2 990 Kč</span>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="#" class="news__item_link">
+              <span class="news__label">NEW</span>
+              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
+              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
+              <span class="news__price">2 990 Kč</span>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="#" class="news__item_link">
+              <span class="news__label">NEW</span>
+              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
+              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
+              <span class="news__price">2 990 Kč</span>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="#" class="news__item_link">
+              <span class="news__label">NEW</span>
+              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
+              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
+              <span class="news__price">2 990 Kč</span>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="#" class="news__item_link">
+              <span class="news__label">NEW</span>
+              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
+              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
+              <span class="news__price">2 990 Kč</span>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="#" class="news__item_link">
+              <span class="news__label">NEW</span>
+              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
+              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
+              <span class="news__price">2 990 Kč</span>
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
     </div>
+
+
+    
+
+    <!-- <a href="#" class="news__item_link">
+      <span class="news__label">NEW</span>
+      <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
+      <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
+      <span class="news__price">2 990 Kč</span>
+    </a> -->
+
+
   </div>
 
-</section> -->
+</section>
 
 
 
 
 </main>
 
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/splide.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

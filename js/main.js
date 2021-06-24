@@ -11,49 +11,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
   };
   openBurgerMenu();
 
+
+
+
+
+
+
 });
-
-// const swiper = new Swiper('.swiper-container_news', {
-//   // Optional parameters
-//   loop: true,
-
-//   // Pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-
-//   //
-//   slidesPerView: 4,
-//   // spaceBetween: 10,
-//   // Responsive breakpoints
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1,
-//       // spaceBetween: 20
-//     },
-//     576: {
-//       slidesPerView: 2,
-//       // spaceBetween: 20
-//     },
-//     768: {
-//       slidesPerView: 4,
-//       // spaceBetween: 20
-//     },
-//     992: {
-//       slidesPerView: 4,
-//       spaceBetween: 10
-//     },
-//     // 1150: {
-//     //   slidesPerView: 5,
-//     //   spaceBetween: 20
-//     // },
-
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-// });
+document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide( '.splide',{
+    type   : 'loop',
+    perPage    : 3,
+		breakpoints: {
+			956: {
+				perPage: 2
+			},
+    },
+    perMove: 1,
+    // focus: 'center',
+    // arrows: 'splide__arrows arrows',
+    // arrow: 'splide__arrow arrow',
+    // prev: 'splide__arrow--prev arrow',
+    // next: 'splide__arrow--next arrow',
+    // autoWidth: true,
+    // cover     : true,
+    // fixedWidth: '250px',
+    // focus: 'center',
+    // autoplay: true,
+    // interval: 3000,
+  }).mount();
+} );
