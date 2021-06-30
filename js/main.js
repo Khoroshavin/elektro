@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 });
-document.addEventListener( 'DOMContentLoaded', function () {
+// document.addEventListener( 'DOMContentLoaded', function () {
   new Splide( '.splide',{
     type   : 'loop',
     perPage    : 3,
@@ -40,4 +40,4 @@ document.addEventListener( 'DOMContentLoaded', function () {
     // autoplay: true,
     // interval: 3000,
   }).mount();
-} );
+// } );

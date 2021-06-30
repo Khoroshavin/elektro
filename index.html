@@ -9,9 +9,7 @@
   <meta name="description" content="description">
   <!-- preload -->
   <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-  <link rel='preconnect' href='https://unpkg.com' crossorigin>
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" as="style">
-  <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style"/>
   <!-- open graph -->
   <meta property="og:site_name" content="nazev webu a popis" />
   <meta property="og:title" content="Kuchyne" />
@@ -47,13 +45,30 @@
       </nav>
     </div>
   </div>
+  
   <div class="header__mid_wrap">
     <div class="container header__mid">
-      <img class="logo__img" src="img/LightstyleWhite.png" alt="logo lightstyle" loading="lazy">
-      <img class="logo__img" src="img/nobilia.png" alt="nobilia logo" loading="lazy">
-      <img class="logo__img" src="img/schullerwhite.png" alt="schuller logo" loading="lazy">
-      <img class="logo__img" src="img/pinowhite.png" alt="pino logo" loading="lazy">
-      <img class="logo__img" src="img/next125white.png" alt="next125 logo" loading="lazy">
+      <div class="header__mid_main_logos">
+        <a href="#">
+          <img class="electro__logo" src="img/elektroczwhite.png" alt="Vestavné spotřebiče" loading="lazy">
+        </a>
+        <a href="#">
+          <img class="logo__img" src="img/LightstyleFull.png" alt="lightstyle" loading="lazy">  
+        </a>
+      </div>
+
+      <div class="header__mid_logos">
+        <a href="#">
+          <img class="logo__img logo__img_next125" src="img/next125white.png" alt="next125 logo" loading="lazy">
+        </a>
+        <a href="#">
+          <img class="logo__img logo__img_schuller " src="img/schullerwhite.png" alt="schuller logo" loading="lazy">
+        </a>
+        <a href="#">
+          <img class="logo__img logo__img_nobilia" src="img/nobilia.png" alt="nobilia logo" loading="lazy">
+        </a>
+      </div>
+
       <div class="header__btn_form__wrapper">
         <div class="header__btns_wrapper">
           <label class="burger__btn" for="check">
@@ -62,17 +77,15 @@
             <span></span>
             <span></span>
           </label>
-          <a class="btn__cta_trhee btn__cta_trhee_lg" >SJEDNAT SCHŮZKU</a>
         </div>
         <form class="header__form" action="#" id="#">
-        <input class="header__input" type="search" name="#" id="#" placeholder="vyhledavejte">
+        <input class="header__input" type="search" name="#" id="#" placeholder="">
         <button class="btn__cta_trhee" type="submit">
           <span>hledat</span>
-          <img src="img/icons/loupe.png" alt="find icon"> 
+          <img src="img/icons/loupe.png" alt="find icon">
         </button>
         </form>
       </div>
-      <img class="electro__logo" src="img/elektroczwhite.png" alt="elektrocz logo" loading="lazy">
       <a class="header__cart_link" href="#">
         <span>Košík <span> 0 </span> Ks</span>
         <div class="header__cart_icon">
@@ -81,8 +94,12 @@
 
     </div>
   </div>
+  
   <nav class="header__bot_wrap">
     <ul class="container header__bot">
+      <li>
+        <button class="btn__meet_offer">domluvit schuzku</button>
+      </li>
       <li>
         <a href="#">MODERNÍ KUCHYNĚ</a>
       </li>
@@ -106,6 +123,14 @@
       </li>
       <li>
         <a href="#">KONTAKT</a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="header__bot_firms">
+    <ul>
+      <li>
+        <!-- <a href="#"><img src="img/b" alt=""></a> -->
       </li>
     </ul>
   </nav>
