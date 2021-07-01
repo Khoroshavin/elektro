@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // burger menu
   const burgerBtn = document.querySelector('.burger__btn_input');
-  const headerBot = document.querySelector('.header__bot');
+  const headerBot = document.querySelector('.header__bot_wrap');
   openBurgerMenu = () => {
     burgerBtn.addEventListener('click', () => {
       headerBot.classList.toggle("header__bot_open");

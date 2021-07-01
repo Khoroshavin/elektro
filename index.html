@@ -8,8 +8,8 @@
   <title>Kuchyne</title>
   <meta name="description" content="description">
   <!-- preload -->
-  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" as="style">
+  <!-- <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin> -->
+  <!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" as="style"> -->
   <!-- open graph -->
   <meta property="og:site_name" content="nazev webu a popis" />
   <meta property="og:title" content="Kuchyne" />
@@ -19,9 +19,9 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"> -->
   <!--  slider -->
-  <link rel="stylesheet" href="css/splide.min.css">
+  <!-- <link rel="stylesheet" href="css/splide.min.css"> -->
   <!-- styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -31,6 +31,7 @@
 <header>
   <div class="header__top_wrap">
     <div class="container header__top">
+      <h1>Vestavné spotřebiče | ElektroCZ.com</h1>
       <div class="header__top_online">
         <img src="img/icons/telephone.svg" alt="icon online">
         <span>ONLINE DO 23°°</span>
@@ -53,19 +54,19 @@
           <img class="electro__logo" src="img/elektroczwhite.png" alt="Vestavné spotřebiče" loading="lazy">
         </a>
         <a href="#">
-          <img class="logo__img" src="img/LightstyleFull.png" alt="lightstyle" loading="lazy">  
+          <img src="img/LightstyleFull.png" alt="lightstyle" loading="lazy">  
         </a>
       </div>
 
       <div class="header__mid_logos">
         <a href="#">
-          <img class="logo__img logo__img_next125" src="img/next125white.png" alt="next125 logo" loading="lazy">
+          <img class="logo__img_next125" src="img/next125white.png" alt="next125 logo" loading="lazy">
         </a>
         <a href="#">
-          <img class="logo__img logo__img_schuller " src="img/schullerwhite.png" alt="schuller logo" loading="lazy">
+          <img class="logo__img_schuller " src="img/schullerwhite.png" alt="schuller logo" loading="lazy">
         </a>
         <a href="#">
-          <img class="logo__img logo__img_nobilia" src="img/nobilia.png" alt="nobilia logo" loading="lazy">
+          <img class="logo__img_nobilia" src="img/nobilia.png" alt="nobilia logo" loading="lazy">
         </a>
       </div>
 
@@ -97,11 +98,11 @@
   
   <nav class="header__bot_wrap">
     <ul class="container header__bot">
-      <li>
+      <li class="btn__meet_wrap">
         <button class="btn__meet_offer">domluvit schuzku</button>
       </li>
       <li>
-        <a href="#">Moderní kuchyně</a>
+        <a class="dropdown" href="#">Kuchyně</a>
       </li>
       <li>
         <a href="#">Zadat poptávku</a>
@@ -113,13 +114,13 @@
         <a href="#">Naše studia</a>
       </li>
       <li>
-        <a href="#">Reference</a>
-      </li>
-      <li>
-        <a href="#">Výprodej expozice</a>
+        <a href="#">% Outlet</a>
       </li>
       <li>
         <a href="#">Developeři</a>
+      </li>
+      <li>
+        <a class="dropdown" href="#">Spotřebiče</a>
       </li>
       <li>
         <a href="#">Kontakt</a>
@@ -130,14 +131,14 @@
   <nav class="header__bot_firms">
     <ul class="container header__firm_list">
       <li>
-        <a href="#">
+        <a href="#" >
           <img src="img/schullerwhite.png" alt="schuller logo">
           <span>KITCHEN</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="img/next125white.png" alt="next125 logo">
+          <img src="img/next125White.svg" alt="next125 logo">
           <span>KITCHEN</span>
         </a>
       </li>
@@ -190,7 +191,39 @@
 
 <main>
 
-<div class="container main__promo">
+  <!-- <div class="container kitchen__wrapper">
+    <div class="kitchen__item kitchen__item_big">
+      <a href="#">
+        <img src="img/1.jpeg" alt="img desc">
+        <div class="kitchen__item_desc">
+          <h3>NX 510</h3>
+          <p>Onyxschwarz Samtmatt AFP / Indischrot Samtmatt AFP / Nebelblau-Satin</p>
+        </div>
+      </a>
+    </div>
+    <div class="kitchen__items_small_wrap">
+      <div class="kitchen__item kitchen__item_small">
+        <a href="#">
+          <img src="img/2.jpeg" alt="img desc">
+          <div class="kitchen__item_desc">
+            <h3>NX 510</h3>
+            <p>Onyxschwarz Samtmatt AFP / Indischrot Samtmatt AFP / Nebelblau-Satin</p>
+          </div>
+        </a>
+      </div>
+      <div class="kitchen__item kitchen__item_small">
+        <a href="#">
+          <img src="img/2.jpeg" alt="img desc">
+          <div class="kitchen__item_desc">
+            <h3>NX 510</h3>
+            <p>Onyxschwarz Samtmatt AFP / Indischrot Samtmatt AFP / Nebelblau-Satin</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div> -->
+
+<!-- <div class="container main__promo">
 
   <div class="main__promo_left">
     <a href="#">
@@ -211,17 +244,17 @@
       </div>
   </div>
 
-</div>
+</div> -->
 
-<nav class="container nav__categories">
+<!-- <nav class="container nav__categories">
   <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
   <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
   <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
   <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
   <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
-</nav>
+</nav> -->
 
-<section class="container trends">
+<!-- <section class="container trends">
   <h2 class="choose__title">Objevte nejnovější trendy pro kuchyně a koupelny</h2>
   
   <ul class="trends__list">
@@ -247,9 +280,9 @@
 
   <a class="btn__cta_second" href="#">Prohlédnout všechny</a>
 
-</section>
+</section> -->
 
-<section class="container ideas">
+<!-- <section class="container ideas">
   <h2 class="choose__title">Inspirace pro váš domov</h2>
   <ul class="ideas__list">
     <li class="idea">
@@ -279,9 +312,9 @@
   </ul>
   <a class="btn__cta_second" href="#">Zobrazit více nápadů</a>
 
-</section>
+</section> -->
 
-<section class="container firm__loga">
+<!-- <section class="container firm__loga">
   <h2 class="choose__title">Objevte výrobky osvědčených značek</h2>
 
   <div class="firm__loga_inner">
@@ -292,13 +325,11 @@
     <img class="firm_log" src="img/lightstyle_clr.png" alt="siemens icon">
     <img class="firm_log" src="img/schuller_clr.png" alt="siemens icon">
     <img class="firm_log" src="img/next125_clr.png" alt="siemens icon">
-    <!-- <img class="firm_log" src="img" alt="siemens icon"> -->
   </div>
 
-</section>
+</section> -->
 
-
-<section class="container upper upper__two">
+<!-- <section class="container upper upper__two">
   <img class="up__img" src="img/konzultant.jpg" alt="img desc">
   <div class="up__content">
     <h3><b>Splňte si sen o perfektní koupelně</b></h3>
@@ -310,9 +341,9 @@
       K umyvadlu, vaně i sprchovému koutu patří vodovodní baterie. V nabídce naleznete osvědčené modely baterií, které jsou vhodné do koupelen i kuchyní.
     </p>
   </div>
-</section>
+</section> -->
 
-<section class="container upper upper__one">
+<!-- <section class="container upper upper__one">
   <div class="up__content">
     <h3><b>V kuchyních SIKO je vaření zábava</b></h3>
     <p>
@@ -324,21 +355,15 @@
     </p>
   </div>
   <img class="up__img" src="img/konzultant.jpg" alt="img desc">
-</section>
+</section> -->
 
-<div class="container center">
+<!-- <div class="container center">
   <a href="#" class="btn__cta_first">Sjednat schůzku</a>
-</div>
+</div> -->
 
-
-<section class="news">
+<!-- <section class="news">
   <div class="container news__inner">
     <h2 class="choose__title">Novinky</h2>
-
-
-
-
-
     <div class="splide">
       <div class="splide__track">
         <ul class="splide__list">
@@ -402,27 +427,14 @@
       </div>
     </div>
 
-
-    
-
-    <!-- <a href="#" class="news__item_link">
-      <span class="news__label">NEW</span>
-      <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
-      <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-      <span class="news__price">2 990 Kč</span>
-    </a> -->
-
-
   </div>
 
-</section>
-
-
+</section> -->
 
 
 </main>
 
-<script src="js/splide.min.js"></script>
+<!-- <script src="js/splide.min.js"></script> -->
 <script src="js/main.js"></script>
 </body>
 </html>
