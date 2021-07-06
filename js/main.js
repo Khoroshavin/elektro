@@ -19,15 +19,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 });
 // document.addEventListener( 'DOMContentLoaded', function () {
-  new Splide( '.splide',{
-    type   : 'loop',
-    perPage    : 3,
-		breakpoints: {
-			956: {
-				perPage: 2
-			},
-    },
-    perMove: 1,
+  // new Splide( '.splide',{
+  //   type   : 'loop',
+  //   perPage    : 3,
+	// 	breakpoints: {
+	// 		956: {
+	// 			perPage: 2
+	// 		},
+  //   },
+    // perMove: 1,
     // focus: 'center',
     // arrows: 'splide__arrows arrows',
     // arrow: 'splide__arrow arrow',
@@ -39,5 +39,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // focus: 'center',
     // autoplay: true,
     // interval: 3000,
-  }).mount();
+  // }).mount();
 // } );
