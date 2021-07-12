@@ -12,9 +12,43 @@ document.addEventListener("DOMContentLoaded", function(event) {
   openBurgerMenu();
 
 
+  // main examples slider
+  // new Splide( '.splide__examples', {
+  //   type : 'loop',
+  //   perPage : 1,
+  //   perMove: 1,
+  // }).mount();
+  
 
+  const swiperExamples = new Swiper('.examples__slider', {
+    // parameters
+    loop: true,
+    slidesPerView: 6,
+    spaceBetween: 30,
+  
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });
 
+  const swiperChoise = new Swiper('.choice__kitchen_slider', {
+    // parameters
+    loop: true,
+    slidesPerView: 6,
+    spaceBetween: 30,
+  
+  
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
 
+  });
 
 
 });

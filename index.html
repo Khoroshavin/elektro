@@ -20,8 +20,9 @@
   <meta property="og:image:height" content="630" />
   <!-- fonts -->
   <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"> -->
-  <!--  slider -->
+  <!--  splide slider -->
   <!-- <link rel="stylesheet" href="css/splide.min.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,7 +34,7 @@
     <div class="container_header header__top">
       <h1>Vestavné spotřebiče | ElektroCZ.com</h1>
       <div class="header__top_online">
-        <img src="img/icons/telephone.svg" alt="icon online">
+        <img src="img/icons/telephone_3.png" alt="icon online">
         <span>ONLINE DO 23°°</span>
       </div>
 
@@ -59,14 +60,14 @@
       </div>
 
       <div class="header__mid_logos">
-        <a href="#">
+        <a href="/next125/">
           <img class="logo__img_next125" src="img/next125White.svg" alt="next125 logo" loading="lazy">
         </a>
         <a href="#">
-          <img class="logo__img_schuller " src="img/SchüllerWhite.svg" alt="schuller logo" loading="lazy">
+          <img class="logo__img_schuller " src="img/SchüllerWhiteRedDot.svg" alt="schuller logo" loading="lazy">
         </a>
         <a href="#">
-          <img class="logo__img_nobilia" src="img/NobiliaWhite.svg" alt="nobilia logo" loading="lazy">
+          <img class="logo__img_nobilia" src="img/Nobilia_Gray.svg" alt="nobilia logo" loading="lazy">
         </a>
       </div>
 
@@ -90,6 +91,7 @@
       <a class="header__cart_link" href="#">
         <span>Košík <span> 0 </span> Ks</span>
         <div class="header__cart_icon">
+          <img src="img/icons/kosik_final.svg" alt="">
         </div>
       </a>
 
@@ -99,7 +101,8 @@
   <nav class="header__bot_wrap">
     <ul class="container_header header__bot">
       <li class="btn__meet_wrap">
-        <button class="btn__meet_offer">domluvit schuzku</button>
+        <div><a href=""><img src="img/schuzka_btn.svg" alt=""></a></div>
+        <!-- <button class="btn__meet_offer">domluvit schůzku</button> -->
       </li>
       <li>
         <a class="dropdown" href="#">Kuchyně</a>
@@ -112,6 +115,9 @@
       </li>
       <li>
         <a href="#">Naše studia</a>
+      </li>
+      <li>
+        <a href="#">reference</a>
       </li>
       <li>
         <a href="#">% Outlet</a>
@@ -131,57 +137,43 @@
   <nav class="header__bot_firms">
     <ul class="container_header header__firm_list">
       <li>
-        <a href="#" >
-          <img src="img/SchüllerWhite.svg" alt="schuller logo">
-          <span>KITCHEN</span>
+        <a href="#" title="Schuller">
+          <img src="img/BBar_Schuller.svg" alt="Schuller">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/next125White.svg" alt="next125 logo">
-          <span>KITCHEN</span>
+        <a href="/next125/" title="Next125">
+          <img src="img/BBar_Next125.svg" alt="Next125">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/Siemens_White.svg" alt="siemens logo">
-          <span>BRAND STORE</span>
+        <a href="#" title="Siemens">
+          <img src="img/BBar_Siemens.svg" alt="Siemens">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/AEG_White.svg" alt="AEG logo">
-          <span>BRAND STORE</span>
+        <a href="#" title="AEG">
+          <img src="img/BBar_AEG.svg" alt="AEG">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/BOSCH_White.svg" alt="BOSCH logo">
-          <span>BRAND STORE</span>
+        <a href="#" title="BOSCH">
+          <img src="img/BBar_BOSCH.svg" alt="BOSCH">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/Electrolux_White.svg" alt="electrolux logo">
-          <span>BRAND STORE</span>
+        <a href="#" title="Nobilia">
+          <img src="img/BBar_Nobilia.svg" alt="Nobilia">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/NobiliaWhite.svg" alt="nobilia logo">
-          <span>KITCHEN</span>
+        <a href="#" title="PINO">
+          <img src="img/BBar_PINO.svg" alt="PINO">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/pinoWhite.svg" alt="pino logo">
-          <span>KITCHEN</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="img/MIELE_White.svg" alt="Miele logo">
-          <span>BRAND STORE</span>
+        <a href="#" title="Miele">
+          <img src="img/BBar_Miele.svg" alt="Miele">
         </a>
       </li>
     </ul>
@@ -192,6 +184,7 @@
 
 
   <section class="container hero__main">
+    <div class="hero__main_ovelay"></div>
     <div class="hero__main_inner">
 
       <div class="diskount_wrap">
@@ -211,7 +204,7 @@
       
       <div class="consult__wrap">
         <div class="consult__head">
-          <img src="img/icons/consult_icon.webp" alt="consultation icon">
+          <img src="img/calling.svg" alt="consultation icon">
           <h3>Konzultace zdarma</h3>
         </div>
         <div class="consult__body">
@@ -286,8 +279,7 @@
         <p>
           Vše Vám <b>doručíme</b> my, naši <b>vlastní zaměstnanci</b>, nebudeme k Vám posílat žádné externí firmy. Všichni naši zaměstnanci vstupují k zákazníkovi jen s potvrzeným negativním covid testem.
         </p>
-        <!-- <p></p> -->
-        <!-- <p></p> -->
+        <p></p>
       </li>
       <li>
         <div class="pluses__top_icon top__icon_discount">
@@ -341,7 +333,7 @@
     </ul>
 
     <div class="center pluses_center">
-      <a href="#" class="">poptávka kuchyně</a>
+      <a href="#" ><img src="img/icons/calling2.png" alt=""><span>poptávka kuchyně</span></a>
     </div>
     <div class="center pluses_center_sec">
       <p>Jste na správném místě. Kuchyním opravdu rozumíme. A to doslova od výběru spotřebičů po projekt cele kuchyně.
@@ -354,435 +346,265 @@
 
   </section>
 
+  <section class="container examples">
+    <h2>
+      Inspirujte se v našich kuchyních
+    </h2>
+    <!-- Slider main container -->
+    <div class="swiper-container examples__slider">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_1.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Stylové pracovní místo
+          </h3>
+          <span>
+            MODEL ROCCA
+          </span>
+        </div>
+        <!-- slide 2 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_2.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Kuchyně s extra úložným prostorem
+          </h3>
+          <span>MODEL ALEA MATT</span>
+        </div>
+        <!-- slide 3 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_3.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Tento vzhled nikdy nevyjde z módy
+          </h3>
+          <span>
+            MODEL FINO MAT
+          </span>
+        </div>
+        <!-- slide 4 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_4.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Krásná od přírody
+          </h3>
+          <span>
+            MODEL LIMA
+          </span>
+        </div>
+        <!-- slide 5 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_5.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Když je kuchyň součástí obytného prostoru
+          </h3>
+          <span>
+            MODEL TARGA
+          </span>
+        </div>
+        <!-- slide 6 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_6.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Pro velké i malé tvůrce trendů
+          </h3>
+          <span>
+            model linea
+          </span>
+        </div>
+        <!-- slide 7 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_7.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Protiklady se přitahují
+          </h3>
+          <span>
+            MODEL STRATO MAT
+          </span>
+        </div>
+        <!-- slide 8 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_8.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Elegantní kuchyně ve městě
+          </h3>
+          <span>
+            MODEL CORTINA
+          </span>
+        </div>
+        <!-- slide 9 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_9.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Silné barvy a struktury
+          </h3>
+          <span>
+            MODEL ALBA
+          </span>
+        </div>
+        <!-- slide 10 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_10.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Moderní venkovská kuchyně
+          </h3>
+          <span>
+            MODEL cAMBIa
+          </span>
+        </div>
+        <!-- slide 11 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_11.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Zelená harmonie
+          </h3>
+          <span>
+            MODEL SIENA
+          </span>
+        </div>
+        <!-- slide 12 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_12.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Malá kuchyň dokonale uspořádaná
+          </h3>
+          <span>
+            MODEL NOVA
+          </span>
+        </div>
+        <!-- slide 13 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_13.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Tradiční vzhled s venkovským nádechem
+          </h3>
+          <span>
+            MODEL vienna
+          </span>
+        </div>
+        <!-- slide 14 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_14.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Kuchyně a vinárna na pokoji
+          </h3>
+          <span>
+            MODEL ELBA
+          </span>
+        </div>
+        <!-- slide 15 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_15.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Pro chuť potřebujete prostor
+          </h3>
+          <span>
+            MODEL CLASSIC
+          </span>
+        </div>
+        <!-- slide 16 -->
+        <div class="swiper-slide examples__slide">
+          <div class="example__img_wrap">
+            <img src="img/examles_16.jpeg" alt="img desc">
+          </div>
+          <h3>
+            Ležérní a lehké - kuchyně v růžovém provedení
+          </h3>
+          <span>
+            xz MODELOVÁ BIELLA
+          </span>
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
 
+    </div>
 
+  </section>
 
-
-  <div class="container kitchen__wrapper">
-    <!-- 1 -->
-    <div class="kitchen__item kitchen__item_big">
-      <a href="#">
-        <div class="kitchen__item_img">
-          <img src="img/1.jpeg" alt="img desc">
+  <section class="container choice__kitchen">
+    <h2 class="choose__title">
+      Která kuchyně mi vyhovuje?
+    </h2>
+    <!-- Slider main container -->
+    <div class="swiper-container choice__kitchen_slider">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide choice__slide">
+          <a class="choice__slide_link" href="#">
+            <div class="choice__slide_img_wrap">
+              <img src="img/choice1.jpeg" alt="Kuchyně pro rodinné lidi">
+            </div>
+            <h4>
+              Küchen für
+            </h4>
+            <h3>
+              Kuchyně pro rodinné lidi
+            </h3>
+            <p>
+              Vařte, jezte, hrajte si, smějte se, žíjte: Otevřeno všem a všemu. Je dobré, když kuchyň splňuje všechny tyto požadavky.
+            </p>
+          </a>
         </div>
-        <div class="kitchen__item_desc">
-          <h3>NX 912 / NX 505</h3>
-          <p>GLAS MATT ACHATGRAU / COGNAC-SATIN</p>
+        <div class="swiper-slide choice__slide">
+          <a class="choice__slide_link" href="#">
+            <div class="choice__slide_img_wrap">
+              <img src="img/choice1.jpeg" alt="Kuchyně pro rodinné lidi">
+            </div>
+            <h4>
+              Küchen für
+            </h4>
+            <h3>
+              Kuchyně pro rodinné lidi
+            </h3>
+            <p>
+              Vařte, jezte, hrajte si, smějte se, žíjte: Otevřeno všem a všemu. Je dobré, když kuchyň splňuje všechny tyto požadavky.
+            </p>
+          </a>
         </div>
-      </a>
-    </div>
-    <!-- 2/3 -->
-    <div class="kitchen__items_small_wrap">
-      <div class="kitchen__item kitchen__item_small">
-        <a href="#">
-          <div class="kitchen__item_img">
-            <img src="img/2.jpeg" alt="img desc">
-          </div>
-          <div class="kitchen__item_desc">
-            <h3>NX 510</h3>
-            <p>ONYXSCHWARZ SAMTMATT AFP / INDISCHROT SAMTMATT AFP / NEBELBLAU-SATIN</p>
-          </div>
-        </a>
-      </div>
-      <div class="kitchen__item kitchen__item_small">
-        <a href="#">
-          <div class="kitchen__item_img">
-            <img src="img/3.jpeg" alt="img desc">
-          </div>
-          <div class="kitchen__item_desc">
-            <h3>NX 505</h3>
-            <p>CURRY-SATIN / KRISTALLWEISS-SATIN</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <!-- 4 -->
-    <div class="kitchen__item kitchen__item_big">
-      <a href="#">
-        <div class="kitchen__item_img">
-          <img src="img/4.jpeg" alt="img desc">
-        </div>
-        <div class="kitchen__item_desc">
-          <h3>NX 510 / NX 640</h3>
-          <p>SAHARABEIGE SAMTMATT AFP / EICHE ELEGANT PERLGRAU</p>
-        </div>
-      </a>
-    </div>
-    <!-- 5 / 6 -->
-    <div class="kitchen__items_small_wrap">
-      <div class="kitchen__item kitchen__item_small">
-        <a href="#">
-          <div class="kitchen__item_img">
-            <img src="img/5.jpeg" alt="img desc">
-          </div>
-          <div class="kitchen__item_desc">
-            <h3>NX 640</h3>
-            <p>EICHE ELEGANT GRAPHITGRAU / KOBALTGRÜN SAMTMATT AFP</p>
-          </div>
-        </a>
-      </div>
-      <div class="kitchen__item kitchen__item_small">
-        <a href="#">
-          <div class="kitchen__item_img">
-            <img src="img/6.jpeg" alt="img desc">
-          </div>
-          <div class="kitchen__item_desc">
-            <h3>NX 510</h3>
-            <p>SANDGRAU SAMTMATT</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <!-- 7 -->
-    <div class="kitchen__item kitchen__item_big">
-      <a href="#">
-        <div class="kitchen__item_img">
-          <img src="img/7.jpeg" alt="img desc">
-        </div>
-        <div class="kitchen__item_desc">
-          <h3>NX 870 / NX 650</h3>
-          <p>FENIX ONXYSCHWARZ FEINMATT AFP / LÄRCHE GERÄUCHERT GEBÜRSTET</p>
-        </div>
-      </a>
-    </div>
-    <!-- 8 -->
-    <div class="kitchen__item kitchen__item_big">
-      <a href="#">
-        <div class="kitchen__item_img">
-          <img src="img/8.jpeg" alt="img desc">
-        </div>
-        <div class="kitchen__item_desc">
-          <h3>NX 870</h3>
-          <p>FENIX MOKKABRAUN FEINMATT AFP / NUSSBAUM NATUR</p>
-        </div>
-      </a>
-    </div>
-    <!-- 9 -->
-    <div class="kitchen__item kitchen__item_big">
-      <a href="#">
-        <div class="kitchen__item_img">
-          <img src="img/9.jpeg" alt="img desc">
-        </div>
-        <div class="kitchen__item_desc">
-          <h3>NX 902 / NX 620</h3>
-          <p>GLAS MATT BRONZE METALLIC / ASTEICHE TABAK GEBÜRSTET</p>
-        </div>
-      </a>
-    </div>
-    <!-- 10 -->
-    <div class="kitchen__item kitchen__item_big">
-      <a href="#">
-        <div class="kitchen__item_img">
-          <img src="img/10.jpeg" alt="img desc">
-        </div>
-        <div class="kitchen__item_desc">
-          <h3>NX 950</h3>
-          <p>CERAMIC MARMOR GRIGIO NACHBILDUNG / GLAS MATT ONYXSCHWARZ</p>
-        </div>
-      </a>
-    </div>
-    <!-- 11 -->
-    <div class="kitchen__item kitchen__item_big">
-      <a href="#">
-        <div class="kitchen__item_img">
-          <img src="img/11.jpeg" alt="img desc">
-        </div>
-        <div class="kitchen__item_desc">
-          <h3>NX 510 / NX 620</h3>
-          <p>SANDGRAU SAMTMATT / ASTEICHE NATUR GEBÜRSTET</p>
-        </div>
-      </a>
-    </div>
-    <!-- 12 / 13 -->
-    <div class="kitchen__items_small_wrap">
-      <div class="kitchen__item kitchen__item_small">
-        <a href="#">
-          <div class="kitchen__item_img">
-            <img src="img/12.jpeg" alt="img desc">
-          </div>
-          <div class="kitchen__item_desc">
-            <h3>NX 640 / NX 505</h3>
-            <p>EICHE ELEGANT TABAK / RUBINROT-SATIN</p>
-          </div>
-        </a>
-      </div>
-      <div class="kitchen__item kitchen__item_small">
-        <a href="#">
-          <div class="kitchen__item_img">
-            <img src="img/13.jpeg" alt="img desc">
-          </div>
-          <div class="kitchen__item_desc">
-            <h3>NX 960</h3>
-            <p>CERAMIC MARMOR NERO NACHBILDUNG / NUSSBAUM NATUR</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <!-- 14 -->
-    <div class="kitchen__item kitchen__item_big">
-      <a href="#">
-        <div class="kitchen__item_img">
-          <img src="img/14.jpeg" alt="img desc">
-        </div>
-        <div class="kitchen__item_desc">
-          <h3>NX 505 / NX 650</h3>
-          <p>JAGUARGRÜN-SATIN / ALTEICHE</p>
-        </div>
-      </a>
-    </div>
-    <!-- 15 -->
-    <div class="kitchen__item kitchen__item_big">
-      <a href="#">
-        <div class="kitchen__item_img">
-          <img src="img/15.jpeg" alt="img desc">
-        </div>
-        <div class="kitchen__item_desc">
-          <h3>NX 510 / NX 950</h3>
-          <p>ACHATGRAU SAMTMATT / CERAMIC MARMOR BIANCO NACHBILDUNG</p>
-        </div>
-      </a>
-    </div>
-    <!-- 16 / 17-->
-    <div class="kitchen__items_small_wrap">
-      <div class="kitchen__item kitchen__item_small">
-        <a href="#">
-          <div class="kitchen__item_img">
-            <img src="img/16.jpeg" alt="img desc">
-          </div>
         
-          <div class="kitchen__item_desc">
-            <h3>NX 505</h3>
-            <p>SAFRANGELB-SATIN / ASTEICHE TABAK GEBÜRSTET</p>
-          </div>
-        </a>
       </div>
-      <div class="kitchen__item kitchen__item_small">
-        <a href="#">
-          <div class="kitchen__item_img">
-            <img src="img/17.jpeg" alt="img desc">
-          </div>
-          <div class="kitchen__item_desc">
-            <h3>NX 902</h3>
-            <p>GLAS MATT PLATIN METALLIC / ASTEICHE TABAK GEBÜRSTET</p>
-          </div>
-        </a>
-      </div>
+
     </div>
-  </div>
-
-<!-- <div class="container main__promo">
-
-  <div class="main__promo_left">
-    <a href="#">
-      <img src="img/promo_1.jpg" alt="promo img">
-    </a>
-  </div>
-
-  <div class="main__promo_right">
-    <div class="promo__right_top">
-      <a href="#">
-        <img src="img/promo_2.jpg" alt="promo img">
-      </a>
-    </div>
-    <div class="promo__right_bot">
-      <a href="#">
-        <img src="img/promo_3.png" alt="promo img">
-      </a>
-      </div>
-  </div>
-
-</div> -->
-
-<!-- <nav class="container nav__categories">
-  <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
-  <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
-  <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
-  <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
-  <a href="#"><img src="img/cat1.jpg" alt="img desc"><h3>koupelny	></h3></a>
-</nav> -->
-
-<!-- <section class="container trends">
-  <h2 class="choose__title">Objevte nejnovější trendy pro kuchyně a koupelny</h2>
-  
-  <ul class="trends__list">
-    <li>
-      <a href="#">
-        <img src="img/koupelna.jpg" alt="img desc">
-        <h3>Kamenná koupelna></h3>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="img/koupelna.jpg" alt="img desc">
-        <h3>Kamenná koupelna ></h3>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="img/koupelna.jpg" alt="img desc">
-        <h3>Kamenná koupelna ></h3>
-      </a>
-    </li>
-  </ul>
-
-  <a class="btn__cta_second" href="#">Prohlédnout všechny</a>
-
-</section> -->
-
-<!-- <section class="container ideas">
-  <h2 class="choose__title">Inspirace pro váš domov</h2>
-  <ul class="ideas__list">
-    <li class="idea">
-      <a href="#">
-        <img src="img/idea.jpg" alt="img desc">
-        <div class="idea__desc">Žhavé novinky do kuchyně</div>
-      </a>
-    </li>
-    <li class="idea">
-      <a href="#">
-        <img src="img/idea.jpg" alt="img desc">
-        <div class="idea__desc">Žhavé novinky do kuchyně</div>
-      </a>
-    </li>
-    <li class="idea">
-      <a href="#">
-        <img src="img/idea2.jpg" alt="img desc">
-        <div class="idea__desc">Co si rozhodně nenechat ujít? NOVINKY v obkladech a dlažbách 2021. </div>
-      </a>
-    </li>
-    <li class="idea">
-      <a href="#">
-        <img src="img/idea.jpg" alt="img desc">
-        <div class="idea__desc">Žhavé novinky do kuchyně</div>
-      </a>
-    </li>
-  </ul>
-  <a class="btn__cta_second" href="#">Zobrazit více nápadů</a>
-
-</section> -->
-
-<!-- <section class="container firm__loga">
-  <h2 class="choose__title">Objevte výrobky osvědčených značek</h2>
-
-  <div class="firm__loga_inner">
-    <img class="firm_log" src="img/bosch.svg" alt="bosch icon">
-    <img class="firm_log" src="img/siemens.svg" alt="siemens icon">
-    <img class="firm_log" src="img/pino_clr.png" alt="pin icon">
-    <img class="firm_log" src="img/nobilia_clr.png" alt="siemens icon">
-    <img class="firm_log" src="img/lightstyle_clr.png" alt="siemens icon">
-    <img class="firm_log" src="img/schuller_clr.png" alt="siemens icon">
-    <img class="firm_log" src="img/next125_clr.png" alt="siemens icon">
-  </div>
-
-</section> -->
-
-<!-- <section class="container upper upper__two">
-  <img class="up__img" src="img/konzultant.jpg" alt="img desc">
-  <div class="up__content">
-    <h3><b>Splňte si sen o perfektní koupelně</b></h3>
-    <p>
-      Připravit si horkou lázeň v příjemné stylové koupelně můžete díky SIKO i vy. Vyberete si vše, co pro svojí vysněnou koupelnu budete potřebovat. Základem každé koupelny jsou obklady a dlažba, které jsou významným designovým prvkem. Sanitární keramika zahrnuje toalety, umyvadla a bidety.
-      <br><br>
-      Je jen na vás, jestli svou koupelnu vybavíte sprchovým koutem, nebo prostornou pohodlnou vanou. Pokud máte prostor, můžete si dopřát obojí. V SIKO získáte vkusné vanové a sprchové sety, které k sobě ladí.
-      <br><br>
-      K umyvadlu, vaně i sprchovému koutu patří vodovodní baterie. V nabídce naleznete osvědčené modely baterií, které jsou vhodné do koupelen i kuchyní.
-    </p>
-  </div>
-</section> -->
-
-<!-- <section class="container upper upper__one">
-  <div class="up__content">
-    <h3><b>V kuchyních SIKO je vaření zábava</b></h3>
-    <p>
-      Svojí novou kuchyni vybavíte snadno a jednoduše. Díky našemu 3D plánovači si navíc můžete vytvořit unikátní styl a rovnou vybírat produkty do svého 3D modelu. Pokud hledáte svůj styl, můžete získat inspiraci, nebo si rovnou změřte prostor a sjednejte si schůzku s naším specialistou.
-    <br><br>
-      Myslíme opravdu na všechno, proto dodáváme stavební chemii, nářadí a lišty. Nakupovat můžete i příslušenství k vanám i ke sprchovým koutům, příslušenství k vodovodním bateriím, také všechny sifony a armatury .
-    <br><br>
-    Ohřev vody zajistíte v sekci vytápění a ohřívače vody. Interiér vašeho domu doplníte stylovými dveřmi z našeho katalogu, které jsou moderní a elegantní.
-    </p>
-  </div>
-  <img class="up__img" src="img/konzultant.jpg" alt="img desc">
-</section> -->
-
-<!-- <div class="container center">
-  <a href="#" class="btn__cta_first">Sjednat schůzku</a>
-</div> -->
-
-<!-- <section class="news">
-  <div class="container news__inner">
-    <h2 class="choose__title">Novinky</h2>
-    <div class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <a href="#" class="news__item_link">
-              <span class="news__label">NEW</span>
-              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
-              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-              <span class="news__price">2 990 Kč</span>
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="#" class="news__item_link">
-              <span class="news__label">NEW</span>
-              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
-              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-              <span class="news__price">2 990 Kč</span>
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="#" class="news__item_link">
-              <span class="news__label">NEW</span>
-              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
-              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-              <span class="news__price">2 990 Kč</span>
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="#" class="news__item_link">
-              <span class="news__label">NEW</span>
-              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
-              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-              <span class="news__price">2 990 Kč</span>
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="#" class="news__item_link">
-              <span class="news__label">NEW</span>
-              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
-              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-              <span class="news__price">2 990 Kč</span>
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="#" class="news__item_link">
-              <span class="news__label">NEW</span>
-              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
-              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-              <span class="news__price">2 990 Kč</span>
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="#" class="news__item_link">
-              <span class="news__label">NEW</span>
-              <img loading="lazy" class="news__img" src="img/new1.jpeg" alt="img desc">
-              <h3 class="news__title">Umyvadlová baterie Swiss Aqua Technologies DARK bez výpusti PVD Gun Metal SATBSDA271P</h3>
-              <span class="news__price">2 990 Kč</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-</section> -->
-
+  </section>
 
 </main>
 
-<!-- <script src="js/splide.min.js"></script> -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
