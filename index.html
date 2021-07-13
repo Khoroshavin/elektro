@@ -241,8 +241,8 @@
     </h2>
     <ul class="pluses__list_top">
       <li>
-        <div class="pluses__top_icon top__icon_like">
-          <img src="img/icons/like.svg" alt="icon">
+        <div class="pluses__top_icon">
+          <img src="img/icons/24hours.svg" alt="icon">
         </div>
         <!-- <img src="img/icons/palec_icon.webp" alt="icon"> -->
         <h3>
@@ -256,8 +256,8 @@
         </p>
       </li>
       <li>
-        <div class="pluses__top_icon top__icon_hours">
-          <img src="img/icons/24-hours.svg" alt="icon">
+        <div class="pluses__top_icon">
+          <img src="img/icons/24hours.svg" alt="icon">
         </div>
         <h3>
           Rychlé jednání a návrh kuchyně do 24 hodin!
@@ -270,8 +270,8 @@
         </p>
       </li>
       <li>
-        <div class="pluses__top_icon top__icon_ruller">
-          <img src="img/icons/ruler-and-pencil.svg" alt="icon ruler">
+        <div class="pluses__top_icon">
+          <img src="img/icons/rullers.svg" alt="icon ruler">
         </div>
         <h3>
           Montáž, zaměření a doprava Vaší kuchyně a spotřebičů zdarma
@@ -282,8 +282,8 @@
         <p></p>
       </li>
       <li>
-        <div class="pluses__top_icon top__icon_discount">
-          <img src="img/icons/discount.svg" alt="icon discount">
+        <div class="pluses__top_icon ">
+          <img src="img/icons/percent.svg" alt="icon discount">
         </div>
         <h3>
           Akční nabídky na kuchyně i spotřebiče!
@@ -300,7 +300,7 @@
     <ul class="pluses__list_bot">
       <li>
         <div class="pluses__bot_icon">
-          <img src="img/icons/right-arrow.svg" alt="icon">
+          <img src="img/icons/star.svg" alt="icon">
         </div>
         <p>
           Vaše spokojenost je naším závazkem. A to opravdu doslova. Chceme mít Vaši důvěru nejen dnes, ale i v budoucnu.
@@ -308,7 +308,7 @@
       </li>
       <li>
         <div class="pluses__bot_icon">
-          <img src="img/icons/right-arrow.svg" alt="icon">
+          <img src="img/icons/star.svg" alt="icon">
         </div>
         <p>
           Komunikace a dostupnost - s tím u nás můžete počítat. Stejně tak i rychlost jednání v celém procesu.
@@ -316,7 +316,7 @@
       </li>
       <li>
         <div class="pluses__bot_icon">
-          <img src="img/icons/right-arrow.svg" alt="icon">
+          <img src="img/icons/star.svg" alt="icon">
         </div>
         <p>
           Opravdu nám záleží na celém procesu výroby a dodání kuchyně. Víme, že montáž je důležitou součástí. 
@@ -324,7 +324,7 @@
       </li>
       <li>
         <div class="pluses__bot_icon">
-          <img src="img/icons/right-arrow.svg" alt="icon">
+          <img src="img/icons/star.svg" alt="icon">
         </div>
         <p>
           Využijte našich nabídek na skvělé SETY spotřebičů. Spolu s kuchyní  od nás je to skutečně ta nejlepší nabídka na trhu.
@@ -347,9 +347,12 @@
   </section>
 
   <section class="container examples">
-    <h2>
-      Inspirujte se v našich kuchyních
-    </h2>
+    <div class="examples_header">
+      <h2>
+        Inspirujte se v našich kuchyních
+      </h2>
+      <span>Pokud najdete co hledáte, pak je to skvělé. Nebo nám jednoduše pošlete obrázek kuchyně, která se Vám líbí. </span>
+    </div>
     <!-- Slider main container -->
     <div class="swiper-container examples__slider">
       <!-- Additional required wrapper -->
@@ -546,61 +549,363 @@
         </div>
       </div>
 
-      <!-- If we need navigation buttons -->
+      <!-- navigation buttons -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-
-
+      <!-- pagination -->
+      <div class="swiper-pagination"></div> 
     </div>
 
   </section>
 
   <section class="container choice__kitchen">
-    <h2 class="choose__title">
-      Která kuchyně mi vyhovuje?
-    </h2>
-    <!-- Slider main container -->
-    <div class="swiper-container choice__kitchen_slider">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide choice__slide">
-          <a class="choice__slide_link" href="#">
-            <div class="choice__slide_img_wrap">
-              <img src="img/choice1.jpeg" alt="Kuchyně pro rodinné lidi">
-            </div>
-            <h4>
-              Küchen für
-            </h4>
-            <h3>
-              Kuchyně pro rodinné lidi
-            </h3>
-            <p>
-              Vařte, jezte, hrajte si, smějte se, žíjte: Otevřeno všem a všemu. Je dobré, když kuchyň splňuje všechny tyto požadavky.
-            </p>
-          </a>
-        </div>
-        <div class="swiper-slide choice__slide">
-          <a class="choice__slide_link" href="#">
-            <div class="choice__slide_img_wrap">
-              <img src="img/choice1.jpeg" alt="Kuchyně pro rodinné lidi">
-            </div>
-            <h4>
-              Küchen für
-            </h4>
-            <h3>
-              Kuchyně pro rodinné lidi
-            </h3>
-            <p>
-              Vařte, jezte, hrajte si, smějte se, žíjte: Otevřeno všem a všemu. Je dobré, když kuchyň splňuje všechny tyto požadavky.
-            </p>
-          </a>
-        </div>
-        
-      </div>
 
+    <div class="choice__left">
+      <div class="advantages">
+        <div class="advantages__item">
+          <img src="img/icons/calling2.png" alt="img desc">
+          <div class="advantages__item_content">
+            <h5>Opravdu rychlá komunikace</h5>
+            <p>Komunikujeme každý den od 9°° do 21°°. Mail, telefon, videohovor - umíme vše.</p>
+          </div>
+        </div>
+        <div class="advantages__item">
+          <img src="img/icons/calling2.png" alt="img desc">
+          <div class="advantages__item_content">
+            <h5>
+              Velmi rychlé dodání kuchyně</h5>
+            <p>Máme krátké dodací lhůty a to jak na kuchyně tak i na spotřebiče, které máme skladem.</p>
+          </div>
+        </div>
+        <div class="advantages__item">
+          <img src="img/icons/calling2.png" alt="img desc">
+          <div class="advantages__item_content">
+            <h5>Návrh kuchyně do 24 hodin</h5>
+            <p>3D návrh do 24 hodin, pokud zákazník přijde na studio, je možný hrubý návrh do 30ti minut.</p>
+          </div>
+        </div>
+        <div class="advantages__item">
+          <img src="img/icons/calling2.png" alt="img desc">
+          <div class="advantages__item_content">
+            <h5>Kuchyně a spotřebiče na jednom místě</h5>
+            <p>Umíme řešit kuchyň i spotřebiče, protože jsme specialisté na oba sortimenty.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="choice__right">
+      <div class="examples_header">
+        <h2>
+          Kuchyňské linky
+        </h2>
+        <span>Podle typu osobnosti</span>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper-container choice__kitchen_slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide choice__slide">
+            <a class="choice__slide_link" href="#">
+              <div class="choice__slide_img_wrap">
+                <img src="img/choice1.jpeg" alt="Kuchyně pro rodinné lidi">
+              </div>
+              <h4>
+                Kuchyně pro
+              </h4>
+              <h3>
+                rodinné typy
+              </h3>
+              <p>
+                Vařte, jezte, hrajte si, smějte se, žijte: otevřeno všem a všemu. Je dobré, když kuchyň splňuje všechny tyto požadavky.
+              </p>
+            </a>
+          </div>
+          <div class="swiper-slide choice__slide">
+            <a class="choice__slide_link" href="#">
+              <div class="choice__slide_img_wrap">
+                <img src="img/choice2.jpeg" alt="Kuchyně pro rodinné lidi">
+              </div>
+              <h4>
+                Kuchyně pro
+              </h4>
+              <h3>
+                lidi z města
+              </h3>
+              <p>
+                Velké kuchyně v malém prostoru s inteligentním řešením pro úložný prostor.
+              </p>
+            </a>
+          </div>
+          <div class="swiper-slide choice__slide">
+            <a class="choice__slide_link" href="#">
+              <div class="choice__slide_img_wrap">
+                <img src="img/choice3.jpeg" alt="Kuchyně pro rodinné lidi">
+              </div>
+              <h4>
+                Kuchyně pro
+              </h4>
+              <h3>
+                trend settery
+              </h3>
+              <p>
+                Vždy na tepu času: kreativní, jiný, neupravený, ale vždy profesionální. To pravé pro všechny, kteří nejsou mainstream.
+              </p>
+            </a>
+          </div>
+          <div class="swiper-slide choice__slide">
+            <a class="choice__slide_link" href="#">
+              <div class="choice__slide_img_wrap">
+                <img src="img/choice4.jpeg" alt="Kuchyně pro rodinné lidi">
+              </div>
+              <h4>
+                Kuchyně pro
+              </h4>
+              <h3>
+                milovníky přírody
+              </h3>
+              <p>
+                Přineste krásu přírody do svých čtyř stěn: speciální materiály, udržitelné povědomí, co nejpřirozenější.
+              </p>
+            </a>
+          </div>
+          <div class="swiper-slide choice__slide">
+            <a class="choice__slide_link" href="#">
+              <div class="choice__slide_img_wrap">
+                <img src="img/choice5.jpeg" alt="Kuchyně pro rodinné lidi">
+              </div>
+              <h4>
+                Kuchyně pro
+              </h4>
+              <h3>
+                labužníky
+              </h3>
+              <p>
+                Kvalita a důvěra v každý detail bez ozdůbek - skutečné hodnoty v životě.
+              </p>
+            </a>
+          </div>
+          
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div> 
+      </div>
     </div>
   </section>
+
+  <section class="container kitchcen__firms">
+
+    <ul class="kitchcen__firms_head">
+      <li class="firms__head_item firms__head_first">
+        <h2>Kuchyňské linky</h2>
+        <span>Vyberte si z našich značek</span>
+      </li>
+      <li class="firms__head_item">
+        <a href="#">
+          <img src="" alt="připravte mi 3d návrh">
+          PŘIPRAVTE MI 3D NÁVRH
+        </a>
+      </li>
+      <li class="firms__head_item">
+        <a href="#">
+          <img src="" alt="POJĎME VŠE PROBRAT ONLINE">
+          POJĎME VŠE PROBRAT ONLINE
+        </a>
+      </li>
+      <li class="firms__head_item">
+        <a href="#">
+          <img src="" alt="DOMLUVIT SCHŮZKU NA STUDIU">
+          DOMLUVIT SCHŮZKU NA STUDIU
+        </a>
+      </li>
+    </ul>
+
+    <div class="kitchcen__firms_wrap">
+      <a class="kitchcen__firm">
+        <div class="kitchcen__firm_img_wrap">
+          <img src="img/1-1.jpeg" alt="schuller">
+        </div>
+        <img class="firm_logo" src="img/Schüller_Black_Red_dot.svg" alt="shuller">
+        <p>
+          Kuchyně Schüller. Pro zákazníky, kteří hledají vysokou německou kvalitu provedení kuchyní. Velmi dostupné kuchyně v několika cenových kategoriích s neomezenými možnostmi dekorů.
+        </p>
+      </a>
+      <a class="kitchcen__firm">
+        <div class="kitchcen__firm_img_wrap">
+          <img src="img/1-1.jpeg" alt="schuller">
+        </div>
+        <img class="firm_logo" src="img/Next125_Black.svg" alt="Next125">
+        <p>
+          Prémiové kuchyně značky Next125 představují špičku v naší nabídce. Exkluzivní materiály a možnosti jak "postavit" kuchyň dávají příležitost náročným zákazníkům získat praktickou a z hlediska designu současně nádhernou kuchyň.
+        </p>
+      </a>
+      <a class="kitchcen__firm">
+        <div class="kitchcen__firm_img_wrap">
+          <img src="img/1-1.jpeg" alt="schuller">
+        </div>
+        <img class="firm_logo" src="img/Nobilia_Black.svg" alt="nobilia">
+        <p>
+          Prémiové kuchyně značky Next125 představují špičku v naší nabídce. Exkluzivní materiály a možnosti jak "postavit" kuchyň dávají příležitost náročným zákazníkům získat kuchyň praktickou a z hlediska designu nádhernou kuchyň.
+        </p>
+      </a>
+      <a class="kitchcen__firm">
+        <div class="kitchcen__firm_img_wrap">
+          <img src="img/1-1.jpeg" alt="schuller">
+        </div>
+        <img class="firm_logo" src="img/Lightstyle_Kitchen_Black.svg" alt="LightstyleKitchen">
+        <p>
+          Zakázková, naše vlastní výroba. Vhodné pro atypické místnosti a zakázky, kde se potřebujeme s nábytkem přizpůsobit ve větší míře. Vyrábíme na nejmodernější CNC strojích s důrazem na vysokou kvalitu materiálů i provedení.
+        </p>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="container discount__block">
+
+    <div class="discount__block_left">
+      <h2>VYUŽIJTE SKVĚLOU AKCI -37% NA KUCHYNĚ</h2>
+      <p>
+        Jsme připraveni se Vám plně věnovat. Stačí udělat první krok a kontaktovat nás. Kuchyním opravdu rozumíme, uvěříte nám hned na začátku.
+        Pomůžeme Vám vše naplánovat a to nejen kuchyň ale i spotřebiče tak, abyste si byli jistí, že máte nejlepší nabídku.
+      </p>
+      <div class="discount__block_btns">
+        <a href="#"> i Kontaktujte mě</a>
+        <a href="#"> i Schůzka na studiu</a>
+        <a href="#"> i Online schůzka</a>
+      </div>
+    </div>
+
+    <div class="discount__block_right">
+      <img src="img/icons/test.svg" alt="icon">
+      <div class="discount__circle">
+        <h3>
+          VYUŽIJTE SKVĚLOU AKCI -37% <br>
+          NA KUCHYNĚ
+        </h3>
+        <h3>-37%</h3>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="container popular">
+    <h2>Prozkoumejte právě oblíbené kuchyně</h2>
+
+    <ul class="popular__top">
+      <li class="top__item">
+        <img class="popular__item_img" src="img/1-1.jpeg" alt="">
+        <a href="#">
+          <img src="img/icons/phone-call.svg" alt="phone icon">
+          Poptávka</a>
+      </li>
+      <li class="top__item">
+        <img class="popular__item_img" src="img/1-1.jpeg" alt="">
+        <a href="#">
+          <img src="img/icons/phone-call.svg" alt="phone icon">
+          Poptávka</a>
+      </li>
+      <li class="top__item">
+        <img class="popular__item_img" src="img/1-1.jpeg" alt="">
+        <a href="#">
+          <img src="img/icons/phone-call.svg" alt="phone icon">
+          Poptávka</a>
+      </li>
+    </ul>
+
+    <ul class="popular__bot">
+      <li class="bot__item">
+        <img class="popular__item_img" src="img/1-1.jpeg" alt="">
+        <a href="#">
+          <img src="img/icons/phone-call.svg" alt="phone icon">
+          Poptávka
+        </a>
+      </li>
+      <li class="bot__item">
+        <img class="popular__item_img" src="img/1-1.jpeg" alt="">
+        <a href="#">
+          <img src="img/icons/phone-call.svg" alt="phone icon">
+          Poptávka
+        </a>
+      </li>
+      <li class="bot__item">
+        <img class="popular__item_img" src="img/1-1.jpeg" alt="">
+        <a href="#">
+          <img src="img/icons/phone-call.svg" alt="phone icon">
+          Poptávka
+        </a>
+      </li>
+      <li class="bot__item">
+        <img class="popular__item_img" src="img/1-1.jpeg" alt="">
+        <a href="#">
+          <img src="img/icons/phone-call.svg" alt="phone icon">
+          Poptávka
+        </a>
+      </li>
+    </ul>
+
+  </section>
+
+  <section class="container postup">
+    <h2>Nákup kuchyně od nás je tak jednoduchý</h2>
+    <span>A my Vám úplně se vším moc rádi pomůžeme, spolehněte se na nás!</span>
+    
+    <ul class="postup__inner">
+
+      <li class="postup__item">
+        <div class="postup__head">
+          <div class="postup__num">
+            <span>1</span>
+          </div>
+          <h3>Připravíme Vám 3D návrh</h3>
+        </div>
+        <p>
+          Napište nám nebo zavolejte. Vše může jít velmi rychle, můžeme se sejít u nás na studiu, nebo mít společně online schůzku. Zajímá nás co Vás inspiruje, třeba  obrázky z Pinterestu. První 3D návrh Vám vytvoříme skutečně rychle.
+        </p>
+      </li>
+      <li class="postup__item">
+        <div class="postup__head">
+          <div class="postup__num">
+            <span>2</span>
+          </div>
+          <h3>Vše naplánujeme
+            a zkonzultujeme</h3>
+        </div>
+        <p>
+          Společně vše naplánujeme. Komunikujeme 7 dní v týdnu, takže pokud budete chtít něco upřesnit, jsme Vám k dispozici, ať už po mailu, telefonu, nebo třeba při online schůzce. Běžně naším zákazníkům voláme přes videohovor, aby mohli  vše vidět.
+        </p>
+      </li>
+      <li class="postup__item">
+        <div class="postup__head">
+          <div class="postup__num">
+            <span>3</span>
+          </div>
+          <h3>           
+            Zaměříme si prostor a potvrdíme objednávku kuchyně
+          </h3>
+        </div>
+        <p>
+          O vše se postaráme. Naši zaměstnanci si Váš prostor pro kuchyň zaměří, tak aby při montáži bylo vše perfektní. Teď už si potvrdíme jen termín, kdy k Vám přijedeme s kuchyní.
+        </p>
+      </li>
+      <li class="postup__item">
+        <div class="postup__head">
+          <div class="postup__num">
+            <span>4</span>
+          </div>
+          <h3>Namontujeme a předáme funkční a bezvadnou kuchyň</h3>
+        </div>
+        <p>
+          Namontujeme kuchyň a vyzkoušíme, zda vše funguje a "sedí" jak má. Po nějaké době se Vám ozveme, zda je vše v pořádku, protože nám na tom záleží. A určitě se uvidíme na našich kurzech vaření, které od nás získáte jako dárek ke kuchyni.
+        </p>
+      </li>
+
+    </ul>
+  
+  </section>
+  
+
 
 </main>
 

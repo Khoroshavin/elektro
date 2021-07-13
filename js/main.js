@@ -12,66 +12,100 @@ document.addEventListener("DOMContentLoaded", function(event) {
   openBurgerMenu();
 
 
-  // main examples slider
-  // new Splide( '.splide__examples', {
-  //   type : 'loop',
-  //   perPage : 1,
-  //   perMove: 1,
-  // }).mount();
-  
-
+  // main page kitchen examples slider
   const swiperExamples = new Swiper('.examples__slider', {
     // parameters
-    loop: true,
-    slidesPerView: 6,
+    // loop: true,
+    slidesPerView: 2,
     spaceBetween: 30,
-  
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        centeredSlides: true,
+      },
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        centeredSlides: false,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: false,
+      },
+      1330: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        centeredSlides: false,
+      },
+      1558: {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        centeredSlides: false,
+      },
+    },
   
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
   
   });
 
+
+  // main page choice kitchen slider
   const swiperChoise = new Swiper('.choice__kitchen_slider', {
     // parameters
-    loop: true,
-    slidesPerView: 6,
-    spaceBetween: 30,
-  
-  
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
+    // loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        centeredSlides: true,
+      },
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        // centeredSlides: true,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: false,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1250: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1350: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1558: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
 
   });
 
 
 });
-// document.addEventListener( 'DOMContentLoaded', function () {
-  // new Splide( '.splide',{
-  //   type   : 'loop',
-  //   perPage    : 3,
-	// 	breakpoints: {
-	// 		956: {
-	// 			perPage: 2
-	// 		},
-  //   },
-    // perMove: 1,
-    // focus: 'center',
-    // arrows: 'splide__arrows arrows',
-    // arrow: 'splide__arrow arrow',
-    // prev: 'splide__arrow--prev arrow',
-    // next: 'splide__arrow--next arrow',
-    // autoWidth: true,
-    // cover     : true,
-    // fixedWidth: '250px',
-    // focus: 'center',
-    // autoplay: true,
-    // interval: 3000,
-  // }).mount();
-// } );
