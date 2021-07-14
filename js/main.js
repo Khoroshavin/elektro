@@ -12,6 +12,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
   openBurgerMenu();
 
 
+
+  // show/close consult wrap
+  const consultBtnHide = document.querySelector('.consult__btn_hide');
+  const consultWrap = document.querySelector('.consult__wrap');
+
+  showConsult = () => {
+    setTimeout((function(){
+      consultWrap.classList.toggle("hide");
+    }),1000)
+  };showConsult();
+
+  closeConsult = () => {
+    consultBtnHide.addEventListener('click', () => {
+      consultWrap.classList.toggle("hide");
+    });
+  };closeConsult();
+
+
+
   // main page kitchen examples slider
   const swiperExamples = new Swiper('.examples__slider', {
     // parameters
@@ -58,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     },
   
   });
+
 
 
   // main page choice kitchen slider
