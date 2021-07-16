@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const consultBtnHide = document.querySelector('.consult__btn_hide');
   const consultWrap = document.querySelector('.consult__wrap');
 
-  showConsult = () => {
-    setTimeout((function(){
-      consultWrap.classList.toggle("hide");
-    }),1000)
-  };showConsult();
+  // showConsult = () => {
+  //   setTimeout((function(){
+  //     consultWrap.classList.toggle("hide");
+  //   }),4000)
+  // };showConsult();
 
   closeConsult = () => {
     consultBtnHide.addEventListener('click', () => {
