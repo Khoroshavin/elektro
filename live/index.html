@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="cs" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live</title>
+  <meta name="description" content="description">
+  <!-- open graph -->
+  <meta property="og:site_name" content="nazev webu a popis" />
+  <meta property="og:title" content="Live" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="#" />
+  <meta property="og:image" content="#" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <!-- preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- swiper slider -->
+  <!-- ! TODO:  optimize bundle -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="../css/reseter.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/live.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="header__top_wrap">
+      <div class="container header__top">
+          <h1>Vestavné spotřebiče | ElektroCZ.com</h1>
+          <div class="header__top_online">
+            <img src="../img/icons/telephone_3.png" alt="icon online">
+            <span>ONLINE DO 23°°</span>
+          </div>
+  
+          <nav class="header__top_nav">
+            <a href="#">6 X STUDIO V ČR</a>
+            <a href="#">KUCHYNĚ</a>
+            <a href="#">O NÁKUPU</a>
+            <a href="#">DOPRAVA ZDARMA</a>
+            <a href="#">KONTAKT</a>
+          </nav>
+      </div>
+    </div>
+    <div class="header__mid_wrap">
+        <div class="container header__mid">
+          <div class="header__mid_main_logos">
+            <a href="../">
+              <img class="electro__logo" src="../img/ElektroCZWhite.svg" alt="Vestavné spotřebiče" loading="lazy">
+            </a>
+            <a href="../" class="lightstyle__logo">
+              <img class="" src="../img/LightstyleFull.svg" alt="lightstyle" loading="lazy">
+            </a>
+          </div>
+  
+          <div class="header__mid_logos">
+            <a href="../next125/">
+              <img class="logo__img_next125" src="../img/next125White.svg" alt="next125 logo" loading="lazy">
+            </a>
+            <a href="../schuller/">
+              <img class="logo__img_schuller " src="../img/SchüllerWhiteRedDot.svg" alt="schuller logo" loading="lazy">
+            </a>
+            <a href="../nobilia/">
+              <img class="logo__img_nobilia" src="../img/Nobilia_Gray.svg" alt="nobilia logo" loading="lazy">
+            </a>
+          </div>
+  
+          <div class="header__btn_form__wrapper">
+            <div class="header__btns_wrapper">
+              <label class="burger__btn" for="check">
+                <input class="burger__btn_input" type="checkbox" id="check" />
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <form class="header__form" action="#" id="#">
+              <input class="header__input" type="search" name="#" id="#" placeholder="">
+              <button class="btn__cta_trhee" type="submit">
+                <span>hledat</span>
+                <img src="../img/icons/loupe.png" alt="find icon">
+              </button>
+            </form>
+          </div>
+          <a class="header__cart_link" href="#">
+            <span>Košík <span> 0 </span> Ks</span>
+            <div class="header__cart_icon">
+              <img src="../img/icons/kosik_final.svg" alt="">
+            </div>
+          </a>
+  
+        </div>
+    </div>
+    <nav class="header__bot_wrap">
+        <ul class="container header__bot">
+          <li class="btn__meet_wrap">
+            <div><a href=""><img src="../img/schuzka_btn.svg" alt=""></a></div>
+            <!-- <button class="btn__meet_offer">domluvit schůzku</button> -->
+          </li>
+          <li>
+            <a class="dropdown" href="#">Kuchyně</a>
+          </li>
+          <li>
+            <a href="#">Zadat poptávku</a>
+          </li>
+          <li>
+            <a href="#">Akce a záruka</a>
+          </li>
+          <li>
+            <a href="#">Naše studia</a>
+          </li>
+          <li>
+            <a href="#">reference</a>
+          </li>
+          <li>
+            <a href="#">% Outlet</a>
+          </li>
+          <li>
+            <a href="#">Developeři</a>
+          </li>
+          <li>
+            <a class="dropdown" href="#">Spotřebiče</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+    </nav>
+    <nav class="header__bot_firms">
+        <ul class="container header__firm_list">
+          <li>
+            <a href="#" title="Schuller">
+              <img src="../img/BBar_Schuller.svg" alt="Schuller">
+            </a>
+          </li>
+          <li>
+            <a href="/next125/" title="Next125">
+              <img src="../img/BBar_Next125.svg" alt="Next125">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="Siemens">
+              <img src="../img/BBar_Siemens.svg" alt="Siemens">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="AEG">
+              <img src="../img/BBar_AEG.svg" alt="AEG">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="BOSCH">
+              <img src="../img/BBar_BOSCH.svg" alt="BOSCH">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="Nobilia">
+              <img src="../img/BBar_Nobilia.svg" alt="Nobilia">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="PINO">
+              <img src="../img/BBar_PINO.svg" alt="PINO">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="Miele">
+              <img src="../img/BBar_Miele.svg" alt="Miele">
+            </a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+
+
+  <main class="container live__categories">
+
+    <ul class="btns__categories_wrap ">
+      <li>
+        <input class="filter__btn" type="checkbox" id="checkboxOne" data-filter=".events">
+        <label for="checkboxOne">Aktuální akce</label>
+      </li>
+      <li>
+        <input class="filter__btn" type="checkbox" id="checkboxTwo" data-filter=".recipes">
+        <label for="checkboxTwo">Recepty</label>
+      </li>
+      <li>
+        <input class="filter__btn" type="checkbox" id="checkboxThree" data-filter=".cooking_courses">
+        <label for="checkboxThree">Kurzy Vaření</label>
+      </li>
+      <li>
+        <input class="filter__btn" type="checkbox" id="checkboxFour" data-filter=".news">
+        <label for="checkboxFour">Aktuality</label>
+      </li>
+      <li>
+        <input class="filter__btn" type="checkbox" id="checkboxFive" data-filter=".vizual">
+        <label for="checkboxFive">Vizualizace</label>
+      </li>
+      <li>
+        <input class="filter__btn" type="checkbox" id="checkboxSix" data-filter=".reference_kitchen">
+        <label for="checkboxSix">Reference kuchyně</label>
+      </li>
+      <li>
+        <input class="filter__btn" type="checkbox" id="checkboxSeven" data-filter=".reference_furniture">
+        <label for="checkboxSeven">Reference nabytek</label>
+      </li>
+      <li>
+        <input class="filter__btn" type="checkbox" id="checkboxEight" data-filter=".vid_recipe">
+        <label for="checkboxEight">Video recepty</label>
+      </li>
+      <li>
+        <input class="filter__btn" type="checkbox" id="checkboxNine" data-filter=".vid_techno">
+        <label for="checkboxNine">Videa používání spotřebičů</label>
+      </li>
+      <li>
+        <input class="filter__btn" type="checkbox" id="checkboxTen" data-filter=".vid_promo">
+        <label for="checkboxTen">Promo videa</label>
+      </li>
+      <!-- <li>
+        <button class="btn_hide hide">Skrýt</button>
+      </li> -->
+    </ul>
+    <button class="btn_hide hide">Skrýt</button>
+    <button class="btn_show">Všechny kategorie</button>
+
+
+    <ul class="live__masonry">
+      <span class="grid-sizer"></span>
+      <span class="gutter-sizer"></span>
+
+      <!-- 1 -->
+      <li class="masonry__item cooking_courses">
+        <a class="cooking_courses_link" href="#" title="Cheesecake s malinami">
+          <div class="cooking_courses__img_wrap">
+            <img src="../img/cooking_courses1.jpg" alt="desc" loading="lazy">
+          </div>
+          <div class="cooking__desc">
+            <span class="helper">kurzy vaření</span>
+            <h2>Cheesecake s malinami</h2>
+            <span class="cooking__prop cooking__prop_date">9.9.2021 od 18 hod</span>
+            <span class="cooking__prop cooking__prop_place">Žitenická 871/7 Praha 9 Prosek</span>
+            <span class="cooking__prop cooking__prop_phone">+420 607 094 289</span>
+            <span class="cooking__prop cooking__prop_email">vareni@elektrocz.com</span>
+          </div>
+        </a>
+      </li>
+      <li class="masonry__item reference_furniture">
+        <span class="helper">realizované projekty</span>
+        <h2>Šatní skříň v dekoru tmavého dřeva</h2>
+        <div class="swiper-container reference__furniture_top r_f_t_i">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide" data-fslightbox="refs_furnit_fslbox_1" href="../img/nabytek_reference1.jpg">
+            <img src="../img/nabytek_reference1.jpg" alt="img desc" loading="lazy">
+          </a>
+          <a class="swiper-slide" data-fslightbox="refs_furnit_fslbox_1" href="../img/nabytek_reference2.jpg">
+            <img src="../img/nabytek_reference2.jpg" alt="img desc" loading="lazy">
+          </a>
+          <a class="swiper-slide" data-fslightbox="refs_furnit_fslbox_1" href="../img/nabytek_reference3.jpg">
+            <img src="../img/nabytek_reference3.jpg" alt="img desc" loading="lazy">
+          </a>
+          <a class="swiper-slide" data-fslightbox="refs_furnit_fslbox_1" href="../img/nabytek_reference4.jpg">
+            <img src="../img/nabytek_reference4.jpg" alt="img desc" loading="lazy">
+          </a>
+          <a class="swiper-slide" data-fslightbox="refs_furnit_fslbox_1" href="../img/nabytek_reference5.jpg">
+            <img src="../img/nabytek_reference5.jpg" alt="img desc" loading="lazy">
+          </a>
+          <a class="swiper-slide" data-fslightbox="refs_furnit_fslbox_1" href="../img/nabytek_reference6.jpg">
+            <img src="../img/nabytek_reference6.jpg" alt="img desc" loading="lazy">
+          </a>
+
+        </div>
+        <button class="swiper-button-next"></button>
+        <button class="swiper-button-prev"></button>
+        </div>
+        <div thumbsSlider="" class="swiper-container reference__furniture_bot r_f_b_i">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../img/nabytek_reference1.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/nabytek_reference2.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/nabytek_reference3.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/nabytek_reference4.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/nabytek_reference5.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/nabytek_reference6.jpg" alt="img desc" loading="lazy">
+          </div>
+
+        </div>
+        </div>
+      </li>
+      <li class="masonry__item events">
+        <a href="#" title="#">
+          <img src="../img/akt_akce1.jpg" alt="akce" loading="lazy">
+        </a>
+      </li>
+      <li class="masonry__item reference_kitchen">
+        <span class="helper">Kuchyně reference</span>
+        <h2>Bílá kuchyň s ostrůvkem</h2>
+        <p>
+          Bílá lakovaná kuchyň ve vysokém lesku s ostrůvkem. Dvířka kuchyně jsou vysoký lesk alpské bílé a imitace dubu
+          Sierra. Cena kuchyně je včetně DPH a je v ní započtena cena kování a tlumení HETTICH a BLUM.
+        </p>
+        <div class="swiper-container reference__kitchen_top r_k_t_i">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference1.jpg">
+            <img src="../img/kitchen_reference1.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference2.jpg">
+            <img src="../img/kitchen_reference2.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference3.jpg">
+            <img src="../img/kitchen_reference3.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference4.jpg">
+            <img src="../img/kitchen_reference4.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference5.jpg">
+            <img src="../img/kitchen_reference5.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference6.jpg">
+            <img src="../img/kitchen_reference6.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference7.jpg">
+            <img src="../img/kitchen_reference7.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference8.jpg">
+            <img src="../img/kitchen_reference8.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference9.jpg">
+            <img src="../img/kitchen_reference9.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference10.jpg">
+            <img src="../img/kitchen_reference10.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference11.jpg">
+            <img src="../img/kitchen_reference11.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference12.jpg">
+            <img src="../img/kitchen_reference12.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference13.jpg">
+            <img src="../img/kitchen_reference13.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference14.jpg">
+            <img src="../img/kitchen_reference14.jpg" alt="img desc" loading="lazy">
+            </a>
+            <a class="swiper-slide" data-fslightbox="refs_kitch_fslbox_1" href="../img/kitchen_reference15.jpg">
+              <img src="../img/kitchen_reference15.jpg" alt="img desc" loading="lazy">
+            </a>
+          
+          </div>
+          <button class="swiper-button-next"></button>
+          <button class="swiper-button-prev"></button>
+        </div>
+        <!-- <div thumbsSlider="" class="swiper-container reference__kitchen_bot r_k_b_i">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference1.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference2.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference3.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference4.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference5.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference6.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference7.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference8.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference9.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference10.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference11.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference12.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference13.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference14.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/kitchen_reference15.jpg" alt="img desc" loading="lazy">
+          </div>
+
+        </div>
+        </div> -->
+      </li>
+      <li class="masonry__item recipes">
+        <a href="#" title="recept - Cheesecake s malinami">
+          <div class="recipe_img_wrap">
+            <img src="../img/recipes1.jpg" alt="recept - Cheesecake s malinami" loading="lazy">
+          </div>
+          <div class="recipe__desc">
+            <span class="helper">recept</span>
+            <h2>Cheesecake s malinami</h2>
+            <span class="recipe__prop recipe__prop_dif">Obtížnost: <span>snadné</span></span>
+            <span class="recipe__prop recipe__prop_ready">Doba přípravy: <span>45 minut</span></span>
+            <span class="recipe__prop recipe__prop_time">Doba vaření: <span>20 minut</span></span>
+          </div>
+        </a>
+      </li>
+      <li class="masonry__item videos vid_recipe">
+        <div class="videos_inner">
+          <a data-fslightbox="vid_recipe_1" href="https://www.youtube.com/watch?v=5HG5D-yEEVg" title="Cizrnový hummus s citronem | Miele Center České Budějovice">
+            <img src="../img/video_prew0.jpg" alt="Cizrnový hummus s citronem | Miele Center České Budějovice" loading="lazy">
+            <span class="play_btn"></span>
+          </a>
+        </div>
+        <a data-fslightbox="vid_recipe_2" href="https://www.youtube.com/watch?v=5HG5D-yEEVg" title="Cizrnový hummus s citronem | Miele Center České Budějovice">
+          <span class="helper">Video recepty</span>
+          <h2>Cizrnový hummus s citronem | Miele Center České Budějovice</h2>
+        </a>
+      </li>
+      <li class="masonry__item vizual">
+        <span class="helper">Vizualizace</span>
+        <h2>Bílá kuchyň s ostrůvkem</h2>
+        <p>
+          Bílá lakovaná kuchyň ve vysokém lesku s ostrůvkem. Dvířka kuchyně jsou vysoký lesk alpské bílé a imitace dubu
+          Sierra. Cena kuchyně je včetně DPH a je v ní započtena cena kování a tlumení HETTICH a BLUM.
+        </p>
+      <div class="swiper-container visual__swiper_top v_s_t_i">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide" data-fslightbox="visual_fslbox_1" href="../img/visual1.jpg">
+            <img src="../img/visual1.jpg" alt="img desc" loading="lazy">
+          </a>
+          <a class="swiper-slide" data-fslightbox="visual_fslbox_1" href="../img/visual2.jpg">
+            <img src="../img/visual2.jpg" alt="img desc" loading="lazy">
+          </a>
+          <a class="swiper-slide" data-fslightbox="visual_fslbox_1" href="../img/visual3.jpg">
+            <img src="../img/visual3.jpg" alt="img desc" loading="lazy">
+          </a>
+          <a class="swiper-slide" data-fslightbox="visual_fslbox_1" href="../img/visual4.jpg">
+            <img src="../img/visual4.jpg" alt="img desc" loading="lazy">
+          </a>
+        </div>
+        <button class="swiper-button-next"></button>
+        <button class="swiper-button-prev"></button>
+      </div>
+      <div thumbsSlider="" class="swiper-container visual__swiper_bot v_s_b_i">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../img/visual1.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/visual2.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/visual3.jpg" alt="img desc" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/visual4.jpg" alt="img desc" loading="lazy">
+          </div>
+        </div>
+      </div>
+      </li>
+      <li class="masonry__item news">
+        <a href="#" title="Získejte prodlouženou záruku na vybrané výrobky značky Teka">
+          <div class="news__img_wrap">
+            <img src="../img/news.png" alt="Získejte prodlouženou záruku na vybrané výrobky značky Teka" loading="lazy">
+          </div>
+          <div class="news__desc">
+            <span class="helper">aktuality</span>
+            <h2>Získejte prodlouženou záruku na vybrané výrobky značky Teka</h2>
+            <p>
+              Značka Teka právě spouští projekt „Prodloužená záruka – online registrace výrobků“. Nakupte vybrané spotřebiče a kuchyňské baterie Teka a získejte zdarma prodlouženou záruku 5 let a dále Lifetime warranty 10 let na nerezové dřezy
+            </p>
+            <span class="news__date">28.5.2021</span>
+            <span class="news__read_more" >číst článek ❯</span>
+          </div>
+        </a>
+      </li>
+      <li class="masonry__item videos vid_promo">
+        <div class="videos_inner">
+          <a data-fslightbox="vid_promo_1" href="https://www.youtube.com/watch?v=cpZntSSJjoc" title="Miele - Nová Generace 7000">
+            <img src="../img/video_prew2.jpg" alt="AEG KKK994500M Vestavný kávovar" loading="lazy">
+            <span class="play_btn"></span>
+          </a>
+        </div>
+        <a data-fslightbox="vid_promo_2" href="https://www.youtube.com/watch?v=cpZntSSJjoc" title="Miele - Nová Generace 7000">
+          <span class="helper">Promo videa</span>
+          <h2>Miele - Nová Generace 7000</h2>
+        </a>
+      </li>
+      <li class="masonry__item videos vid_techno">
+        <div class="videos_inner">
+          <a data-fslightbox="vid_techno_1" href="https://www.youtube.com/watch?v=VpzfP3eCAUw" title="AEG KKK994500M Vestavný kávovar">
+            <img src="../img/video_prew1.jpg" alt="AEG KKK994500M Vestavný kávovar" loading="lazy">
+            <span class="play_btn"></span>
+          </a>
+        </div>
+        <a data-fslightbox="vid_techno_2" href="https://www.youtube.com/watch?v=VpzfP3eCAUw" title="AEG KKK994500M Vestavný kávovar">
+          <span class="helper">Používání spotřebičů</span>
+          <h2>AEG KKK994500M Vestavný kávovar</h2>
+        </a>
+      </li>
+      <!-- / 1 -->
+
+      
+
+
+      <!-- <li class="masonry__item events">
+        <a href="#" title="#">
+          <img src="../img/akt_akce2.jpg" alt="akce" loading="lazy">
+        </a>
+      </li> -->
+      <!-- <li class="masonry__item events">
+        <a href="#" title="#">
+          <img src="../img/akt_akce3.jpg" alt="akce" loading="lazy">
+        </a>
+      </li> -->
+      <!-- <li class="masonry__item events">
+        <a href="#" title="#">
+          <img src="../img/akt_akce4.jpg" alt="akce" loading="lazy">
+        </a>
+      </li> -->
+
+    </ul>
+
+    <button class="btn__show_more">Zobrazit více</button>
+
+  </main>
+
+
+  
+  <!-- VENDORS -->
+  <!-- isotop masonry -->
+  <!-- ! TODO:  optimize bundle -->
+  <script src="../js/isotope.pkgd.min.js"></script>
+  <!-- isotop packery mode -->
+  <script src="../js/packery-mode.pkgd.min.js"></script>
+  <!-- swiper slider -->
+  <!-- ! TODO:  optimize bundle -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- fslightbox -->
+  <script src="../js/fslightbox.js"></script>
+  <!-- SCRIPTS-->
+  <script src="../js/header.js"></script>
+  <script src="../js/live.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,673 @@
+/* ------------------------------ kitchen page ------------------------------ */
+/* 1 page */
+/* kitchen hero */
+.kitchen__hero {
+	margin-bottom: 120px;
+}
+
+.kitchen_page__item_desc h1 {
+	font-size: 90px;
+	font-weight: 700;
+}
+
+.kitchen__hero_img {
+	padding: 0 50px;
+	height: 774px;
+	position: relative;
+}
+
+.kitchen__hero_img img {
+	max-height: 774px;
+	width: 100%;
+}
+
+.kitchen_page__item_desc {
+	position: absolute;
+	padding: 20px 10vw 30px 12vw;
+	bottom: -60px;
+	left: -1px;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, white 90%);
+}
+
+.kitchen__hero_desc {
+	margin-top: 80px;
+	padding: 0 160px;
+	display: flex;
+}
+
+.hero__desc_title,
+.hero__desc_text {
+	width: 50%;
+}
+
+.hero__desc_title {
+	padding-right: 20px;
+}
+
+.hero__desc_title h2 {
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: 700;
+	color: var(--black);
+}
+
+.hero__desc_title a {
+	margin-bottom: 25px;
+	font-size: 20px;
+	display: block;
+	width: auto;
+	text-transform: uppercase;
+	color: #b2b2b2;
+}
+
+.hero__desc_title span {
+	position: relative;
+}
+
+.hero__desc_title span:after {
+	content: "";
+	background-image: url(../img/icons/next.svg);
+	background-size: cover;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	right: -25px;
+	top: 0px;
+	display: block;
+}
+
+.hero__desc_text p {
+	line-height: 2;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+/* kitchen short description */
+.kitchen__short_desc {
+	margin: 0 auto;
+	margin-bottom: 175px;
+	max-width: 926px;
+	padding: 0 40px;
+	overflow: hidden;
+}
+
+.short_desc_img {
+	max-width: 926px;
+	max-height: 615px;
+	overflow: hidden;
+}
+
+.kitchen__img_wrap img {
+	transition: .9s;
+	-webkit-transition: .9s;
+	-moz-transition: .9s;
+	-ms-transition: .9s;
+	-o-transition: .9s;
+}
+
+.kitchen__img_wrap img:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+.kitchen__short_desc p {
+	margin-top: 40px;
+	font-size: 21px;
+	line-height: 2;
+}
+
+
+/* kitchen details */
+.kitchen__details {
+	margin-bottom: 175px;
+	padding: 0 60px;
+}
+
+.kitchen__details h2 {
+	font-size: 82px;
+	margin-bottom: 115px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.kitchen__details_content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.kitchen__details_text,
+.kitchen__details_img {
+	width: calc(50% - 20px);
+	overflow: hidden;
+}
+
+.kitchen__details_img {
+	max-width: 50%;
+	max-height: 683px;
+}
+
+.kitchen__details_text p {
+	font-size: 21px;
+	line-height: 2;
+	font-weight: 400;
+}
+
+.kitchen__details_text a {
+	margin-top: 60px;
+	display: block;
+	max-width: fit-content;
+	padding: 20px 30px;
+	font-weight: 700;
+	font-size: 21px;
+	border-radius: 6px;
+	color: var(--white);
+	background-color: var(--black);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	text-transform: uppercase;
+}
+
+
+/* kitchen width */
+.kitchen__width {
+	padding: 0 60px;
+	margin-bottom: 175px;
+}
+
+.kitchen__width_img {
+	max-width: 100%;
+	max-height: 531px;
+	overflow: hidden;
+}
+
+.kitchen__width p {
+	max-width: 926px;
+	margin: 0 auto;
+	margin-top: 20px;
+	font-size: 21px;
+	line-height: 2;
+}
+
+
+@media screen and (max-width: 1400px) {
+	.kitchen__hero_img {
+		padding: 0 38px;
+		max-height: 426px;
+	}
+
+	.kitchen__hero_img img {
+		max-height: 426px;
+	}
+
+	.kitchen_page__item_desc h1 {
+		font-size: 83px;
+	}
+
+	.hero__desc_title h2 {
+		font-size: 26px;
+	}
+
+	.hero__desc_title a {
+		font-size: 18px;
+	}
+
+	.hero__desc_text p {
+		font-size: 18px;
+	}
+
+	.kitchen__short_desc p {
+		font-size: 18px;
+	}
+
+	.kitchen__details {
+		padding: 0 38px;
+	}
+
+	.kitchen__details h2 {
+		font-size: 67px;
+	}
+
+	.kitchen__details_text p {
+		font-size: 18px;
+	}
+
+	.kitchen__details_text a {
+		font-size: 18px;
+		padding: 15px 20px;
+	}
+
+	.kitchen__width {
+		padding: 0 38px;
+	}
+
+	.kitchen__width p {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.kitchen__hero {
+		margin-bottom: 80px;
+	}
+
+	.kitchen__hero_img {
+		padding: 0 20px;
+	}
+
+	.kitchen__hero_desc {
+		padding: 0 100px;
+	}
+
+	.kitchen_page__item_desc {
+		padding: 20px 9vw 20px 9vw;
+	}
+
+	.kitchen_page__item_desc h1 {
+		font-size: 69px;
+	}
+
+	.hero__desc_title h2 {
+		font-size: 21px;
+	}
+
+	.hero__desc_title a {
+		font-size: 16px;
+	}
+
+	.hero__desc_text p {
+		font-size: 16px;
+	}
+
+	.hero__desc_title span:after {
+		width: 17px;
+		height: 17px;
+		top: -1px;
+	}
+
+	.kitchen__short_desc {
+		margin-bottom: 75px;
+	}
+
+	.kitchen__short_desc p {
+		font-size: 16px;
+	}
+
+	.kitchen__details {
+		margin-bottom: 80px;
+		padding: 0 20px;
+	}
+
+	.kitchen__details h2 {
+		font-size: 55px;
+		margin-bottom: 35px;
+	}
+
+	.kitchen__details_text p {
+		font-size: 16px;
+	}
+
+	.kitchen__details_text a {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	.kitchen__details_content {
+		flex-direction: column;
+	}
+
+	.kitchen__details_text,
+	.kitchen__details_img {
+		width: 100%;
+		max-width: 100%;
+		max-height: 683px;
+	}
+
+	.kitchen__width {
+		padding: 0 20px;
+		margin-bottom: 80px;
+	}
+
+	.kitchen__width p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.kitchen__hero_img {
+		max-height: 343px;
+	}
+
+	.kitchen__hero_img img {
+		max-height: 343px;
+	}
+
+	.kitchen__hero_desc {
+		padding: 0 20px;
+	}
+
+	.kitchen_page__item_desc {
+		padding: 20px 5vw 20px 5vw;
+		bottom: -45px;
+	}
+
+	.kitchen_page__item_desc h1 {
+		font-size: 50px;
+	}
+
+	.hero__desc_title h2 {
+		font-size: 18px;
+	}
+
+	.hero__desc_text p {
+		font-size: 14px;
+	}
+
+	.hero__desc_title span:after {
+		width: 15px;
+		height: 15px;
+		top: 0px;
+	}
+
+	.kitchen__short_desc {
+		margin-bottom: 60px;
+		padding: 0 20px;
+	}
+
+	.kitchen__short_desc p {
+		font-size: 14px;
+		margin-top: 20px;
+	}
+
+	.kitchen__width p {
+		font-size: 14px;
+	}
+
+	.kitchen__details h2 {
+		font-size: 40px;
+		margin-bottom: 25px;
+	}
+
+	.kitchen__details {
+		padding: 0 20px;
+		margin-bottom: 60px;
+	}
+
+	.kitchen__details_text p {
+		font-size: 14px;
+	}
+
+	.kitchen__details_text a {
+		font-size: 14px;
+		padding: 13px 15px;
+		/* margin-bottom: 30px; */
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.kitchen__hero_img {
+		max-height: 220px;
+		padding: 0 10px;
+	}
+
+	.kitchen__hero_img img {
+		max-height: 220px;
+		padding: 0;
+	}
+
+	.kitchen_page__item_desc h1 {
+		font-size: 46px;
+	}
+
+	.kitchen__hero_desc {
+		margin-top: 40px;
+		flex-direction: column;
+	}
+
+	.hero__desc_title,
+	.hero__desc_text {
+		width: 100%;
+	}
+
+	.hero__desc_title h2 {
+		margin-bottom: 15px;
+	}
+
+	.hero__desc_title a {
+		margin-bottom: 10px;
+		font-size: 13px;
+	}
+
+	.hero__desc_title span:after {
+		width: 13px;
+		height: 13px;
+		right: -20px;
+	}
+
+	.kitchen__short_desc {
+		padding: 0 10px;
+	}
+
+	.kitchen__details {
+		padding: 0 10px;
+	}
+
+	.kitchen__width {
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.kitchen__hero_img {
+		height: auto;
+	}
+
+	.kitchen__hero_img img {
+		padding: 0;
+	}
+
+	.kitchen_page__item_desc h1 {
+		font-size: 38px;
+	}
+
+	.kitchen_page__item_desc {
+		bottom: -36px;
+	}
+
+	.hero__desc_title a {
+		margin-bottom: 10px;
+		font-size: 13px;
+	}
+
+	.hero__desc_title span:after {
+		width: 13px;
+		height: 13px;
+		right: -20px;
+	}
+
+	.kitchen__short_desc p {
+		margin-top: 20px;
+	}
+}
+
+/* kitchen front */
+
+.kitchen__front {
+	margin-bottom: 175px;
+	padding: 0 60px;
+}
+
+.front__top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.front__left,
+.front__right {
+	width: 50%;
+}
+
+.front__left h2 {
+	font-size: 82px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.front__left span {
+	font-size: 21px;
+	font-weight: 700;
+	color: #b2b2b2;
+}
+
+.front__right {
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 2;
+}
+
+.front__bot {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+.front__bot_first {
+	padding: 25px 25px;
+	background: #f4f4f4;
+	position: relative;
+	width: calc(16.6% - 90px);
+}
+
+.front__bot_first::before {
+	content: "";
+	position: absolute;
+	bottom: 10px;
+	right: 12px;
+	width: 26px;
+	height: 26px;
+	color: inherit;
+	background-image: url(../img/icons/right_arrow_long.svg);
+	background-size: cover;
+}
+
+.front__bot_first h4 {
+	margin-bottom: 55px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #b2b2b2;
+}
+
+.front__bot_first h3 {
+	margin-bottom: 55px;
+	font-size: 31px;
+	font-weight: 700;
+}
+
+.front__bot li {
+	max-width: calc(16.6% - 40px);
+	margin: 0 20px 40px 20px;
+	flex: 1 1 auto;
+}
+
+.front__bot_norm h4 {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 1300px) {
+	.front__bot li {
+		max-width: calc(20% - 40px);
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.kitchen__front {
+		padding: 0 20px;
+	}
+
+	.front__left h2 {
+		font-size: 61px;
+	}
+
+	.front__left span {
+		font-size: 15px;
+	}
+
+	.front__right {
+		font-size: 17px;
+	}
+
+	.front__bot li {
+		max-width: calc(25% - 40px);
+	}
+
+	.front__bot_first h3 {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.front__top {
+		flex-direction: column;
+	}
+
+	.front__left,
+	.front__right {
+		width: 100%;
+	}
+
+	.front__left {
+		margin-bottom: 30px;
+	}
+
+	.front__left h2 {
+		margin-bottom: 15px;
+	}
+
+	.front__bot li {
+		max-width: calc(33.3% - 40px);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.front__bot li {
+		max-width: calc(50% - 40px);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.kitchen__front {
+		padding: 0 10px;
+	}
+
+	.front__bot li {
+		max-width: calc(50% - 20px);
+		margin: 0 10px 20px 10px;
+	}
+
+	.front__bot {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.front__bot h4 {
+		margin-top: 5px;
+	}
+}
+
+/* ----------------------------- / kitchen page ----------------------------- */

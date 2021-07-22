@@ -1,27 +1,15 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-
-  // burger menu
-  const burgerBtn = document.querySelector('.burger__btn_input');
-  const headerBot = document.querySelector('.header__bot_wrap');
-  openBurgerMenu = () => {
-    burgerBtn.addEventListener('click', () => {
-      headerBot.classList.toggle("header__bot_open");
-      document.body.classList.toggle("no_scroll");
-    });
-  };
-  openBurgerMenu();
-
-
+  // MAIN PAGE JS
 
   // show/close consult wrap
   const consultBtnHide = document.querySelector('.consult__btn_hide');
   const consultWrap = document.querySelector('.consult__wrap');
-
-  // showConsult = () => {
-  //   setTimeout((function(){
-  //     consultWrap.classList.toggle("hide");
-  //   }),4000)
-  // };showConsult();
+  
+  showConsult = () => {
+    setTimeout((function(){
+      consultWrap.classList.toggle("hide");
+    }),4000)
+  };showConsult();
 
   closeConsult = () => {
     consultBtnHide.addEventListener('click', () => {
@@ -77,8 +65,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     },
   
   });
-
-
 
   // main page choice kitchen slider
   const swiperChoise = new Swiper('.choice__kitchen_slider', {
