@@ -1,0 +1,73 @@
+.brandstore__main {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.brandstore__hero {
+  /* margin-bottom: 40px; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+  max-height: 1100px;
+  overflow: hidden;
+}
+
+.brandstore__hero_bg_img {
+  position: absolute;
+  inset: 0 0 0 0;
+}
+
+.brandstore__hero_logo {
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.brandstore__slogan {
+  margin-top: 30px;
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 500px;
+}
+
+.brandstore__title {
+  padding-bottom: 40px;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* CATEGORIES SLIDER */
+.brandstore__categories_all {
+  margin-bottom: 40px;
+  /* padding-top: 10px; */
+  background-color: #eaeef2;
+}
+
+.brandstore__categories_all h2 {
+  padding-top: 40px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.brandstore__categories_item {
+  padding: 20px;
+  /* width: 270px; */
+  background-color: #eaeef2;
+  text-align: center;
+}
+
+.brandstore__categories_item h3 {
+  font-size: 18px;
+  font-weight: 600;
+}

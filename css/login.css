@@ -1,6 +1,7 @@
 .login__wrap {
   width: 100%;
   margin: auto;
+  margin-bottom: 40px;
   max-width: 525px;
   min-height: 580px;
   position: relative;
@@ -24,9 +25,15 @@
   right: 0;
   bottom: 0;
   position: absolute;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-  transition: all .4s linear;
+  /*transform: rotateY(180deg);
+  */backface-visibility: hidden;
+  /*-webkit-backface-visibility: hidden;
+  */opacity: 0;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
 }
 
 .login__inner .sign-in,
@@ -150,11 +157,13 @@
 }
 
 .login__inner .sign-in:checked+.tab+.sign-up+.tab+.login-form .sign-in-htm {
-  transform: rotate(0);
+  /* transform: rotate(0); */
+  opacity: 1;
 }
 
 .login__inner .sign-up:checked+.tab+.login-form .sign-up-htm {
-  transform: rotate(0);
+  /* transform: rotate(0); */
+  opacity: 1;
 }
 
 .hr {
