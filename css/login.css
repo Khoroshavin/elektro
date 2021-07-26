@@ -6,7 +6,7 @@
   min-height: 580px;
   position: relative;
   font: 600 16px/18px 'Open Sans', sans-serif;
-  background: url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+  background: url(../img/img__login_bg.png) no-repeat center;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
 }
 
@@ -29,6 +29,7 @@
   */backface-visibility: hidden;
   /*-webkit-backface-visibility: hidden;
   */opacity: 0;
+  z-index: -1;
   transition: .3s linear;
   -webkit-transition: .3s linear;
   -moz-transition: .3s linear;
@@ -159,11 +160,13 @@
 .login__inner .sign-in:checked+.tab+.sign-up+.tab+.login-form .sign-in-htm {
   /* transform: rotate(0); */
   opacity: 1;
+  z-index: 2;
 }
 
 .login__inner .sign-up:checked+.tab+.login-form .sign-up-htm {
   /* transform: rotate(0); */
   opacity: 1;
+  z-index: 2;
 }
 
 .hr {
@@ -192,4 +195,11 @@
 
 .sign__btns img {
   width: 30px;
+}
+
+
+@media screen and (max-width: 525px) {
+  .login__inner{
+    padding: 20px 20px 0px 20px;
+  }
 }
