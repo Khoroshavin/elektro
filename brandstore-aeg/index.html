@@ -18,27 +18,22 @@
   <!-- preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <!-- reseter -->
-  <link rel="preload" href="../css/reseter.css" type="text/css" as="style"
-    onload="this.onload=null;this.rel='stylesheet';" />
+  <link rel="preload" href="../css/reseter.css" type="text/css" as="style" onload="this.onload=null;this.rel='stylesheet';" />
   <!-- fonts -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
     type="text/css" as="style" onload="this.onload=null;this.rel='stylesheet';" />
   <!-- swiper slider components -->
-  <link rel="preload" href="../css/swiper.min.css" type="text/css" as="style"
-    onload="this.onload=null;this.rel='stylesheet';" />
-  <link rel="preload" href="../css/navigation.min.css" type="text/css" as="style"
-    onload="this.onload=null;this.rel='stylesheet';" />
+  <link rel="preload" href="../css/swiper.min.css" type="text/css" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+  <link rel="preload" href="../css/navigation.min.css" type="text/css" as="style" onload="this.onload=null;this.rel='stylesheet';" />
   <!-- styles -->
-  <link rel="preload" href="../css/header.css" type="text/css" as="style"
-    onload="this.onload=null;this.rel='stylesheet';" />
-  <link rel="preload" href="../css/brandstore.css" type="text/css" as="style"
-    onload="this.onload=null;this.rel='stylesheet';" />
+  <link rel="preload" href="../css/header.css" type="text/css" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+  <link rel="preload" href="../css/brandstore.css" type="text/css" as="style" onload="this.onload=null;this.rel='stylesheet';" />
 </head>
 
 <body>
 
 
-  <header class="header">
+<header class="header">
     <div class="header__top_wrap">
       <div class="container header__top">
         <h1>Vestavné spotřebiče | ElektroCZ.com</h1>
@@ -184,79 +179,2234 @@
         </li>
       </ul>
     </nav>
-  </header>
+</header>
 
 
-  <main class="brandstore__main">
+<main class="brandstore__main">
 
-    <section class="container brandstore__hero">
-      <img class="brandstore__hero_bg_img" src="../img/brandstore_hero.png" alt="brand promo AEG">
-      <img class="brandstore__hero_logo" src="../img/AEG_OG.svg" alt="brand logo AEG">
+  <!-- hero -->
+  <section class="container brandstore__hero">
+      <img class="brandstore__hero_bg_img" src="../img/brandstore_hero.png" alt="brand promo AEG" loading="lazy">
+      <img class="brandstore__hero_logo" src="../img/AEG_OG.svg" alt="brand logo AEG" loading="lazy">
       <span class="brandstore__slogan">CHALLENGE THE EXPECTED</span>
       <h2 class="brandstore__title">
         ZBAVTE SE STEREOTYPŮ<br>AEG<br>VÍCE NEŽ OČEKÁVÁTE
       </h2>
-    </section>
-
-    <section class="container brandstore__categories_all">
-      <h2>Hlavní kategorie AEG</h2>
-
-      <div class="swiper-container brandstore__categories_list">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide brandstore__categories_item">
-            <a href="#" title="aeg kategorie trouby">
+  </section>
+  <!-- slider -->
+  <section class="container brandstore__categories_all">
+    <h2>Kategorie AEG</h2>
+    <div class="brand_categories__slider_btns">
+        <button class="brand_categories_prev"></button>
+        <button class="brand_categories_next"></button>
+    </div>
+    <li class="swiper-container brandstore__categories_list">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide brandstore__categories_item">
+            <a href="#trouby_parni" title="aeg kategorie Trouby parní">
+              <img src="../img/aeg_trouba2.png" alt="aeg kategorie Trouby parní" loading="lazy">
+              <h3>Trouby parní</h3>
+            </a>
+        </li>
+        <li class="swiper-slide brandstore__categories_item">
+            <a href="#trouby" title="aeg kategorie trouby">
               <img src="../img/aeg_trouba1.png" alt="aeg kategorie trouby" loading="lazy">
-              <h3>trouby</h3>
+              <h3>Trouby</h3>
             </a>
-          </div>
-          <div class="swiper-slide brandstore__categories_item">
-            <a href="#" title="aeg kategorie varné desky">
+        </li>
+        <li class="swiper-slide brandstore__categories_item">
+            <a href="#varne_desky" title="aeg kategorie varné desky">
               <img src="../img/aeg_varne_desky.png" alt="aeg kategorie varné desky" loading="lazy">
-              <h3>varné desky</h3>
+              <h3>Varné desky</h3>
             </a>
-          </div>
-          <div class="swiper-slide brandstore__categories_item">
-            <a href="#" title="aeg kategorie myčky nádobí">
-              <img src="../img/aeg_mycky_nadobi.png" alt="aeg kategorie myčky nádobí" loading="lazy">
-              <h3>myčky nádobí</h3>
-            </a>
-          </div>
-          <div class="swiper-slide brandstore__categories_item">
-            <a href="#" title="aeg kategorie odsavače">
-              <img src="../img/aeg_odsavac.png" alt="aeg kategorie odsavače" loading="lazy">
-              <h3>odsavače</h3>
-            </a>
-          </div>
-          <div class="swiper-slide brandstore__categories_item">
-            <a href="#" title="aeg kategorie chladničky">
-              <img src="../img/aeg_chladnicky.png" alt="aeg kategorie chladničky" loading="lazy">
-              <h3>chladničky</h3>
-            </a>
-          </div>
-          <div class="swiper-slide brandstore__categories_item">
-            <a href="#" title="aeg kategorie kávovary">
-              <img src="../img/aeg_kavovar.png" alt="aeg kategorie kávovary" loading="lazy">
-              <h3>kávovary</h3>
-            </a>
-          </div>
-          <div class="swiper-slide brandstore__categories_item">
-            <a href="#" title="aeg kategorie pračky a sušičky">
-              <img src="../img/aeg_pracky.png" alt="aeg kategorie pračky a sušičky" loading="lazy">
-              <h3>pračky a sušičky</h3>
-            </a>
-          </div>
+        </li>
+        <li class="swiper-slide brandstore__categories_item">
+          <a href="#mycky_nadobi" title="aeg kategorie myčky nádobí">
+            <img src="../img/aeg_mycky_nadobi.png" alt="aeg kategorie myčky nádobí" loading="lazy">
+            <h3>Myčky nádobí</h3>
+          </a>
+        </li>
+        <li class="swiper-slide brandstore__categories_item">
+          <a href="#odsavace" title="aeg kategorie odsavače">
+            <img src="../img/aeg_odsavac.png" alt="aeg kategorie odsavače" loading="lazy">
+            <h3>Odsavače</h3>
+          </a>
+        </li>
+        <li class="swiper-slide brandstore__categories_item">
+          <a href="#chladnicky" title="aeg kategorie chladničky">
+            <img src="../img/aeg_chladnicky.png" alt="aeg kategorie chladničky" loading="lazy">
+            <h3>Chladničky</h3>
+          </a>
+        </li>
+        <li class="swiper-slide brandstore__categories_item">
+          <a href="#kavovary" title="aeg kategorie kávovary">
+            <img src="../img/aeg_kavovar.png" alt="aeg kategorie kávovary" loading="lazy">
+            <h3>Kávovary</h3>
+          </a>
+        </li>
+        <li class="swiper-slide brandstore__categories_item">
+          <a href="#pracky_susicky" title="aeg kategorie pračky a sušičky">
+            <img src="../img/aeg_pracky.png" alt="aeg kategorie pračky a sušičky" loading="lazy">
+            <h3>Pračky a sušičky</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
 
 
+  <!-- trouby parni -->
+  <section class="container brandstore__category_promo" id="trouby_parni">
+      <img class="brandstore__category_promo_img" src="../img/brandstore_category_promo1.png" alt="brandstore AEG category trouby" loading="lazy">
+      <h2 class="brandstore__category_promo_title">MULTIFUNKČNÍ<br>PARNÍ TROUBY</h2>
+      <p class="brandstore__category_promo_desc">
+        Populární metodu Sous-Vide nejraději
+        využívám při přípravě mas, ryb a zeleniny.
+        Vakuum zachová výraznou chuť pokrmu, jeho
+        charakteristickou strukturu i vitamíny. Mnoho
+        lidí považuje vaření metodou
+        Sous-Vide za komplikované a vhodné
+        jen pro profesionální kuchyně. Přitom
+        už dávno nejde o výsadu restaurací,
+        a to díky multifunkční parní troubě.
+      </p>
+  </section>
+  
+  <section class="container brandstore__category_features">
+      <h2 class="brandstore__category_features_title">Features of the category parní trouby</h2>
+      <ul class="container category__features_list">
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature2-1.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>STEAMIFY®</h3>
+          <p class="category__features_item_desc">
+            S funkcí Steamify® je příprava jídel snadnější.
+            Stačí zadat teplotu pečení jako obyčejně
+            a trouba automaticky upraví nastavení, aby
+            pára dovedla vaše pokrmy k dokonalosti.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Martina</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Jídlo je díky páře mnohem šťavnatější
+              a rychleji připravené. Funkce Steamify je
+              super, nemusím troubu složitě nastavovat,
+              trouba si sama určí, kolik páry potřebuje.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature2-2.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>SOUS-VIDE</h3>
+          <p class="category__features_item_desc">
+            Při použití funkce Sous-Vide, tedy vakuového
+            vaření, se jídla připravují při nižších teplotách,
+            díky čemuž jsou pokrmy chutnější a zdravější.
+            Vakuum uchová všechny vůně, chutě a živiny.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Ben</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Koupili jsme si jak vakuovačku, tak parní
+              troubu AEG a jsme unešeni. Díky SousVide si
+              neuvěřitelně pochutnáme. Třeba maso a ryby
+              nebo i zelenina mají úplně jinou chuť, není to
+              suché nebo bez chuti. Tahle investice stála za to.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature2-3.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>SENZOR VLHKOSTI</h3>
+          <p class="category__features_item_desc">
+            Pokročilý senzor vlhkosti automaticky
+            nastaví správné množství páry, čímž zajistí
+            šťavnatou texturu a intenzivní chuť jídla.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Jana</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Jedná se o naši druhou parní troubu.
+              Rozhodli jsme se pro nejvyšší model se
+              senzorem vlhkosti. Jednoduché ovládání
+              a ještě lepší výsledky než předtím.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature2-4.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>STEAMBOOST</h3>
+          <p class="category__features_item_desc">
+            Vyzkoušejte pečení v páře a horkém vzduchu.
+            Díky této kombinaci získáte dokonale upečený
+            pokrm s bohatou chutí vašich potravin.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Lenka</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Velmi mě baví objevovat nové funkce. Pečené
+              maso z této trouby je velmi šťavnaté, domácí
+              hranolky, chleba, knedlíky vynikající. Vše, co
+              jsem zatím upekla a uvařila, nemá chybu.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature2-5.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>OTOČNÝ OVLADAČ</h3>
+          <p class="category__features_item_desc">
+            S citlivým otočným ovladačem máte
+            naprostou kontrolu nad procesem
+            vaření, nastaveními času, teploty i funkce
+            trouby. Aktuální nastavení se zobrazí
+            na jasném barevném LCD displeji.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Kamila</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Vestavná trouba s parní funkcí SteamPro
+              zakoupena pro pěkný design. Uživatelsky je
+              příjemné ovládání pomocí otočného ovladače.
+              Velmi intuitivní, velmi jednoduché!
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature1-6.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>VYUŽIJTE VÁŠ SPOTŘEBIČ NAPLNO</h3>
+          <p class="category__features_item_desc">
+            TStáhněte si aplikaci My AEG a získejte
+            užitečné rady i spoustu inspirace. Naučte
+            se využívat parní trouby na maximum a
+            objevte nové recepty, s nimiž dosáhnete
+            úžasných kulinářských výsledků.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Milan</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Již mám několikátou parní troubu, ale toto je
+              téměř dokonalý produkt. Všechny funkce trouby
+              jsou vyladěné a propojené s online aplikací
+              pro její pohodlné ovládání. Přes kameru se dá
+              sledovat už i samotný průběh pečícího procesu.
+            </p>
+          </div>
+        </li>
+      </ul>
+  </section>
+
+  <section class="container">
+      <div class="something__left">
+        <div class="functions">
+          <h2>TROUBY PARNÍ</h2>
+          <ul class="functions__list">
+            <li class="functions__item">
+              <img src="../img/icons/Energeticka_trida.svg" alt="energetická třída" loading="lazy">
+              <span>ENERGETICKÁ TŘÍDA</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Sous-Vide.svg" alt="funkce sous-vide" loading="lazy">
+              <span>FUNKCE SOUS-VIDE</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/SensorVlhkosti.svg" alt="senzor vlhkosti" loading="lazy">
+              <span>SENZOR VLHKOSTI</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/FunkceSteamify.svg" alt="FUNKCE STEAMIFY®" loading="lazy">
+              <span>FUNKCE STEAMIFY®</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/" alt="FUNKCE STEAMBOOST" loading="lazy">
+              <span>FUNKCE STEAMBOOST</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Wifi.svg" alt="WI-FI" loading="lazy">
+              <span>WI-FI</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Kamera.svg" alt="Kamera" loading="lazy">
+              <span>Kamera</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Teplotni_sonda.svg" alt="teplotní sonda" loading="lazy">
+              <span>TEPLOTNÍ SONDA</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Ventilator.svg" alt="ventilátor + kruhové ohřevné těleso" loading="lazy">
+              <span>VENTILÁTOR + KRUHOVÉ OHŘEVNÉ TĚLESO</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/3levels.svg" alt="možnost pečení na 3 úrovních" loading="lazy">
+              <span>MOŽNOST PEČENÍ NA 3 ÚROVNÍCH</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/XXL_Prostor.svg" alt="xxl prostor" loading="lazy">
+              <span>XXL PROSTOR</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/70l.svg" alt="vnitřní objem" loading="lazy">
+              <span>VNITŘNÍ OBJEM</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Teleskopicke_vysuvy.svg" alt="teleskopické výsuvy" loading="lazy">
+              <span>TELESKOPICKÉ VÝSUVY</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Jemne_dovirani.svg" alt="jemné dovírání dvířek" loading="lazy">
+              <span>JEMNÉ DOVÍRÁNÍ DVÍŘEK</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Chladne_na_dotek.svg" alt="chladné na dotyk" loading="lazy">
+              <span>CHLADNÉ NA DOTYK</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/AFP.svg" alt="nerez s ochranou proti otiskům prstů" loading="lazy">
+              <span>NEREZ S OCHRANOU PROTI OTISKŮM PRSTŮ</span>
+            </li>
+          </ul>
+        </div>
+        <div class="equipment">
+          <h2>Vybavení trub</h2>
+          <p>
+            PŘI KOUPI PARNÍ TROUBY STEAMPRO A STEAMBOOST
+            <span>
+              ZÍSKÁTE SADU NÁDOBÍ ZDARMA
+            </span>
+          </p>
+          <img src="../img/brand__equipment_img.png" alt="img desc" loading="lazy">
         </div>
       </div>
+  </section>
 
-      <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
+
+
+  <!-- trouby -->
+  <section class="container brandstore__category_promo" id="trouby">
+      <img class="brandstore__category_promo_img" src="../img/brandstore_category_promo2.png" alt="brandstore AEG category trouby" loading="lazy">
+      <h2 class="brandstore__category_promo_title">PEČTE A VAŘTE S LEHKOSTÍ</h2>
+      <p class="brandstore__category_promo_desc">Zbavte se stereotypů. V multifunkční troubě
+        AEG si můžete zvolit úroveň propečení
+        vašeho pokrmu stejně jako v restauraci. Rare,
+        medium, well done – dle vaší chuti. AEG.
+        Více než očekáváte.</p>
+  </section>
+
+  <section class="container brandstore__category_features">
+      <h2 class="brandstore__category_features_title">Features of the category multifunkční trouby</h2>
+      <ul class="container category__features_list">
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature1-1.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>STEAMBAKE</h3>
+          <p class="category__features_item_desc">
+            Technologie SteamBake přidá na začátku
+            pečení i páru, díky které je těsto na povrchu
+            vlhké, čímž se vytvoří zlatavá a křupavá
+            kůrka, zatímco střed zůstane měkký a vláčný.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Klára</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Funkce SteamBake je super. Jsem velice spokojená,
+              pečení cukroví, korpusu na dort a husy byla jedna
+              velká radost. Parní nastartování je dobrý napad.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature1-2.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>TEPLOTNÍ SONDA</h3>
+          <p class="category__features_item_desc">
+            S teplotní sondou už nebude žádný
+            pokrm vysušený nebo nedopečený. Sonda
+            zapíchnutá ve středu připravovaného jídla dá
+            troubě pokyn, aby se vypnula, když vnitřní
+            teplota pokrmu dosáhne požadované úrovně.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Petra</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Pořídili jsme si poprvé troubu s párou
+              a je to velký posun. Příjemné je i použití
+              teplotní sondy - nemusím nic kontrolovat
+              a jen se spoléhám na techniku.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature1-3.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>SOFTCLOSING</h3>
+          <p class="category__features_item_desc">
+            Technologie SoftClosing zařídí, že se dvířka
+            zavírají lehce a tiše. Stačí je mírně popostrčit
+            a ony se automaticky samy dovřou
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Artur</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Vřele troubu doporučuji zejména kvůli 3 vlastnostem.
+              Funkce SteamBake, teplotní sonda pro přesné
+              pečení, pyrolytické čištění. Dále je super komfortní
+              dovírání dvířek. Trouba předčila naše očekávání.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature1-4.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>TELESKOPICKÉ VÝSUVY</h3>
+          <p class="category__features_item_desc">
+            S teleskopickými výsuvy
+            se jídla do trouby vkládají
+            a vytahují bezpečně a snadno.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Ctirad</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Tato trouba byla skvělá volba. Má nejen velmi
+              jednoduché ovládání, ale i pohodovou manipulaci
+              při vaření díky výsuvným pojezdům.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature1-5.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>PYROLYTICKÉ ČIŠTĚNÍ</h3>
+          <p class="category__features_item_desc">
+            Pyrolytický systém Pyroluxe Plus
+            je nejúčinnějším způsobem čištění
+            vůbec. Všechny zbytky jídel promění
+            na jemný popel, který potom snadno
+            otřete. Už žádné chemické čištění.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Jana</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Tento spotřebič je naprostá pecka. Vyzkoušena
+              i pyrolýza, tam je potřeba si nechat čas
+              a opravdu dobře větrat, ale výsledek stojí za
+              to. Všechna špína zmizela jedním setřením
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature1-6.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>VYUŽIJTE VÁŠ SPOTŘEBIČ NAPLNO</h3>
+          <p class="category__features_item_desc">
+            TStáhněte si aplikaci My AEG a získejte
+            užitečné rady i spoustu inspirace. Naučte
+            se využívat parní trouby na maximum a
+            objevte nové recepty, s nimiž dosáhnete
+            úžasných kulinářských výsledků.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Milan</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Již mám několikátou parní troubu, ale toto je
+              téměř dokonalý produkt. Všechny funkce trouby
+              jsou vyladěné a propojené s online aplikací
+              pro její pohodlné ovládání. Přes kameru se dá
+              sledovat už i samotný průběh pečícího procesu.
+            </p>
+          </div>
+        </li>
+      </ul>
+  </section>
+
+  <section class="container">
+      <div class="something__left">
+        <div class="functions">
+          <h2>Trouby</h2>
+          <ul class="functions__list">
+            <li class="functions__item">
+              <img src="../img/icons/Energeticka_trida.svg" alt="energetická třída" loading="lazy">
+              <span>ENERGETICKÁ TŘÍDA</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/" alt="funkce steambake" loading="lazy">
+              <span>FUNKCE STEAMBAKE</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Wifi.svg" alt="WI-FI" loading="lazy">
+              <span>WI-FI</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Kamera.svg" alt="Kamera" loading="lazy">
+              <span>Kamera</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Teplotni_sonda.svg" alt="teplotní sonda" loading="lazy">
+              <span>TEPLOTNÍ SONDA</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons" alt="pyrolytické samočištění" loading="lazy">
+              <span>PYROLYTICKÉ SAMOČIŠTĚNÍ</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons" alt="katalytické samočištění" loading="lazy">
+              <span>KATALYTICKÉ SAMOČIŠTĚNÍ</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Ventilator.svg" alt="ventilátor + kruhové ohřevné těleso" loading="lazy">
+              <span>VENTILÁTOR + KRUHOVÉ OHŘEVNÉ TĚLESO</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/3levels.svg" alt="možnost pečení na 3 úrovních" loading="lazy">
+              <span>MOŽNOST PEČENÍ NA 3 ÚROVNÍCH</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/XXL_Prostor.svg" alt="xxl prostor" loading="lazy">
+              <span>XXL PROSTOR</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/70l.svg" alt="vnitřní objem" loading="lazy">
+              <span>VNITŘNÍ OBJEM</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Teleskopicke_vysuvy.svg" alt="teleskopické výsuvy" loading="lazy">
+              <span>TELESKOPICKÉ VÝSUVY</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Jemne_dovirani.svg" alt="jemné dovírání dvířek" loading="lazy">
+              <span>JEMNÉ DOVÍRÁNÍ DVÍŘEK</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Chladne_na_dotek.svg" alt="chladné na dotyk" loading="lazy">
+              <span>CHLADNÉ NA DOTYK</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/AFP.svg" alt="nerez s ochranou proti otiskům prstů" loading="lazy">
+              <span>NEREZ S OCHRANOU PROTI OTISKŮM PRSTŮ</span>
+            </li>
+          </ul>
+        </div>
+        <div class="equipment">
+          <h2>Vybavení trub</h2>
+          <p>
+            Součástí našich multifunkčních trub je i toto vybavení:
+            <span>1 KOLÁČOVÝ PLECH NA PEČENÍ, ŠEDÝ SMALT<br>
+              1 ODKAPÁVACÍ PEKÁČ, ŠEDÝ SMALT<br>
+              1 BĚŽNÝ ROŠT CHROMOVANÝ
+            </span>
+          </p>
+          <img src="../img/brand__equipment_img.png" alt="img desc" loading="lazy">
+        </div>
       </div>
-    </section>
+  </section>
 
-  </main>
+
+
+  <!-- varne desky -->
+  <section class="container brandstore__category_promo" id="varne_desky">
+    <img class="brandstore__category_promo_img" src="../img/brandstore_category_promo3.png" alt="brandstore AEG category trouby" loading="lazy">
+    <h2 class="brandstore__category_promo_title">
+      BUĎTE ŠÉFEM<br>VE SVÉ KUCHYNI
+    </h2>
+    <p class="brandstore__category_promo_desc">
+      Zbavte se stereotypů. Při vaření na indukční desce AEG
+      s technologií SensePro budete dokonale precizní.
+      Bezdrátová sonda měří teplotu uvnitř vašeho pokrmu
+      a výkon indukční desky se tak nastaví automaticky.
+      AEG. Více než očekáváte.
+    </p>
+  </section>
+
+  <section class="container brandstore__category_features">
+    <h2 class="brandstore__category_features_title">Features of the category varne desky</h2>
+    <ul class="container category__features_list">
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature3-1.png" alt="kategorie trouby vlastnost FLEXIBRIDGE™" loading="lazy">
+        <h3>FLEXIBRIDGE™</h3>
+        <p class="category__features_item_desc">
+          Čtyři samostatné segmenty varné desky
+          se mohou díky funkci FlexiBridge™ spojit do
+          různě velkých celků a vytvořit tak velkou
+          varnou plochu, jaká je zrovna třeba.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Štěpánka</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Konečně se nám vejdou na desku i velké hrnce
+            a pánve. Díky možnosti spojit si varné zóny
+            v jednu se dá tahle deska využívat pro spoustu
+            různých účelů. A hlavně můžeme vařit ve
+            velkém a najednou v jednom okamžiku.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature3-2.png" alt="kategorie trouby vlastnost HOB2HOOD®" loading="lazy">
+        <h3>HOB2HOOD®</h3>
+        <p class="category__features_item_desc">
+          Díky funkci Hob2Hood® komunikuje odsavač
+          par s varnou deskou. Na začátku vaření
+          automaticky zapne a rozsvítí odsavač par a
+          také nastaví odtah podle intenzity vašeho
+          vaření. Odsavač par lze ovládat i manuálně.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Láďa</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Naše nová deska má intuitivní ovládání, designově
+            v pořádku. Náramně si rozumí s odsavačem par
+            přes technologii HOB2HOOD, což mne uchvátilo.
+            Samo se spárovalo a vše funguje výborně.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature3-3.png" alt="kategorie trouby vlastnost POWERSLIDE" loading="lazy">
+        <h3>POWERSLIDE</h3>
+        <p class="category__features_item_desc">
+          Funkce PowerSlide umí vytvořit speciální
+          varné plochy s předdefinovanými
+          teplotami. Díky tomu lze snadno přejít
+          z varu na mírné vření, aniž by bylo
+          potřeba měnit nastavení desky. 
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Luboš</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Deska vaří skvěle. Hlavně funkce PowerBoost, která
+            opravdu rychle přivede vodu k varu. Moje žena zase
+            oceňuje, že může varné zóny využívat pro různé
+            účely, aniž by musela pořád něco nastavovat.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature3-4.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+        <h3>SENSEBOIL®</h3>
+        <p class="category__features_item_desc">
+          Chytré indukční varné desky s technologií
+          SenseBoil® po celou dobu vaření detekují,
+          kdy voda v hrnci dosáhne bodu varu. Při jeho
+          dosažení je teplota automaticky regulována
+          až do té doby, než ji sami změníte.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Jiří</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Deska SenseBoil® je skvělým pomocníkem.
+            Voda při vaření nikdy nepřeteče.
+            Můžu se tak věnovat jiným věcem.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature3-5.png" alt="kategorie trouby vlastnost SENSEFRY®" loading="lazy">
+        <h3>SENSEFRY®</h3>
+        <p class="category__features_item_desc">
+          Chytré indukční varné desky s technologií
+          SenseFry® udrží díky speciálnímu senzoru
+          konstantní teplotu po celou dobu smažení.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Pavel</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Vždycky jsem měl problém s ideální teplotou
+            oleje při smažených jídlech. Proto jsem zakoupil
+            desku SenseFry. Nyní už mám o starost méně,
+            deska řeší vše za mě a olej se nepřepaluje.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature3-6.png" alt="kategorie trouby vlastnost DIRECTTOUCH" loading="lazy">
+        <h3>DIRECTTOUCH</h3>
+        <p class="category__features_item_desc">
+          Systém DirectTouch umožňuje přesné
+          nastavení výkonu a ovládání každé
+          zóny zvlášť pouhým přejetím prstu.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Šárka</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Před nákupem jsem váhala, jestli jít do indukce,
+            ale jsem naprosto nadšená. Rychlost ohřevu je
+            fantastická. Dotyková tlačítka fungují i s mokrými
+            prsty a skvěle se nastavuje teplota. Ovládání
+            intuitivní a rychlé. Mohu jen doporučit!
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <div class="something__left">
+      <div class="functions">
+        <h2>VARNÉ DESKY</h2>
+        <ul class="functions__list">
+          <li class="functions__item">
+            <img src="../img/icons/Energeticka_trida.svg" alt="energetická třída" loading="lazy">
+            <span>ENERGETICKÁ TŘÍDA</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/" alt="funkce steambake" loading="lazy">
+            <span>FUNKCE STEAMBAKE</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Wifi.svg" alt="WI-FI" loading="lazy">
+            <span>WI-FI</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Kamera.svg" alt="Kamera" loading="lazy">
+            <span>Kamera</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Teplotni_sonda.svg" alt="teplotní sonda" loading="lazy">
+            <span>TEPLOTNÍ SONDA</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons" alt="pyrolytické samočištění" loading="lazy">
+            <span>PYROLYTICKÉ SAMOČIŠTĚNÍ</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons" alt="katalytické samočištění" loading="lazy">
+            <span>KATALYTICKÉ SAMOČIŠTĚNÍ</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Ventilator.svg" alt="ventilátor + kruhové ohřevné těleso" loading="lazy">
+            <span>VENTILÁTOR + KRUHOVÉ OHŘEVNÉ TĚLESO</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/3levels.svg" alt="možnost pečení na 3 úrovních" loading="lazy">
+            <span>MOŽNOST PEČENÍ NA 3 ÚROVNÍCH</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/XXL_Prostor.svg" alt="xxl prostor" loading="lazy">
+            <span>XXL PROSTOR</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/70l.svg" alt="vnitřní objem" loading="lazy">
+            <span>VNITŘNÍ OBJEM</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Teleskopicke_vysuvy.svg" alt="teleskopické výsuvy" loading="lazy">
+            <span>TELESKOPICKÉ VÝSUVY</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Jemne_dovirani.svg" alt="jemné dovírání dvířek" loading="lazy">
+            <span>JEMNÉ DOVÍRÁNÍ DVÍŘEK</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Chladne_na_dotek.svg" alt="chladné na dotyk" loading="lazy">
+            <span>CHLADNÉ NA DOTYK</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/AFP.svg" alt="nerez s ochranou proti otiskům prstů" loading="lazy">
+            <span>NEREZ S OCHRANOU PROTI OTISKŮM PRSTŮ</span>
+          </li>
+        </ul>
+      </div>
+      <div class="equipment">
+        <h2>OCENĚNÍ</h2>
+        <p>
+          Deska
+          <span>IKB64301FB</span>
+          se stala
+          vítězem prestižního ocenění dTest.
+          Tento model je k dispozici i ve
+          variantě s nerezovým rámečkem.
+        </p>
+        <img src="../img/brand__equipment_img.png" alt="img desc" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- mycky nadobi -->
+  <section class="container brandstore__category_promo" id="mycky_nadobi">
+    <img class="brandstore__category_promo_img" src="../img/brandstore_category_promo4.png" alt="brandstore AEG category mycky nadobi" loading="lazy">
+    <h2 class="brandstore__category_promo_title">
+      ZVYŠTE SVŮJ<br>KOMFORT
+    </h2>
+    <p class="brandstore__category_promo_desc">
+      Zbavte se stereotypů. Myčka AEG
+      se systémem ComfortLift® zvedne
+      spodní koš a vy se tak nemusíte
+      zbytečně ohýbat. Vkládání a uklízení
+      nádobí nebylo nikdy snadnější.
+      AEG. Více než očekáváte.
+    </p>
+  </section>
+
+  <section class="container brandstore__category_features">
+    <h2 class="brandstore__category_features_title">Features of the category mycky nadobi</h2>
+    <ul class="container category__features_list">
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature4-1.png" alt="kategorie trouby vlastnost FLEXIBRIDGE™" loading="lazy">
+        <h3>PROCLEAN™</h3>
+        <p class="category__features_item_desc">
+          Pět sprchovacích rovin a satelitní
+          sprchovací rameno s dvojí rotací zabezpečují
+          nejdůkladnější umytí jakéhokoliv nádobí.
+          Voda se dostane do každého
+          koutu i v přeplněné myčce.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Dan</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Myčka má skvěle řešený vnitřní prostor.
+            Žádné zbytečné pohyblivé části košů. Dvojité
+            spodní rameno spolu s horním ramenem vždy
+            bezvadně umyje veškeré nádobí v myčce.
+            Funkce automatického otevírání je také super.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature4-2.png" alt="kategorie trouby vlastnost HOB2HOOD®" loading="lazy">
+        <h3>AIRDRY</h3>
+        <p class="category__features_item_desc">
+          Technologie AirDry otevře dvířka na šířku
+          10 cm několik minut poté, co skončila
+          fáze mytí a začala fáze sušení. Nádobí
+          se prouděním vzduchu přirozeně osuší
+          a zároveň se sníží spotřeba energie.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Agáta</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Myčka dobře myje i suší. Bezva je zásuvka na
+            příbory (košík už nechci). Promítá červené
+            světlo na podlahu po celou dobu mytí a po
+            dokončení programu se otevřou dvířka.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature4-3.png" alt="kategorie trouby vlastnost POWERSLIDE" loading="lazy">
+        <h3>SPRAYZONE</h3>
+        <p class="category__features_item_desc">
+          Skvělé výsledky mytí pro hodně znečištěné
+          a zaschlé nádobí díky maximálnímu
+          tlaku vody v této zóně s vysokým mycím
+          účinkem a o 50 % lepším výsledkem mytí.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Lenka</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Ze zatím krátkého soužití s novou pomocnicí
+            mohu ocenit tichý provoz, nádobí je bezvadně
+            umyté. Díky zóně SprayZone i bez nutnosti
+            cokoliv dopředu oplachovat, předmývat.
+            Ovládání jednoduché, intuitivní.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature4-4.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+        <h3>QUICKSELECT</h3>
+        <p class="category__features_item_desc">
+          Vyberte si čas mytí nádobí, který potřebujete.
+          Díky flexibilnímu ovládání QuickSelect
+          ho nastavíte jedním dotykem. O zbytek
+          se již postará myčka sama.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Jitka</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Myčka je super. Dali jsme na doporučení přátel
+            a nelitujeme. Nastavení programu mytí je na
+            tři stisknutí a nemusíte se bát, že vyberete
+            špatně – myčka si s tím poradí za vás.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature4-5.png" alt="kategorie trouby vlastnost SENSEFRY®" loading="lazy">
+        <h3>MAXIFLEX</h3>
+        <p class="category__features_item_desc">
+          Do zásuvky MaxiFlex se vejde vše.
+          Neforemné naběračky a další náčiní, dlouhé
+          nože i běžné příbory, vše si pohodlně najde
+          své místo. Přizpůsobitelné příčky vám
+          navíc poskytnou absolutní flexibilitu.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Kamila</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Když jsem hledala novou myčku, zaměřila jsem
+            se schválně na mytí příborů. V té předchozí
+            jsem měla košík, který byl velmi nepraktický,
+            a vidličky a lžíce občas zůstávaly špinavé.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature4-6.png" alt="kategorie trouby vlastnost DIRECTTOUCH" loading="lazy">
+        <h3>SOFTGRIPS</h3>
+        <p class="category__features_item_desc">
+          Pro sklenice na víno, které potřebují
+          trochu více péče, tu jsou držáky
+          SoftGrips.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Aleš</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Myčka je velmi tichá. Výborně je řešen šuplík na
+            příbory. Výkroje na bocích umožnují dát do středního
+            koše bez problémů sklenice na víno. S myčkou
+            jsme velice spokojeni a mohu ji jen doporučit.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <div class="something__left">
+      <div class="functions">
+        <h2>MYČKY NÁDOBÍ</h2>
+        <ul class="functions__list">
+          <li class="functions__item">
+            <img src="../img/icons/Energeticka_trida.svg" alt="energetická třída" loading="lazy">
+            <span>ENERGETICKÁ TŘÍDA</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/" alt="funkce steambake" loading="lazy">
+            <span>FUNKCE STEAMBAKE</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Wifi.svg" alt="WI-FI" loading="lazy">
+            <span>WI-FI</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Kamera.svg" alt="Kamera" loading="lazy">
+            <span>Kamera</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Teplotni_sonda.svg" alt="teplotní sonda" loading="lazy">
+            <span>TEPLOTNÍ SONDA</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons" alt="pyrolytické samočištění" loading="lazy">
+            <span>PYROLYTICKÉ SAMOČIŠTĚNÍ</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons" alt="katalytické samočištění" loading="lazy">
+            <span>KATALYTICKÉ SAMOČIŠTĚNÍ</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Ventilator.svg" alt="ventilátor + kruhové ohřevné těleso" loading="lazy">
+            <span>VENTILÁTOR + KRUHOVÉ OHŘEVNÉ TĚLESO</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/3levels.svg" alt="možnost pečení na 3 úrovních" loading="lazy">
+            <span>MOŽNOST PEČENÍ NA 3 ÚROVNÍCH</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/XXL_Prostor.svg" alt="xxl prostor" loading="lazy">
+            <span>XXL PROSTOR</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/70l.svg" alt="vnitřní objem" loading="lazy">
+            <span>VNITŘNÍ OBJEM</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Teleskopicke_vysuvy.svg" alt="teleskopické výsuvy" loading="lazy">
+            <span>TELESKOPICKÉ VÝSUVY</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Jemne_dovirani.svg" alt="jemné dovírání dvířek" loading="lazy">
+            <span>JEMNÉ DOVÍRÁNÍ DVÍŘEK</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/Chladne_na_dotek.svg" alt="chladné na dotyk" loading="lazy">
+            <span>CHLADNÉ NA DOTYK</span>
+          </li>
+          <li class="functions__item">
+            <img src="../img/icons/AFP.svg" alt="nerez s ochranou proti otiskům prstů" loading="lazy">
+            <span>NEREZ S OCHRANOU PROTI OTISKŮM PRSTŮ</span>
+          </li>
+        </ul>
+      </div>
+      <div class="equipment">
+        <h2>OCENĚNÍ</h2>
+        <p>
+          Myčka nádobí
+          <span>ComfortLift®</span>
+          byla oceněna prestižní
+          mezinárodní zlatou cenou iF Design Award a cenou Red
+          Dot Design Award za nejlepší produktový design.
+        </p>
+        <img src="../img/brand__equipment_img.png" alt="img desc" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- odsavace -->
+  <section class="container brandstore__category_promo" id="odsavace">
+      <img class="brandstore__category_promo_img" src="../img/brandstore_category_promo5.png" alt="brandstore AEG category odsavace" loading="lazy">
+      <h2 class="brandstore__category_promo_title">
+        ODSAVAČE
+      </h2>
+      <p class="brandstore__category_promo_desc">
+        Moderní design a vynikající
+        funkčnost – s našimi odsavači
+        par bude vaše kuchyně vždy
+        čistá, svěží a stylová.
+      </p>
+  </section>
+
+    <section class="container brandstore__category_features">
+      <h2 class="brandstore__category_features_title">Features of the category odsavace</h2>
+      <ul class="container category__features_list">
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature5-1.png" alt="kategorie odsavace vlastnost DOTYKOVÝ DISPLEJ" loading="lazy">
+          <h3>DOTYKOVÝ DISPLEJ</h3>
+          <p class="category__features_item_desc">
+            Díky velkému LCD displeji s dotykovým ovládáním je
+            nastavování odsavače snadné, rychlé a pohodlné.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Karel</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Odsavač zatím plní naše očekávání.
+              Je velmi výkonný a poměrně tichý.
+              Navíc má jednoduchý dotykový displej
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature5-2.png" alt="kategorie odsavace vlastnost AIRDRY" loading="lazy">
+          <h3>BREEZE</h3>
+          <p class="category__features_item_desc">
+            Technologie Breeze zajistí dokonalé
+            a jedinečně tiché odsávání nežádoucích pachů.
+            Udrží tak vaši kuchyň stále svěží.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Tereza</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Odsaje úplně všechno, je to super, nemít nikde
+              smrad. A navíc je tichá a dobře se udržuje
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature5-3.png" alt="kategorie trouby vlastnost POWERSLIDE" loading="lazy">
+          <h3>HOB2HOOD®</h3>
+          <p class="category__features_item_desc">
+            Díky funkci Hob2Hood® komunikuje odsavač
+            par s varnou deskou. Na začátku vaření
+            automaticky zapne a rozsvítí odsavač par a
+            také nastaví odtah podle intenzity vašeho
+            vaření. Odsavač par lze ovládat i manuálně.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Pavel</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Na digestoři oceňuji Hob2Hood - sama
+              se zapne a nastaví přesně podle výkonu
+              indukční desky. Po konci vaření ještě chvíli
+              odsává páry a následně se vypne.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature5-4.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>LED OSVĚTLENÍ</h3>
+          <p class="category__features_item_desc">
+            Užívejte si výhod kvalitního LED osvětlení. Zdroj
+            jasného a příjemného světla nad varnou deskou
+            zajistí dokonalý přehled. Toto osvětlení má navíc
+            dlouhou životnost a je energeticky úsporné.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Marek</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Odsavač funguje skvěle. Zároveň
+              má celkem silné světlo, takže mám
+              skvělý přehled při vaření na desce.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature5-5.png" alt="kategorie trouby vlastnost SENSEFRY®" loading="lazy">
+          <h3>SILENCETECH</h3>
+          <p class="category__features_item_desc">
+            Tato pokročilá technologie je navržena pro nerušené
+            vaření a snižuje úroveň hluku na nejnižší možnou hranici.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Jiří</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Dobrý den, pro mě odsavač splňuje
+              2 zásadní věci. Jednak je výkonný a zároveň
+              velmi tichý. Neruší mě při vaření.
+            </p>
+          </div>
+        </li>
+      </ul>
+  </section>
+
+    <section class="container">
+      <div class="something__left">
+        <div class="functions">
+          <h2>MYČKY NÁDOBÍ</h2>
+          <ul class="functions__list">
+            <li class="functions__item">
+              <img src="../img/icons/Energeticka_trida.svg" alt="energetická třída" loading="lazy">
+              <span>ENERGETICKÁ TŘÍDA</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/" alt="funkce steambake" loading="lazy">
+              <span>FUNKCE STEAMBAKE</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Wifi.svg" alt="WI-FI" loading="lazy">
+              <span>WI-FI</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Kamera.svg" alt="Kamera" loading="lazy">
+              <span>Kamera</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Teplotni_sonda.svg" alt="teplotní sonda" loading="lazy">
+              <span>TEPLOTNÍ SONDA</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons" alt="pyrolytické samočištění" loading="lazy">
+              <span>PYROLYTICKÉ SAMOČIŠTĚNÍ</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons" alt="katalytické samočištění" loading="lazy">
+              <span>KATALYTICKÉ SAMOČIŠTĚNÍ</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Ventilator.svg" alt="ventilátor + kruhové ohřevné těleso" loading="lazy">
+              <span>VENTILÁTOR + KRUHOVÉ OHŘEVNÉ TĚLESO</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/3levels.svg" alt="možnost pečení na 3 úrovních" loading="lazy">
+              <span>MOŽNOST PEČENÍ NA 3 ÚROVNÍCH</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/XXL_Prostor.svg" alt="xxl prostor" loading="lazy">
+              <span>XXL PROSTOR</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/70l.svg" alt="vnitřní objem" loading="lazy">
+              <span>VNITŘNÍ OBJEM</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Teleskopicke_vysuvy.svg" alt="teleskopické výsuvy" loading="lazy">
+              <span>TELESKOPICKÉ VÝSUVY</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Jemne_dovirani.svg" alt="jemné dovírání dvířek" loading="lazy">
+              <span>JEMNÉ DOVÍRÁNÍ DVÍŘEK</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Chladne_na_dotek.svg" alt="chladné na dotyk" loading="lazy">
+              <span>CHLADNÉ NA DOTYK</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/AFP.svg" alt="nerez s ochranou proti otiskům prstů" loading="lazy">
+              <span>NEREZ S OCHRANOU PROTI OTISKŮM PRSTŮ</span>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="equipment">
+          <h2>OCENĚNÍ</h2>
+          <p>
+            Myčka nádobí
+            <span>ComfortLift®</span>
+            byla oceněna prestižní
+            mezinárodní zlatou cenou iF Design Award a cenou Red
+            Dot Design Award za nejlepší produktový design.
+          </p>
+          <img src="../img/brand__equipment_img.png" alt="img desc" loading="lazy">
+        </div> -->
+      </div>
+  </section>
+
+
+
+  <!-- chladnicky -->
+  <section class="container brandstore__category_promo" id="chladnicky">
+    <img class="brandstore__category_promo_img" src="../img/brandstore_category_promo6.png" alt="brandstore AEG category chladnicky" loading="lazy">
+    <h2 class="brandstore__category_promo_title">
+      CHLAZENÍ
+    </h2>
+    <p class="brandstore__category_promo_desc">
+      Ať už sháníte extra velkou lednici,
+      do které se vejdou zásoby jídla
+      pro početnou rodinu, nebo naopak
+      kompaktní chladničku do malé kuchyně,
+      z nabídky AEG si určitě vyberete.
+    </p>
+  </section>
+  
+  <section class="container brandstore__category_features">
+    <h2 class="brandstore__category_features_title">Features of the category chladnicky</h2>
+    <ul class="container category__features_list">
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature6-1.png" alt="kategorie odsavace vlastnost DOTYKOVÝ DISPLEJ" loading="lazy">
+        <h3>TWINTECH® NOFROST</h3>
+        <p class="category__features_item_desc">
+          Technologie TwinTech® NoFrost kombinuje
+          dva oddělené chladicí systémy. Díky tomu se
+          v mrazničce netvoří námraza a v chladničce
+          je udržována optimální vlhkost. Potraviny
+          tak zůstanou déle šťavnaté a čerstvé.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Petr</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Líbí se nám variabilní uspořádání polic ve
+            dveřích a hezký vnitřní prostor. Používá
+            systém chlazení NoFrost, takže odpadá
+            odmrazování, invertorový kompresor je tichý.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature6-2.png" alt="kategorie odsavace vlastnost AIRDRY" loading="lazy">
+        <h3>STATIC LOWFROST</h3>
+        <p class="category__features_item_desc">
+          Technologie Static LowFrost redukuje
+          tvorbu námrazy. Protože jsou mrazicí spirály
+          rozmístěny po celém vnitřním prostroru
+          mrazničky, nemusí se tak často odmrazovat.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Jana</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Vybírali jsme chladničku od osvědčeného
+            výrobce s nižší spotřebou. Spotřebič je
+            prostorný a dokáže zamrazit i velké množství
+            čerstvých potravin ve velmi krátkém čase. Navíc
+            není trřeba ho skoro vůbec odmrazovat.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature6-3.png" alt="kategorie trouby vlastnost POWERSLIDE" loading="lazy">
+        <h3>DYNAMICAIR</h3>
+        <p class="category__features_item_desc">
+          Technologie DynamicAir udržuje proudění
+          vzduchu, které zajišťuje stabilní teplotu v celé
+          chladničce. Každá police je rovnoměrně
+          chlazená a vaše potraviny
+          zůstávají déle čerstvé.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Matěj</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Při koupi nové chladničky jsme dbali na to,
+            aby měla ventilátor. Naše původní chladnička
+            nechladila všude rovnoměrně. Nyní již je
+            výsledek podstatně lepší. Jsme spokojeni.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature6-4.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+        <h3>LCD DISPLEJ</h3>
+        <p class="category__features_item_desc">
+          LCD displej s pokročilým dotykovým ovládáním vám
+          umožní převzít plnou kontrolu nad skladovacími
+          podmínkami vašich potravin. Ovládání je tak citlivé, že lze
+          vše přesně nastavit pouhým letmým dotykem prstu.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Lucie</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Chladnička nám skvěle zapadla do naší kuchyně.
+            Nejvíce se nám líbí, že teplotu vidíme na LCD
+            displeji na dvířkách, takže nemusíme otevírat
+            chladničku a kontrolovat, zda je vše v pořádku.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature6-5.png" alt="kategorie trouby vlastnost SENSEFRY®" loading="lazy">
+        <h3>FLEXISHELF®</h3>
+        <p class="category__features_item_desc">
+          Díky flexibilní sklopné poličce FlexiShelf® můžete v chladničce
+          okamžitě vytvořit prostor pro nadměrné
+          a jinak atypické nádoby či láhve.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Andrej</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Chladnička je dostatečně objemná, prostorná
+            a má skvěle dostupná všechna svá místa.
+            Obsahuje velké množství odkládacích ploch,
+            které si můžete měnit podle sebe, třeba zmenšit
+            si poličků napůl. Jsem velmi spokojený.
+          </p>
+        </div>
+      </li>
+      <li class="category__features_item">
+        <img src="../img/aeg_category_feature6-6.png" alt="kategorie trouby vlastnost SENSEFRY®" loading="lazy">
+        <h3>SOFTCLOSING</h3>
+        <p class="category__features_item_desc">
+          Technologie SoftClosing zařídí, že se dvířka
+          zavírají lehce a tiše. Stačí je mírně popostrčit
+          a ony se automaticky samy dovřou.
+        </p>
+        <div class="category_features_review">
+          <div class="features_review_left">
+            <span class="review__left_name">Petr</span>
+            <div class="rating-mini">
+              <span class="active"></span>	
+              <span class="active"></span>    
+              <span class="active"></span>  
+              <span class="active"></span>    
+              <span class="active"></span>
+            </div>
+          </div>
+          <p class="features_review_right">
+            Výborná chladnička s jednoduchým ovládáním.
+            Náš záměr bylo mít co nejtišší chaldničku. Tento
+            model to splňuje, a to i díky jemnému dovírání dveří.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="container">
+      <div class="something__left">
+        <div class="functions">
+          <h2>CHLADNIČKY</h2>
+          <ul class="functions__list">
+            <li class="functions__item">
+              <img src="../img/icons/Energeticka_trida.svg" alt="energetická třída" loading="lazy">
+              <span>ENERGETICKÁ TŘÍDA</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/" alt="funkce steambake" loading="lazy">
+              <span>FUNKCE STEAMBAKE</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Wifi.svg" alt="WI-FI" loading="lazy">
+              <span>WI-FI</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Kamera.svg" alt="Kamera" loading="lazy">
+              <span>Kamera</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Teplotni_sonda.svg" alt="teplotní sonda" loading="lazy">
+              <span>TEPLOTNÍ SONDA</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons" alt="pyrolytické samočištění" loading="lazy">
+              <span>PYROLYTICKÉ SAMOČIŠTĚNÍ</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons" alt="katalytické samočištění" loading="lazy">
+              <span>KATALYTICKÉ SAMOČIŠTĚNÍ</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Ventilator.svg" alt="ventilátor + kruhové ohřevné těleso" loading="lazy">
+              <span>VENTILÁTOR + KRUHOVÉ OHŘEVNÉ TĚLESO</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/3levels.svg" alt="možnost pečení na 3 úrovních" loading="lazy">
+              <span>MOŽNOST PEČENÍ NA 3 ÚROVNÍCH</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/XXL_Prostor.svg" alt="xxl prostor" loading="lazy">
+              <span>XXL PROSTOR</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/70l.svg" alt="vnitřní objem" loading="lazy">
+              <span>VNITŘNÍ OBJEM</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Teleskopicke_vysuvy.svg" alt="teleskopické výsuvy" loading="lazy">
+              <span>TELESKOPICKÉ VÝSUVY</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Jemne_dovirani.svg" alt="jemné dovírání dvířek" loading="lazy">
+              <span>JEMNÉ DOVÍRÁNÍ DVÍŘEK</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/Chladne_na_dotek.svg" alt="chladné na dotyk" loading="lazy">
+              <span>CHLADNÉ NA DOTYK</span>
+            </li>
+            <li class="functions__item">
+              <img src="../img/icons/AFP.svg" alt="nerez s ochranou proti otiskům prstů" loading="lazy">
+              <span>NEREZ S OCHRANOU PROTI OTISKŮM PRSTŮ</span>
+            </li>
+          </ul>
+        </div>
+        <div class="equipment">
+          <h2>TWINTECH® NOFROST</h2>
+          <p>
+            <span>VAŠE POTRAVINY VŽDY ČERSTVÉ</span>
+          </p>
+          <img src="../img/brand__equipment_img6.png" alt="img desc" loading="lazy">
+        </div>
+      </div>
+  </section>
+
+
+
+  <!-- kavovary -->
+  <section class="container brandstore__category_promo" id="kavovary">
+    <img class="brandstore__category_promo_img" src="../img/brandstore_category_promo7.png" alt="brandstore AEG category kavovary" loading="lazy">
+    <h2 class="brandstore__category_promo_title">
+      KÁVOVARY
+    </h2>
+    <p class="brandstore__category_promo_desc">
+      Ať už sháníte extra velkou lednici,
+      do které se vejdou zásoby jídla
+      pro početnou rodinu, nebo naopak
+      kompaktní chladničku do malé kuchyně,
+      z nabídky AEG si určitě vyberete.
+    </p>
+  </section>
+    
+  <section class="container brandstore__category_features">
+    <h2 class="brandstore__category_features_title">Features of the category KÁVOVARY</h2>
+    <ul class="container category__features_list">
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-1.png" alt="kategorie odsavace vlastnost DOTYKOVÝ DISPLEJ" loading="lazy">
+          <h3>TWINTECH® NOFROST</h3>
+          <p class="category__features_item_desc">
+            Technologie TwinTech® NoFrost kombinuje
+            dva oddělené chladicí systémy. Díky tomu se
+            v mrazničce netvoří námraza a v chladničce
+            je udržována optimální vlhkost. Potraviny
+            tak zůstanou déle šťavnaté a čerstvé.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Petr</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Líbí se nám variabilní uspořádání polic ve
+              dveřích a hezký vnitřní prostor. Používá
+              systém chlazení NoFrost, takže odpadá
+              odmrazování, invertorový kompresor je tichý.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-2.png" alt="kategorie odsavace vlastnost AIRDRY" loading="lazy">
+          <h3>STATIC LOWFROST</h3>
+          <p class="category__features_item_desc">
+            Technologie Static LowFrost redukuje
+            tvorbu námrazy. Protože jsou mrazicí spirály
+            rozmístěny po celém vnitřním prostroru
+            mrazničky, nemusí se tak často odmrazovat.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Jana</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Vybírali jsme chladničku od osvědčeného
+              výrobce s nižší spotřebou. Spotřebič je
+              prostorný a dokáže zamrazit i velké množství
+              čerstvých potravin ve velmi krátkém čase. Navíc
+              není trřeba ho skoro vůbec odmrazovat.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-3.png" alt="kategorie trouby vlastnost POWERSLIDE" loading="lazy">
+          <h3>DYNAMICAIR</h3>
+          <p class="category__features_item_desc">
+            Technologie DynamicAir udržuje proudění
+            vzduchu, které zajišťuje stabilní teplotu v celé
+            chladničce. Každá police je rovnoměrně
+            chlazená a vaše potraviny
+            zůstávají déle čerstvé.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Matěj</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Při koupi nové chladničky jsme dbali na to,
+              aby měla ventilátor. Naše původní chladnička
+              nechladila všude rovnoměrně. Nyní již je
+              výsledek podstatně lepší. Jsme spokojeni.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-4.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>LCD DISPLEJ</h3>
+          <p class="category__features_item_desc">
+            LCD displej s pokročilým dotykovým ovládáním vám
+            umožní převzít plnou kontrolu nad skladovacími
+            podmínkami vašich potravin. Ovládání je tak citlivé, že lze
+            vše přesně nastavit pouhým letmým dotykem prstu.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Lucie</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Chladnička nám skvěle zapadla do naší kuchyně.
+              Nejvíce se nám líbí, že teplotu vidíme na LCD
+              displeji na dvířkách, takže nemusíme otevírat
+              chladničku a kontrolovat, zda je vše v pořádku.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-5.png" alt="kategorie trouby vlastnost SENSEFRY®" loading="lazy">
+          <h3>FLEXISHELF®</h3>
+          <p class="category__features_item_desc">
+            Díky flexibilní sklopné poličce FlexiShelf® můžete v chladničce
+            okamžitě vytvořit prostor pro nadměrné
+            a jinak atypické nádoby či láhve.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Andrej</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Chladnička je dostatečně objemná, prostorná
+              a má skvěle dostupná všechna svá místa.
+              Obsahuje velké množství odkládacích ploch,
+              které si můžete měnit podle sebe, třeba zmenšit
+              si poličků napůl. Jsem velmi spokojený.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-6.png" alt="kategorie trouby vlastnost SENSEFRY®" loading="lazy">
+          <h3>SOFTCLOSING</h3>
+          <p class="category__features_item_desc">
+            Technologie SoftClosing zařídí, že se dvířka
+            zavírají lehce a tiše. Stačí je mírně popostrčit
+            a ony se automaticky samy dovřou.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Petr</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Výborná chladnička s jednoduchým ovládáním.
+              Náš záměr bylo mít co nejtišší chaldničku. Tento
+              model to splňuje, a to i díky jemnému dovírání dveří.
+            </p>
+          </div>
+        </li>
+    </ul>
+  </section>
+  
+  <section class="container">
+        <div class="something__left">
+          <div class="functions">
+            <h2>KÁVOVARY</h2>
+            <ul class="functions__list">
+              <li class="functions__item">
+                <img src="../img/icons/Energeticka_trida.svg" alt="energetická třída" loading="lazy">
+                <span>ENERGETICKÁ TŘÍDA</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/" alt="funkce steambake" loading="lazy">
+                <span>FUNKCE STEAMBAKE</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Wifi.svg" alt="WI-FI" loading="lazy">
+                <span>WI-FI</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Kamera.svg" alt="Kamera" loading="lazy">
+                <span>Kamera</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Teplotni_sonda.svg" alt="teplotní sonda" loading="lazy">
+                <span>TEPLOTNÍ SONDA</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons" alt="pyrolytické samočištění" loading="lazy">
+                <span>PYROLYTICKÉ SAMOČIŠTĚNÍ</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons" alt="katalytické samočištění" loading="lazy">
+                <span>KATALYTICKÉ SAMOČIŠTĚNÍ</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Ventilator.svg" alt="ventilátor + kruhové ohřevné těleso" loading="lazy">
+                <span>VENTILÁTOR + KRUHOVÉ OHŘEVNÉ TĚLESO</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/3levels.svg" alt="možnost pečení na 3 úrovních" loading="lazy">
+                <span>MOŽNOST PEČENÍ NA 3 ÚROVNÍCH</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/XXL_Prostor.svg" alt="xxl prostor" loading="lazy">
+                <span>XXL PROSTOR</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/70l.svg" alt="vnitřní objem" loading="lazy">
+                <span>VNITŘNÍ OBJEM</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Teleskopicke_vysuvy.svg" alt="teleskopické výsuvy" loading="lazy">
+                <span>TELESKOPICKÉ VÝSUVY</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Jemne_dovirani.svg" alt="jemné dovírání dvířek" loading="lazy">
+                <span>JEMNÉ DOVÍRÁNÍ DVÍŘEK</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Chladne_na_dotek.svg" alt="chladné na dotyk" loading="lazy">
+                <span>CHLADNÉ NA DOTYK</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/AFP.svg" alt="nerez s ochranou proti otiskům prstů" loading="lazy">
+                <span>NEREZ S OCHRANOU PROTI OTISKŮM PRSTŮ</span>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="equipment">
+            <h2>OCENĚNÍ</h2>
+            <p>
+              Myčka nádobí
+              <span>ComfortLift®</span>
+              byla oceněna prestižní
+              mezinárodní zlatou cenou iF Design Award a cenou Red
+              Dot Design Award za nejlepší produktový design.
+            </p>
+            <img src="../img/brand__equipment_img.png" alt="img desc" loading="lazy">
+          </div> -->
+        </div>
+  </section>
+
+
+
+  <!-- PRAČKY A SUŠIČKY -->
+  <section class="container brandstore__category_promo" id="pracky_susicky">
+    <img class="brandstore__category_promo_img" src="../img/brandstore_category_promo7.png" alt="brandstore AEG category pracky a susicky" loading="lazy">
+    <h2 class="brandstore__category_promo_title">
+      PRAČKY A SUŠIČKY
+    </h2>
+    <p class="brandstore__category_promo_desc">
+      Ať už sháníte extra velkou lednici,
+      do které se vejdou zásoby jídla
+      pro početnou rodinu, nebo naopak
+      kompaktní chladničku do malé kuchyně,
+      z nabídky AEG si určitě vyberete.
+    </p>
+  </section>
+    
+  <section class="container brandstore__category_features">
+    <h2 class="brandstore__category_features_title">Features of the category PRAČKY A SUŠIČKY</h2>
+    <ul class="container category__features_list">
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-1.png" alt="kategorie odsavace vlastnost DOTYKOVÝ DISPLEJ" loading="lazy">
+          <h3>TWINTECH® NOFROST</h3>
+          <p class="category__features_item_desc">
+            Technologie TwinTech® NoFrost kombinuje
+            dva oddělené chladicí systémy. Díky tomu se
+            v mrazničce netvoří námraza a v chladničce
+            je udržována optimální vlhkost. Potraviny
+            tak zůstanou déle šťavnaté a čerstvé.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Petr</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Líbí se nám variabilní uspořádání polic ve
+              dveřích a hezký vnitřní prostor. Používá
+              systém chlazení NoFrost, takže odpadá
+              odmrazování, invertorový kompresor je tichý.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-2.png" alt="kategorie odsavace vlastnost AIRDRY" loading="lazy">
+          <h3>STATIC LOWFROST</h3>
+          <p class="category__features_item_desc">
+            Technologie Static LowFrost redukuje
+            tvorbu námrazy. Protože jsou mrazicí spirály
+            rozmístěny po celém vnitřním prostroru
+            mrazničky, nemusí se tak často odmrazovat.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Jana</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Vybírali jsme chladničku od osvědčeného
+              výrobce s nižší spotřebou. Spotřebič je
+              prostorný a dokáže zamrazit i velké množství
+              čerstvých potravin ve velmi krátkém čase. Navíc
+              není trřeba ho skoro vůbec odmrazovat.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-3.png" alt="kategorie trouby vlastnost POWERSLIDE" loading="lazy">
+          <h3>DYNAMICAIR</h3>
+          <p class="category__features_item_desc">
+            Technologie DynamicAir udržuje proudění
+            vzduchu, které zajišťuje stabilní teplotu v celé
+            chladničce. Každá police je rovnoměrně
+            chlazená a vaše potraviny
+            zůstávají déle čerstvé.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Matěj</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Při koupi nové chladničky jsme dbali na to,
+              aby měla ventilátor. Naše původní chladnička
+              nechladila všude rovnoměrně. Nyní již je
+              výsledek podstatně lepší. Jsme spokojeni.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-4.png" alt="kategorie trouby vlastnost steambake" loading="lazy">
+          <h3>LCD DISPLEJ</h3>
+          <p class="category__features_item_desc">
+            LCD displej s pokročilým dotykovým ovládáním vám
+            umožní převzít plnou kontrolu nad skladovacími
+            podmínkami vašich potravin. Ovládání je tak citlivé, že lze
+            vše přesně nastavit pouhým letmým dotykem prstu.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Lucie</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Chladnička nám skvěle zapadla do naší kuchyně.
+              Nejvíce se nám líbí, že teplotu vidíme na LCD
+              displeji na dvířkách, takže nemusíme otevírat
+              chladničku a kontrolovat, zda je vše v pořádku.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-5.png" alt="kategorie trouby vlastnost SENSEFRY®" loading="lazy">
+          <h3>FLEXISHELF®</h3>
+          <p class="category__features_item_desc">
+            Díky flexibilní sklopné poličce FlexiShelf® můžete v chladničce
+            okamžitě vytvořit prostor pro nadměrné
+            a jinak atypické nádoby či láhve.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Andrej</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Chladnička je dostatečně objemná, prostorná
+              a má skvěle dostupná všechna svá místa.
+              Obsahuje velké množství odkládacích ploch,
+              které si můžete měnit podle sebe, třeba zmenšit
+              si poličků napůl. Jsem velmi spokojený.
+            </p>
+          </div>
+        </li>
+        <li class="category__features_item">
+          <img src="../img/aeg_category_feature6-6.png" alt="kategorie trouby vlastnost SENSEFRY®" loading="lazy">
+          <h3>SOFTCLOSING</h3>
+          <p class="category__features_item_desc">
+            Technologie SoftClosing zařídí, že se dvířka
+            zavírají lehce a tiše. Stačí je mírně popostrčit
+            a ony se automaticky samy dovřou.
+          </p>
+          <div class="category_features_review">
+            <div class="features_review_left">
+              <span class="review__left_name">Petr</span>
+              <div class="rating-mini">
+                <span class="active"></span>	
+                <span class="active"></span>    
+                <span class="active"></span>  
+                <span class="active"></span>    
+                <span class="active"></span>
+              </div>
+            </div>
+            <p class="features_review_right">
+              Výborná chladnička s jednoduchým ovládáním.
+              Náš záměr bylo mít co nejtišší chaldničku. Tento
+              model to splňuje, a to i díky jemnému dovírání dveří.
+            </p>
+          </div>
+        </li>
+    </ul>
+  </section>
+  
+  <section class="container">
+        <div class="something__left">
+          <div class="functions">
+            <h2>PRAČKY A SUŠIČKY</h2>
+            <ul class="functions__list">
+              <li class="functions__item">
+                <img src="../img/icons/Energeticka_trida.svg" alt="energetická třída" loading="lazy">
+                <span>ENERGETICKÁ TŘÍDA</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/" alt="funkce steambake" loading="lazy">
+                <span>FUNKCE STEAMBAKE</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Wifi.svg" alt="WI-FI" loading="lazy">
+                <span>WI-FI</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Kamera.svg" alt="Kamera" loading="lazy">
+                <span>Kamera</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Teplotni_sonda.svg" alt="teplotní sonda" loading="lazy">
+                <span>TEPLOTNÍ SONDA</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons" alt="pyrolytické samočištění" loading="lazy">
+                <span>PYROLYTICKÉ SAMOČIŠTĚNÍ</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons" alt="katalytické samočištění" loading="lazy">
+                <span>KATALYTICKÉ SAMOČIŠTĚNÍ</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Ventilator.svg" alt="ventilátor + kruhové ohřevné těleso" loading="lazy">
+                <span>VENTILÁTOR + KRUHOVÉ OHŘEVNÉ TĚLESO</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/3levels.svg" alt="možnost pečení na 3 úrovních" loading="lazy">
+                <span>MOŽNOST PEČENÍ NA 3 ÚROVNÍCH</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/XXL_Prostor.svg" alt="xxl prostor" loading="lazy">
+                <span>XXL PROSTOR</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/70l.svg" alt="vnitřní objem" loading="lazy">
+                <span>VNITŘNÍ OBJEM</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Teleskopicke_vysuvy.svg" alt="teleskopické výsuvy" loading="lazy">
+                <span>TELESKOPICKÉ VÝSUVY</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Jemne_dovirani.svg" alt="jemné dovírání dvířek" loading="lazy">
+                <span>JEMNÉ DOVÍRÁNÍ DVÍŘEK</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/Chladne_na_dotek.svg" alt="chladné na dotyk" loading="lazy">
+                <span>CHLADNÉ NA DOTYK</span>
+              </li>
+              <li class="functions__item">
+                <img src="../img/icons/AFP.svg" alt="nerez s ochranou proti otiskům prstů" loading="lazy">
+                <span>NEREZ S OCHRANOU PROTI OTISKŮM PRSTŮ</span>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="equipment">
+            <h2>OCENĚNÍ</h2>
+            <p>
+              Myčka nádobí
+              <span>ComfortLift®</span>
+              byla oceněna prestižní
+              mezinárodní zlatou cenou iF Design Award a cenou Red
+              Dot Design Award za nejlepší produktový design.
+            </p>
+            <img src="../img/brand__equipment_img.png" alt="img desc" loading="lazy">
+          </div> -->
+        </div>
+  </section>
+
+
+
+
+
+</main>
 
 
 
