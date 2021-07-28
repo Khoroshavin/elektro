@@ -1,0 +1,39 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.40426 76.40426">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5 {
+        stroke: #000;
+      }
+
+      .cls-1 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        stroke-width: 0.25px;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="cls-1" cx="38.20213" cy="38.20213" r="28.85106"/>
+    <circle class="cls-2" cx="38.20213" cy="38.20213" r="21.41697"/>
+    <rect class="cls-3" x="10.52557" y="33.92938" width="37.93188" height="8.18765"/>
+    <circle class="cls-3" cx="52.22309" cy="38.20213" r="14.70244"/>
+    <circle class="cls-4" cx="38.20213" cy="24.0535" r="14.70244"/>
+    <circle class="cls-4" cx="38.20213" cy="52.28723" r="14.70244"/>
+    <circle class="cls-4" cx="24.41489" cy="38.75594" r="14.70244"/>
+    <circle class="cls-4" cx="28.58511" cy="48.20213" r="14.70244"/>
+    <circle class="cls-4" cx="28.58511" cy="28.37234" r="14.70244"/>
+    <circle class="cls-4" cx="48.45745" cy="28.37234" r="14.70244"/>
+    <circle class="cls-4" cx="46.96809" cy="49.45776" r="14.70244"/>
+    <circle class="cls-5" cx="38.20213" cy="38.20213" r="37.70213"/>
+  </g>
+</svg>

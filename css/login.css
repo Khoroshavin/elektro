@@ -1,13 +1,18 @@
 .login__wrap {
   width: 100%;
   margin: auto;
-  margin-bottom: 40px;
-  max-width: 525px;
+  /*margin-bottom: 40px;
+  */max-width: 525px;
   min-height: 580px;
   position: relative;
   font: 600 16px/18px 'Open Sans', sans-serif;
   background: url(../img/img__login_bg.JPG) no-repeat center;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .login__inner {
@@ -202,4 +207,17 @@
   .login__inner{
     padding: 20px 20px 0px 20px;
   }
+}
+
+@media screen and (max-width: 425px) {
+  .login__inner {
+    padding: 10px 5px 0px 5px;
+  }
+}
+
+/* modal */
+.modal__container_login {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 525px;
 }
