@@ -193,6 +193,13 @@
                 Osobní kabinet</a>
             </li>
             <li class="user__pages_item">
+              <a class="user__pages_link" href="saved-cart.html"
+                title="uložený košík">
+                <!-- https://www.flaticon.com/free-icon/checklist_2666505 -->
+                <img src="../img/icons/user_shop_cart.svg" alt="uložený košík" loading="lazy">
+                Uložený košík</a>
+            </li>
+            <li class="user__pages_item">
               <a class="user__pages_link" href="user-orders-history.html" title="Historie objednávek">
                 <!-- https://www.flaticon.com/free-icon/checklist_2666505 -->
                 <img src="../img/icons/user_checklist.svg" alt="Historie objednávek" loading="lazy">
@@ -221,6 +228,11 @@
                 <img src="../img/icons/user_settings.svg" alt="Nastavení" loading="lazy">
                 Nastavení</a>
             </li>
+            <li class="user__pages_item">
+              <a class="user__pages_link" href="#" title="Odhlásit se">
+                <img src="../img/icons/user_door.svg" alt="Odhlásit se" loading="lazy">
+                Odhlásit se</a>
+            </li>
           </ul>
         </nav>
       </aside>
@@ -231,7 +243,7 @@
         <div class="accordion acc-multiple-open">
 
           <div class="acc-container acc-active">
-            <h2 class="acc-title">přihlašovací údaje</h2>
+            <h2 class="acc-title">Přihlašovací údaje</h2>
             <div class="acc-content">
 
               <form action="#">
@@ -245,7 +257,7 @@
                   <div class="password">
                     <input class="input input_success" type="password" id="input__user_pwd" minlength="6"
                       maxlength="40">
-                    <a class="password__control password__control1 password__control_show"></a>
+                    <button class="password__control password__control1 password__control_show"></button>
                   </div>
                 </div>
 
@@ -253,7 +265,7 @@
                   <label class="user__label" for="input__user_pwd_rep">Potvrzení hesla</label>
                   <div class="password">
                     <input class="input" type="password" id="input__user_pwd_rep" minlength="6" maxlength="40">
-                    <a href="#" class="password__control password__control2 password__control_show"></a>
+                    <button class="password__control password__control2 password__control_show"></button>
                   </div>
                 </div>
 
@@ -280,7 +292,7 @@
             </div>
           </div>
 
-          <div class="acc-container">
+          <div class="acc-container acc-active">
             <h2 class="acc-title">Fakturační údaje</h2>
             <div class="acc-content">
 
@@ -306,7 +318,7 @@
                 </div>
 
                 <div class="input__group">
-                  <label class="user__label" for="input__user_company_city">Ulice</label>
+                  <label class="user__label" for="input__user_company_city">Město</label>
                   <input class="input" type="text" id="input__user_company_city" minlength="2" maxlength="50">
                 </div>
 
@@ -443,11 +455,11 @@
 
 
 
-  <!-- VENDORS -->
+<!-- VENDORS -->
 
-  <!-- SCRIPTS-->
-  <script src="../js/header.js"></script>
-  <script src="../js/user_page.js"></script>
+<!-- SCRIPTS-->
+<script src="../js/header.js"></script>
+<script src="../js/user_page.js"></script>
 
 
 </body>

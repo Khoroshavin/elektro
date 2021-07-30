@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>user home page</title>
+  <title>user nastaveni</title>
   <meta name="description" content="description">
   <!-- open graph -->
   <meta property="og:site_name" content="nazev webu a popis">
-  <meta property="og:title" content="user home page">
+  <meta property="og:title" content="user nastaveni">
   <meta property="og:type" content="website">
   <meta property="og:url" content="#">
   <meta property="og:image" content="#">
@@ -192,6 +192,13 @@
               Osobní kabinet</a>
           </li>
           <li class="user__pages_item">
+            <a class="user__pages_link" href="saved-cart.html"
+              title="uložený košík">
+              <!-- https://www.flaticon.com/free-icon/checklist_2666505 -->
+              <img src="../img/icons/user_shop_cart.svg" alt="uložený košík" loading="lazy">
+              Uložený košík</a>
+          </li>
+          <li class="user__pages_item">
             <a class="user__pages_link" href="user-orders-history.html" title="Historie objednávek">
               <!-- https://www.flaticon.com/free-icon/checklist_2666505 -->
               <img src="../img/icons/user_checklist.svg" alt="Historie objednávek" loading="lazy">
@@ -220,12 +227,58 @@
               <img src="../img/icons/user_settings.svg" alt="Nastavení" loading="lazy">
               Nastavení</a>
           </li>
+          <li class="user__pages_item">
+            <a class="user__pages_link" href="#" title="Odhlásit se">
+              <img src="../img/icons/user_door.svg" alt="Odhlásit se" loading="lazy">
+              Odhlásit se</a>
+          </li>
         </ul>
       </nav>
     </aside>
 
     <div class="user__page_content">
-      content
+      
+      <h2 class="user__title">E-mailová oznámení</h2>
+
+      <form action="#">
+
+        <div class="input__group">
+          <input class="input__check" type="checkbox" id="subscribeInfoMail" 
+          name="subscribeInfoMail" value="subscribeInfoMail" checked>
+          <label class="label__check" for="subscribeInfoMail">Informační zprávy?</label>
+        </div>
+
+        <div class="input__group">
+          <input class="input__check" type="checkbox" id="subscribeSpecial" 
+          name="subscribeSpecial" value="subscribeSpecial" checked>
+          <label class="label__check" for="subscribeSpecial"
+          title="Informace o slevách a akcích.">
+          Speciální nabídky od ElektroCZ.com?</label>
+        </div>
+
+        <div class="input__group">
+          <input class="input__check" type="checkbox" id="subscribeNews" 
+          name="subscribeNews" value="subscribeNews" checked>
+          <label class="label__check" for="subscribeNews"
+          title="Sborník novinek ElektroCZ.com">
+          Sborník novinek ElektroCZ.com - ne častěji než jednou za měsíc</label>
+        </div>
+
+        <div class="input__group">
+          <input class="input__check" type="checkbox" id="subscribeBlog" 
+          name="subscribeBlog" value="subscribeBlog" checked>
+          <label class="label__check" for="subscribeBlog"
+          title="Sborník nových příspěvků na blogu">
+            Sborník nových příspěvků na blogu - ne častěji než jednou týdně</label>
+        </div>
+
+        <div class="input__group">
+          <button class="btn__submit_user_form" type="submit">uložit</button>
+        </div>
+
+      </form>
+
+
     </div>
 
   </div>

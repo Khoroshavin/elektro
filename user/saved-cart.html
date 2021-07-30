@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>user order history page</title>
+  <title>user uložený košík</title>
   <meta name="description" content="description">
   <!-- open graph -->
   <meta property="og:site_name" content="nazev webu a popis">
-  <meta property="og:title" content="user home page">
+  <meta property="og:title" content="Uložený košík">
   <meta property="og:type" content="website">
   <meta property="og:url" content="#">
   <meta property="og:image" content="#">
@@ -192,14 +192,14 @@
                 Osobní kabinet</a>
             </li>
             <li class="user__pages_item">
-              <a class="user__pages_link" href="saved-cart.html"
+              <a class="user__pages_link user__pages_link_active" href="saved-cart.html"
                 title="uložený košík">
                 <!-- https://www.flaticon.com/free-icon/checklist_2666505 -->
                 <img src="../img/icons/user_shop_cart.svg" alt="uložený košík" loading="lazy">
                 Uložený košík</a>
             </li>
             <li class="user__pages_item">
-              <a class="user__pages_link user__pages_link_active" href="user-orders-history.html"
+              <a class="user__pages_link" href="user-orders-history.html"
                 title="Historie objednávek">
                 <!-- https://www.flaticon.com/free-icon/checklist_2666505 -->
                 <img src="../img/icons/user_checklist.svg" alt="Historie objednávek" loading="lazy">
@@ -241,11 +241,10 @@
 
         <!-- Accordion -->
         <div class="accordion acc-multiple-open">
+
           <div class="acc-container">
             <h2 class="acc-title">
-
-              <span class="state__order_icon state__order_icon_procces" title="Zpracovava se"></span>
-              Č. objednávky <span class="order__number">8658554556</span></h2>
+              Uložený košík:<span class="order__number">kosik s bordelem</span></h2>
 
             <ul class="acc-content user_orders__history_list">
               <li class="user_orders__history_item">
@@ -257,6 +256,11 @@
                   <h3>Miele DGC 7865 Obsidian černá</h3>
                   <h4>parní trouba</h4>
                   <h5>Kód zboží: 2T62665</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">151 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
                 </a>
               </li>
               <li class="user_orders__history_item">
@@ -265,9 +269,14 @@
                   <div class="img_wrap">
                     <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
                   </div>
-                    <h3>AEG ProSteam L7FBE48SC</h3>
+                  <h3>AEG ProSteam L7FBE48SC</h3>
                   <h4>pračka s předním plněním</h4>
                   <h5>Kód zboží: 2T54813</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">14 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
                 </a>
               </li>
               <li class="user_orders__history_item">
@@ -279,6 +288,11 @@
                   <h3>Miele DGC 7865 Obsidian černá</h3>
                   <h4>parní trouba</h4>
                   <h5>Kód zboží: 2T62665</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">151 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
                 </a>
               </li>
               <li class="user_orders__history_item">
@@ -287,9 +301,14 @@
                   <div class="img_wrap">
                     <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
                   </div>
-                    <h3>AEG ProSteam L7FBE48SC</h3>
+                  <h3>AEG ProSteam L7FBE48SC</h3>
                   <h4>pračka s předním plněním</h4>
                   <h5>Kód zboží: 2T54813</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">14 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
                 </a>
               </li>
               <li class="user_orders__history_item">
@@ -301,6 +320,11 @@
                   <h3>Miele DGC 7865 Obsidian černá</h3>
                   <h4>parní trouba</h4>
                   <h5>Kód zboží: 2T62665</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">151 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
                 </a>
               </li>
               <li class="user_orders__history_item">
@@ -309,131 +333,123 @@
                   <div class="img_wrap">
                     <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
                   </div>
-                    <h3>AEG ProSteam L7FBE48SC</h3>
+                  <h3>AEG ProSteam L7FBE48SC</h3>
                   <h4>pračka s předním plněním</h4>
                   <h5>Kód zboží: 2T54813</h5>
-                </a>
-              </li>
-              <li class="user_orders__history_item">
-                <a class="user_orders__history_link"
-                  href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
-                  <div class="img_wrap">
-                    <img src="../img/user_Miele_DGC_7865_ObsidianBlack.jpg" alt="parní trouba - Miele DGC 7865 Obsidian Black" loading="lazy">
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">14 990</span>
+                    <span class="price_kc">Kč</span>
                   </div>
-                  <h3>Miele DGC 7865 Obsidian černá</h3>
-                  <h4>parní trouba</h4>
-                  <h5>Kód zboží: 2T62665</h5>
                 </a>
               </li>
-              <li class="user_orders__history_item">
-                <a class="user_orders__history_link"
-                  href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
-                  <div class="img_wrap">
-                    <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
-                  </div>
-                    <h3>AEG ProSteam L7FBE48SC</h3>
-                  <h4>pračka s předním plněním</h4>
-                  <h5>Kód zboží: 2T54813</h5>
-                </a>
-              </li>
+
             </ul>
           </div>
 
           <div class="acc-container">
             <h2 class="acc-title">
-              <span class="state__order_icon state__order_icon_ready" title="Ukoncena uspesne"></span>
-              Č. objednávky <span class="order__number">8658554555</span></h2>
-              <ul class="acc-content user_orders__history_list">
-                <li class="user_orders__history_item">
-                  <a class="user_orders__history_link"
-                    href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
-                    <div class="img_wrap">
-                      <img src="../img/user_Miele_DGC_7865_ObsidianBlack.jpg" alt="parní trouba - Miele DGC 7865 Obsidian Black" loading="lazy">
-                    </div>
-                    <h3>Miele DGC 7865 Obsidian černá</h3>
-                    <h4>parní trouba</h4>
-                    <h5>Kód zboží: 2T62665</h5>
-                  </a>
-                </li>
-                <li class="user_orders__history_item">
-                  <a class="user_orders__history_link"
-                    href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
-                    <div class="img_wrap">
-                      <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
-                    </div>
-                      <h3>AEG ProSteam L7FBE48SC</h3>
-                    <h4>pračka s předním plněním</h4>
-                    <h5>Kód zboží: 2T54813</h5>
-                  </a>
-                </li>
-                <li class="user_orders__history_item">
-                  <a class="user_orders__history_link"
-                    href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
-                    <div class="img_wrap">
-                      <img src="../img/user_Miele_DGC_7865_ObsidianBlack.jpg" alt="parní trouba - Miele DGC 7865 Obsidian Black" loading="lazy">
-                    </div>
-                    <h3>Miele DGC 7865 Obsidian černá</h3>
-                    <h4>parní trouba</h4>
-                    <h5>Kód zboží: 2T62665</h5>
-                  </a>
-                </li>
-                <li class="user_orders__history_item">
-                  <a class="user_orders__history_link"
-                    href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
-                    <div class="img_wrap">
-                      <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
-                    </div>
-                      <h3>AEG ProSteam L7FBE48SC</h3>
-                    <h4>pračka s předním plněním</h4>
-                    <h5>Kód zboží: 2T54813</h5>
-                  </a>
-                </li>
-                <li class="user_orders__history_item">
-                  <a class="user_orders__history_link"
-                    href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
-                    <div class="img_wrap">
-                      <img src="../img/user_Miele_DGC_7865_ObsidianBlack.jpg" alt="parní trouba - Miele DGC 7865 Obsidian Black" loading="lazy">
-                    </div>
-                    <h3>Miele DGC 7865 Obsidian černá</h3>
-                    <h4>parní trouba</h4>
-                    <h5>Kód zboží: 2T62665</h5>
-                  </a>
-                </li>
-                <li class="user_orders__history_item">
-                  <a class="user_orders__history_link"
-                    href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
-                    <div class="img_wrap">
-                      <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
-                    </div>
-                      <h3>AEG ProSteam L7FBE48SC</h3>
-                    <h4>pračka s předním plněním</h4>
-                    <h5>Kód zboží: 2T54813</h5>
-                  </a>
-                </li>
-                <li class="user_orders__history_item">
-                  <a class="user_orders__history_link"
-                    href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
-                    <div class="img_wrap">
-                      <img src="../img/user_Miele_DGC_7865_ObsidianBlack.jpg" alt="parní trouba - Miele DGC 7865 Obsidian Black" loading="lazy">
-                    </div>
-                    <h3>Miele DGC 7865 Obsidian černá</h3>
-                    <h4>parní trouba</h4>
-                    <h5>Kód zboží: 2T62665</h5>
-                  </a>
-                </li>
-                <li class="user_orders__history_item">
-                  <a class="user_orders__history_link"
-                    href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
-                    <div class="img_wrap">
-                      <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
-                    </div>
-                      <h3>AEG ProSteam L7FBE48SC</h3>
-                    <h4>pračka s předním plněním</h4>
-                    <h5>Kód zboží: 2T54813</h5>
-                  </a>
-                </li>
-  
-              </ul>
+              Uložený košík:<span class="order__number">kosik s bordelem 2</span></h2>
+
+            <ul class="acc-content user_orders__history_list">
+              <li class="user_orders__history_item">
+                <a class="user_orders__history_link"
+                  href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
+                  <div class="img_wrap">
+                    <img src="../img/user_Miele_DGC_7865_ObsidianBlack.jpg" alt="parní trouba - Miele DGC 7865 Obsidian Black" loading="lazy">
+                  </div>
+                  <h3>Miele DGC 7865 Obsidian černá</h3>
+                  <h4>parní trouba</h4>
+                  <h5>Kód zboží: 2T62665</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">151 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
+                </a>
+              </li>
+              <li class="user_orders__history_item">
+                <a class="user_orders__history_link"
+                  href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
+                  <div class="img_wrap">
+                    <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
+                  </div>
+                  <h3>AEG ProSteam L7FBE48SC</h3>
+                  <h4>pračka s předním plněním</h4>
+                  <h5>Kód zboží: 2T54813</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">14 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
+                </a>
+              </li>
+              <li class="user_orders__history_item">
+                <a class="user_orders__history_link"
+                  href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
+                  <div class="img_wrap">
+                    <img src="../img/user_Miele_DGC_7865_ObsidianBlack.jpg" alt="parní trouba - Miele DGC 7865 Obsidian Black" loading="lazy">
+                  </div>
+                  <h3>Miele DGC 7865 Obsidian černá</h3>
+                  <h4>parní trouba</h4>
+                  <h5>Kód zboží: 2T62665</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">151 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
+                </a>
+              </li>
+              <li class="user_orders__history_item">
+                <a class="user_orders__history_link"
+                  href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
+                  <div class="img_wrap">
+                    <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
+                  </div>
+                  <h3>AEG ProSteam L7FBE48SC</h3>
+                  <h4>pračka s předním plněním</h4>
+                  <h5>Kód zboží: 2T54813</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">14 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
+                </a>
+              </li>
+              <li class="user_orders__history_item">
+                <a class="user_orders__history_link"
+                  href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
+                  <div class="img_wrap">
+                    <img src="../img/user_Miele_DGC_7865_ObsidianBlack.jpg" alt="parní trouba - Miele DGC 7865 Obsidian Black" loading="lazy">
+                  </div>
+                  <h3>Miele DGC 7865 Obsidian černá</h3>
+                  <h4>parní trouba</h4>
+                  <h5>Kód zboží: 2T62665</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">151 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
+                </a>
+              </li>
+              <li class="user_orders__history_item">
+                <a class="user_orders__history_link"
+                  href="https://www.elektrocz.com/p272847-miele-dgc-7865-obsidian-cerna/">
+                  <div class="img_wrap">
+                    <img src="../img/user_AEG_ProSteam_L7FBE48SC.jpg" alt="pračka s předním plněním - AEG ProSteam L7FBE48SC" loading="lazy">
+                  </div>
+                  <h3>AEG ProSteam L7FBE48SC</h3>
+                  <h4>pračka s předním plněním</h4>
+                  <h5>Kód zboží: 2T54813</h5>
+                  <div class="price_wrapper">
+                    <span class="price_title">cena:</span>
+                    <span class="price_price">14 990</span>
+                    <span class="price_kc">Kč</span>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
           </div>
 
 
