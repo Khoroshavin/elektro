@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+    <title>1927C453-57A8-40A3-8C0B-4B3BC90AAA60</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 20.9898536 0 20.9898536 16 0 16"></polygon>
+    </defs>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons---basics" transform="translate(-150.000000, -1303.000000)">
+            <g id="cz" transform="translate(150.000000, 1303.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Shape"></g>
+                <g id="Group" mask="url(#mask-2)" fill-rule="nonzero">
+                    <g transform="translate(-1.000000, 0.000000)" id="Shape">
+                        <polygon fill="#E80000" points="0 8 22.1966618 8 22.1966618 16 0 16"></polygon>
+                        <polygon fill="#FFFFFF" points="0 0 22.1966618 0 22.1966618 8 0 8"></polygon>
+                        <polygon fill="#00006F" points="1 0 12.7985308 8.01062914 1 16.0109187"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
