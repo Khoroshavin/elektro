@@ -1,0 +1,50 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fa7206;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="150" cy="150" r="150"/>
+  <rect class="cls-2" x="52.62766" y="81.58511" width="29.61702" height="21.10638"/>
+  <rect class="cls-2" x="85.30851" y="81.58511" width="29.61702" height="21.10638"/>
+  <rect class="cls-2" x="118.32979" y="81.58511" width="29.61702" height="21.10638"/>
+  <rect class="cls-2" x="151.01064" y="81.58511" width="29.61702" height="21.10638"/>
+  <rect class="cls-2" x="183.03191" y="81.58511" width="29.61702" height="21.10638"/>
+  <rect class="cls-2" x="215.75532" y="81.58511" width="29.61702" height="21.10638"/>
+  <rect class="cls-2" x="52.62766" y="106.09574" width="29.61702" height="111.31915"/>
+  <rect class="cls-2" x="85.30851" y="106.09574" width="29.61702" height="111.31915"/>
+  <rect class="cls-2" x="118.32979" y="173.5" width="29.61702" height="43.91489"/>
+  <rect class="cls-2" x="151.01064" y="173.5" width="28.48936" height="43.91489"/>
+  <rect class="cls-2" x="215.75532" y="173.5" width="29.61702" height="43.91489"/>
+  <rect class="cls-2" x="182.03191" y="193.58511" width="31.65957" height="23.82979"/>
+  <rect class="cls-2" x="182.5" y="173.5" width="31" height="7.14894"/>
+  <rect class="cls-2" x="182.5" y="183.54255" width="31" height="7.14894"/>
+  <g>
+    <rect class="cls-1" x="73.5" y="90.5" width="4" height="4" rx="2"/>
+    <rect class="cls-1" x="89.5" y="90.5" width="4" height="4" rx="2"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="138.5" y="90.5" width="4" height="4" rx="2"/>
+    <rect class="cls-1" x="154.5" y="90.5" width="4" height="4" rx="2"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="203.5" y="90.5" width="4" height="4" rx="2"/>
+    <rect class="cls-1" x="219.5" y="90.5" width="4" height="4" rx="2"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="73.5" y="152.5" width="4" height="4" rx="2"/>
+    <rect class="cls-1" x="89.5" y="152.5" width="4" height="4" rx="2"/>
+  </g>
+  <rect class="cls-1" x="139.5" y="178.5" width="4" height="4" rx="2"/>
+  <rect class="cls-1" x="155.5" y="178.5" width="4" height="4" rx="2"/>
+  <rect class="cls-1" x="195.5" y="175.5" width="4" height="4" rx="2"/>
+  <rect class="cls-1" x="195.5" y="185.5" width="4" height="4" rx="2"/>
+  <rect class="cls-1" x="195.5" y="196.5" width="4" height="4" rx="2"/>
+  <rect class="cls-1" x="228.5" y="177.5" width="4" height="4" rx="2"/>
+</svg>

@@ -180,6 +180,13 @@
 
 
 <main class="container user__page">
+  <button class="btn__user_menu">
+    <span class="wrapper-menu">
+      <span class="line-menu half start"></span>
+      <span class="line-menu"></span>
+      <span class="line-menu half end"></span>
+    </span>
+  </button>
   <div class="user__page_inner">
 
     <aside class="user__menu_left">
@@ -237,11 +244,106 @@
     </aside>
 
     <div class="user__page_content">
-      content
+
+      <ul class="user__main_list">
+        <li class="user__main_item">
+          <div class="item_inner_welcome">
+            <div class="item_welcome_img">
+              <img src="../img/avatar_ilya.jpg" alt="">
+            </div>
+            <h2>Ahoj, Ilya</h2>
+          </div>
+          <span class="item__subtitle">Rekomendace pro vas</span>
+          <div class="item__inner_grid">
+            <a class="inner_grid_link" href="#" title="objednavky">
+              <img class="inner_grid_icon" src="../img/icons/vase_objednavky.svg" alt="objednavky ikonka">
+              <h3 class="inner_grid_icon_title">Vaše objednávky</h3>
+            </a>
+            <a class="inner_grid_link" href="#" title="údaje profilu">
+              <img class="inner_grid_icon" src="../img/icons/údaje_profil.svg" alt="údaje profilu ikonka">
+              <h3 class="inner_grid_icon_title">Vaše údaje</h3>
+            </a>
+            <a class="inner_grid_link" href="#" title="Kuchyně">
+              <img class="inner_grid_icon" src="../img/icons/Kuchyně_Ikona.svg" alt="Kuchyně ikonka">
+              <h3 class="inner_grid_icon_title">Kuchyně</h3>
+            </a>
+            <a class="inner_grid_link" href="#" title="Spotřebiče">
+              <img class="inner_grid_icon" src="../img/icons/Spotřebiče.svg" alt="Spotřebiče ikonka">
+              <h3 class="inner_grid_icon_title">Spotřebiče</h3>
+            </a>
+          </div>
+        </li>
+        <li class="user__main_item">
+          <span class="item__subtitle">Všechny kategorie</span>
+          <div class="item__inner_grid">
+            <a class="inner_grid_link" href="#" title="Vestavné spotřebiče">
+              <img class="inner_grid_img" src="../img/1559117111.png" alt="Vestavné spotřebiče">
+              <h3 class="inner_grid_img_title">Vestavné spotřebiče</h3>
+            </a>
+            <a class="inner_grid_link" href="#" title="">
+              <img class="inner_grid_img" src="../img/A0165645.png" alt="Pračky a susicky">
+              <h3 class="inner_grid_img_title">Pračky a sušicky</h3>
+            </a>
+            <a class="inner_grid_link" href="#" title="">
+              <img class="inner_grid_img" src="../img/Volnestojici.png" alt="Volně stojící spotřviče">
+              <h3 class="inner_grid_img_title">Volně stojící spotřebiče</h3>
+            </a>
+            <a class="inner_grid_link" href="#" title="">
+              <img class="inner_grid_img" src="../img/13dec4.png" alt="Kuchyně">
+              <h3 class="inner_grid_img_title">Kuchyně</h3>
+            </a>
+          </div>
+          <a class="user__main_item_cat_link" href="#">Do obchodu</a>
+        </li>
+        <li class="user__main_item">
+          <span class="item__subtitle">Kurzy vaření</span>
+          <a class="user__main_big_link" href="#" title="kurz vaření">
+            <img class="user__main_big_img" src="../img/Kurzy_Vaření556x480.png" alt="kurz vaření">
+          </a>
+          <a class="user__main_item_cat_link" href="#">Vyber si kurz vaření</a>
+        </li>
+        <li class="user__main_item">
+          <span class="item__subtitle">Akční produkty a akce</span>
+          <a class="user__main_big_link" href="#" title="Akční produkty a akce">
+            <img class="user__main_big_img" src="../img/Letní_Akce_556x480.png" alt="Akční produkty a akce">
+          </a>
+          <a class="user__main_item_cat_link" href="#">Využit akce</a>
+        </li>
+        <li class="user__main_item">
+          <span class="item__subtitle">Naše showroomy</span>
+          <a class="user__main_big_link" href="#" title="Naše showroomy">
+            <img class="user__main_big_img" src="../img/Naše_Showroomy556x480.png" alt="Naše showroomy">
+          </a>
+          <a class="user__main_item_cat_link" href="#">Zjistí vice</a>
+        </li>
+        <li class="user__main_item">
+          <span class="item__subtitle">Naše služby</span>
+          <a class="user__main_big_link" href="#" title="Naše showroomy">
+            <img class="user__main_big_img" src="../img/Naše_služby556x480.png" alt="Naše showroomy">
+          </a>
+          <a class="user__main_item_cat_link" href="#">Zjistí vice</a>
+        </li>
+        <li class="user__main_item">
+          <span class="item__subtitle">Video recepty</span>
+          <a class="user__main_big_link" href="#" title="Video recepty">
+            <img class="user__main_big_img" src="../img/Video_Recepty556x480.png" alt="Video recepty">
+          </a>
+          <a class="user__main_item_cat_link" href="#">Zjistí vice</a>
+        </li>
+        <li class="user__main_item">
+          <span class="item__subtitle">Recepty</span>
+          <a class="user__main_big_link" href="#" title="Recepty">
+            <img class="user__main_big_img" src="../img/Recepty_Nové556x480.png" alt="Recepty">
+          </a>
+          <a class="user__main_item_cat_link" href="#">Zjistí vice</a>
+        </li>
+      </ul>
+
     </div>
 
   </div>
-
+  
+  <div class="black__overlay"></div>
 </main>  
 
 
@@ -251,7 +353,7 @@
 
 <!-- SCRIPTS-->
 <script src="../js/header.js"></script>
-
+<script src="../js/user_page.js"></script>
 
 </body>
 

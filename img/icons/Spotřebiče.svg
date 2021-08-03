@@ -1,0 +1,31 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fa7206;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fa7206;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="150" cy="150" r="150"/>
+  <polygon class="cls-2" points="106.194 51.415 106.194 85.798 206.5 85.798 206.5 184.5 236.5 184.5 236.5 51.415 106.194 51.415"/>
+  <circle class="cls-3" cx="206" cy="156" r="17"/>
+  <circle class="cls-3" cx="202" cy="89" r="26"/>
+  <circle class="cls-3" cx="140" cy="86" r="19"/>
+  <rect class="cls-2" x="61.01788" y="89.5" width="140.82255" height="143.78723"/>
+  <rect class="cls-1" x="75.69539" y="133.97028" width="110.87923" height="91.31231"/>
+  <rect class="cls-1" x="106.19401" y="95.62454" width="44.47028" height="9.19052"/>
+  <circle class="cls-1" cx="80.58712" cy="100.01803" r="4.89173"/>
+  <circle class="cls-1" cx="168.96773" cy="100.51628" r="4.89173"/>
+  <circle class="cls-1" cx="182.90175" cy="100.21981" r="4.89173"/>
+  <rect class="cls-2" x="79.69772" y="139.89965" width="102.87458" height="8.89406"/>
+</svg>

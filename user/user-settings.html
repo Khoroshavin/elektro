@@ -180,6 +180,13 @@
 
 
 <main class="container user__page">
+  <button class="btn__user_menu">
+    <span class="wrapper-menu">
+      <span class="line-menu half start"></span>
+      <span class="line-menu"></span>
+      <span class="line-menu half end"></span>
+    </span>
+  </button>
   <div class="user__page_inner">
 
     <aside class="user__menu_left">
@@ -239,16 +246,15 @@
     <div class="user__page_content">
       
       <h2 class="user__title">E-mailová oznámení</h2>
-
       <form action="#">
 
-        <div class="input__group">
+        <div class="input__group input__group_check">
           <input class="input__check" type="checkbox" id="subscribeInfoMail" 
           name="subscribeInfoMail" value="subscribeInfoMail" checked>
           <label class="label__check" for="subscribeInfoMail">Informační zprávy?</label>
         </div>
 
-        <div class="input__group">
+        <div class="input__group input__group_check">
           <input class="input__check" type="checkbox" id="subscribeSpecial" 
           name="subscribeSpecial" value="subscribeSpecial" checked>
           <label class="label__check" for="subscribeSpecial"
@@ -256,7 +262,7 @@
           Speciální nabídky od ElektroCZ.com?</label>
         </div>
 
-        <div class="input__group">
+        <div class="input__group input__group_check">
           <input class="input__check" type="checkbox" id="subscribeNews" 
           name="subscribeNews" value="subscribeNews" checked>
           <label class="label__check" for="subscribeNews"
@@ -264,7 +270,7 @@
           Sborník novinek ElektroCZ.com - ne častěji než jednou za měsíc</label>
         </div>
 
-        <div class="input__group">
+        <div class="input__group input__group_check">
           <input class="input__check" type="checkbox" id="subscribeBlog" 
           name="subscribeBlog" value="subscribeBlog" checked>
           <label class="label__check" for="subscribeBlog"
@@ -278,6 +284,20 @@
 
       </form>
 
+      <h2 class="user__title">Profilová fotka <span class="user__title_helper">60px * 60px</span></h2>
+      <form action="#">
+        <div class="input__group">
+        <input class="input__upload" type="file" method="post" 
+        name="avatar_file_img" accept="image/jpeg,image/png" required>
+        </div>
+
+        <div class="notify__wrap_login">
+        </div>
+
+        <div class="input__group">
+          <button class="btn__submit_user_form" type="submit">uložit</button>
+        </div>
+      </form>
 
     </div>
 
@@ -285,15 +305,14 @@
 
 </main>  
 
-
+<div class="black__overlay"></div>
 
 
 <!-- VENDORS -->
 
 <!-- SCRIPTS-->
 <script src="../js/header.js"></script>
-
+<script src="../js/user_page.js"></script>
 
 </body>
-
 </html>

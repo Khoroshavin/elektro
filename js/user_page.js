@@ -1,4 +1,38 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+  const userMenuBtn     = document.querySelector('.btn__user_menu');
+  const userMenuWrap    = document.querySelector('.user__menu_left');
+  const userOverlay     = document.querySelector('.black__overlay');
+  const userOverlayOpen = document.querySelector('.black__overlay_show');
+  const userMenu        = document.querySelector('.wrapper-menu');
+
+
+
+  UserMenu = () => {
+    // open user menu
+    userMenuBtn.addEventListener('click', () => {
+      userMenuWrap.classList.toggle('user__menu_left_open');
+      userOverlay.classList.toggle('black__overlay_show');
+      userMenu.classList.toggle('open');  
+      // userMenuBtn.classList.add('hide');
+      // userMenuBtn.
+      document.body.classList.toggle('no_scroll');
+    });
+
+    // close user menu
+    userOverlay.addEventListener('click', () => {
+      userMenuWrap.classList.toggle('user__menu_left_open');
+      userOverlay.classList.toggle('black__overlay_show');
+      userMenu.classList.toggle('open');  
+      // userMenuBtn.classList.add('hide');
+      // userMenuBtn.
+      document.body.classList.toggle('no_scroll');
+    });
+
+  };
+  UserMenu();
+
+
   
   function initAccordion(elem, option){
 		document.addEventListener('click', function (e) {
@@ -24,9 +58,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     // const pwdBtn = document.querySelector('.password__control');
-    const pwdCtrl1 = document.querySelector('.password__control1');
+    const pwdCtrl1  = document.querySelector('.password__control1');
     const pwdInput1 = document.querySelector('#input__user_pwd');
-    const pwdCtrl2 = document.querySelector('.password__control2');
+    const pwdCtrl2  = document.querySelector('.password__control2');
     const pwdInput2 = document.querySelector('#input__user_pwd_rep');
   
   

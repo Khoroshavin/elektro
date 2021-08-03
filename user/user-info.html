@@ -181,6 +181,13 @@
 
 
   <main class="container user__page">
+    <button class="btn__user_menu">
+      <span class="wrapper-menu">
+        <span class="line-menu half start"></span>
+        <span class="line-menu"></span>
+        <span class="line-menu half end"></span>
+      </span>
+    </button>
     <div class="user__page_inner">
 
       <aside class="user__menu_left">
@@ -418,10 +425,12 @@
 
                 <div class="input__group">
                   <label class="user__label" for="input__user_bank1">Bankovní účet</label>
-                  <input class="input input__user_bank1" type="text" id="input__user_bank1" minlength="2"
+                  <div class="inputs_wrap">
+                    <input class="input input__user_bank1" type="text" id="input__user_bank1" minlength="2"
                     maxlength="20">
                   <label class="user__label input__user_bank2_label" for="input__user_bank2">/</label>
                   <input class="input input__user_bank2" type="text" id="input__user_bank2" minlength="2" maxlength="8">
+                  </div>
                 </div>
 
                 <div class="input__group">
@@ -448,11 +457,7 @@
 
   </main>
 
-
-
-
-
-
+  <div class="black__overlay"></div>
 
 
 <!-- VENDORS -->
@@ -460,7 +465,6 @@
 <!-- SCRIPTS-->
 <script src="../js/header.js"></script>
 <script src="../js/user_page.js"></script>
-
 
 </body>
 
