@@ -5,40 +5,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login page</title>
+  <!-- ! CHANGE ME -->
+  <title>TITLE PAGE</title>
   <meta name="description" content="description">
   <!-- open graph -->
   <meta property="og:site_name" content="nazev webu a popis">
-  <meta property="og:title" content="login">
+  <!-- ! CHANGE ME -->
+  <meta property="og:title" content="TITLE PAGE">
   <meta property="og:type" content="website">
   <meta property="og:url" content="#">
   <meta property="og:image" content="#">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+
+  <!-- ---------------------------- VENDOR STYLES ---------------------------- -->
   <!-- reseter -->
   <link rel="preload" href="../css/reseter.css" type="text/css" as="style"
     onload="this.onload=null;this.rel='stylesheet';">
   <!-- fonts -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
     type="text/css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-
-  <!-- styles -->
-  <link rel="preload" href="../css/header.css" type="text/css" as="style"
+  <!-- swiper slider components -->
+  <link rel="preload" href="../css/swiper.min.css" type="text/css" as="style"
+    onload="this.onload=null;this.rel='stylesheet';">
+  <link rel="preload" href="../css/navigation.min.css" type="text/css" as="style"
     onload="this.onload=null;this.rel='stylesheet';">
   <!-- gmodal -->
   <link rel="preload" href="../css/gmodal.min.css" type="text/css" as="style"
     onload="this.onload=null;this.rel='stylesheet';">
+  <!-- ----------------------------- PAGE STYLES ----------------------------- -->
+  <link rel="preload" href="../css/header.css" type="text/css" as="style"
+    onload="this.onload=null;this.rel='stylesheet';">
   <link rel="preload" href="../css/login.css" type="text/css" as="style"
     onload="this.onload=null;this.rel='stylesheet';">
+  <!-- ! CHANGE ME -->
+  <link rel="preload" href="../css/NAME_OF_PAGE.css" type="text/css" as="style"
+    onload="this.onload=null;this.rel='stylesheet';">
+
 </head>
 
 <body>
 
-
-  <header class="header">
+<header class="header">
     <div class="header__top_wrap">
       <div class="container header__top">
-        <h1>login | ElektroCZ.com</h1>
+          <!-- ! CHANGE ME -->
+        <h1>TITLE PAGE | ElektroCZ.com</h1>
         <div class="header__top_online">
           <img src="../img/icons/telephone_3.png" alt="icon online">
           <span>ONLINE DO 23°°</span>
@@ -182,77 +194,18 @@
         </li>
       </ul>
     </nav>
-  </header>
+</header>
 
 
-  <!-- <div class="login__wrap">
-    <div class="login__inner">
-      <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
-      <label for="tab-1" class="tab">PŘIHLÁSIT SE</label>
-      <input id="tab-2" type="radio" name="tab" class="sign-up">
-      <label for="tab-2" class="tab">Zaregistrujte se</label>
-      <div class="login-form">
-        <form class="sign-in-htm">
-          <div class="group">
-            <label for="sign_in_user" class="label">login</label>
-            <input id="sign_in_user" type="text" class="input" minlength="5" required value="">
-          </div>
-          <div class="group">
-            <label for="sign_in_pass" class="label">HESLO</label>
-            <input id="sign_in_pass" type="password" class="input data-type="password" required value="">
-          </div>
-          <div class="group">
-            <button type="submit" class="button button__sign_in button_off" >Přihlásit se</button>
-          </div>
-          <div class="hr"></div>
-          <div class="foot-lnk">
-            <span>Přihlásit se pomoci</span>
-            <div class="sign__btns">
-              <a href="#">
-                <img src="../img/icons/facebook.svg" alt="login with facebook">
-              </a>
-              <a href="#">
-                <img src="../img/icons/google.svg" alt="login with google">
-              </a>
-            </div>
-          </div>
-        </form>
-        <form class="sign-up-htm">
-          <div class="group">
-            <label for="sign_up_user" class="label">login</label>
-            <input id="sign_up_user" type="text" class="input" required>
-          </div>
-          <div class="group">
-            <label for="sign_up_pass" class="label">heslo</label>
-            <input id="sign_up_pass" type="password" class="input" data-type="password" required>
-          </div>
-          <div class="group">
-            <label for="sign_up_pass_rep" class="label">Zopakujte si heslo</label>
-            <input id="sign_up_pass_rep" type="password" class="input" data-type="password" required>
-          </div>
-          <div class="group">
-            <label for="sign_up_email" class="label">E-mailová adresa</label>
-            <input id="sign_up_email" type="email" class="input" required>
-          </div>
-          <div class="group">
-            <button type="submit" class="button">Zaregistrovat se</button>
-          </div>
-          <div class="hr"></div>
-          <div class="foot-lnk">
-            <span>Zaregistrovat se pomocí</span>
-            <div class="sign__btns">
-              <a href="#">
-                <img src="../img/icons/facebook.svg" alt="login with facebook">
-              </a>
-              <a href="#">
-                <img src="../img/icons/google.svg" alt="login with google">
-              </a>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div> -->
+<main class="">
+
+  <section class="container">
+
+  </section>
+
+
+</main>  
+
 
 
   <!-- modals wrap -->
@@ -334,13 +287,21 @@
 
 	</div>
 
+
 <!-- VENDORS -->
-<!-- modal -->
 <script src="../js/gmodal.min.js"></script>
+<!-- swiper slider - optimized bundle -->
+<script src="../js/swiper-bundle.min.js"></script>
+<!-- fslightbox -->
+<script src="../js/fslightbox.js"></script>
 
 <!-- SCRIPTS-->
 <script src="../js/header.js"></script>
 <script src="../js/login.js"></script>
+
+<!-- page scripts -->
+<script src="../js/TITLE_PAGE.js"></script>
+
 </body>
 
 </html>
