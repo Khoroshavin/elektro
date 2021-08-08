@@ -1,8 +1,13 @@
+.login_main {
+  margin-top: 40px;
+  min-height: 100vh;
+}
+
 .login__wrap {
   width: 100%;
   margin: auto;
-  /*margin-bottom: 40px;
-  */max-width: 525px;
+  /* margin-bottom: 60px; */
+  max-width: 525px;
   min-height: 580px;
   position: relative;
   font: 600 16px/18px 'Open Sans', sans-serif;
@@ -13,6 +18,7 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  overflow: hidden;
 }
 
 .login__inner {
@@ -30,10 +36,8 @@
   right: 0;
   bottom: 0;
   position: absolute;
-  /*transform: rotateY(180deg);
-  */backface-visibility: hidden;
-  /*-webkit-backface-visibility: hidden;
-  */opacity: 0;
+  /* backface-visibility: hidden; */
+  opacity: 0;
   z-index: -1;
   transition: .3s linear;
   -webkit-transition: .3s linear;
@@ -41,6 +45,16 @@
   -ms-transition: .3s linear;
   -o-transition: .3s linear;
 }
+
+/* .login__inner .sign-in-htm {
+  opacity: 1;
+  z-index: 1;
+} */
+
+/* .login__inner .sign-up-htm {
+  opacity: 0;
+  z-index: -1;
+} */
 
 .login__inner .sign-in,
 .login__inner .sign-up,

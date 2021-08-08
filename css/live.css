@@ -32,6 +32,9 @@ body {
 }
 /* ------------------------------- / utilities ------------------------------ */
 
+.live__categories {
+  margin-top: 40px;
+}
 
 /* categories checkboxes */
 .btns__categories_wrap {

@@ -1,0 +1,273 @@
+.kitchen__ref_page {
+  /* margin-top: 40px; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 1558px;
+  margin: 0 auto;
+}
+
+
+/* HERO */
+.kitchen__ref_hero {
+  margin-bottom: 40px;
+}
+
+.hero__img_inner {
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+
+.hero_title_wrap {
+  padding: 20px 40px 0;
+  position: absolute;
+  bottom: 0;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 100%);
+}
+
+.kitchen__ref_title_hero {
+  font-size: 46px;
+  text-align: center;
+  color: #3e3a39;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.kitchen__ref_title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+  color: #3e3a39;
+}
+
+.kitchen__ref_desc {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #555;
+}
+
+.kitchen__under_hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kitchen__under_hero_left,
+.kitchen__under_hero_right {
+  width: 50%;
+  padding: 40px 20px 0;
+}
+
+.kitchen__under_hero_right .kitchen__ref_desc {
+  text-align: left;
+}
+
+
+/* SLIDER */
+.kitchen__ref_slider {
+  margin-bottom: 60px;
+}
+
+.kitchen__ref_slider_top {
+  margin-bottom: 20px;
+}
+
+.swiper-slide-thumb-active {
+  opacity: .4;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: rgba(248, 100, 3, .6);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: rgba(248, 100, 3, 1);
+}
+
+/* CUSTOMER REQUIREMENTS */
+.kitchen__ref_customer_reqs {
+  margin-bottom: 60px;
+}
+
+
+
+
+/* KITCHEN VISUAL */
+.kitchen__ref_visual {
+  margin-bottom: 60px;
+}
+
+.kitchen__ref_vis_list {
+  display: flex;
+}
+
+.kitchen__ref_vis_list li {
+  margin: 10px;
+  width: calc(33.3% - 20px);
+}
+
+
+
+
+
+/* KITCHEN REFERENCE INSTALL */
+.kitchen__ref_install {
+  margin-bottom: 60px;
+}
+
+
+
+
+
+/* KITCHEN REFERENCE USED MATERIALS */
+.kitchen__ref_used {
+  margin-bottom: 60px;
+}
+
+
+
+
+/* KITCHEN REFERENCE VIDEO */
+.kitchen__ref_video {
+  margin-bottom: 60px;
+}
+
+.kitchen__ref_video_inner {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.play_btn::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 30px;
+  background-image: url(../img/icons/play-button_square_red.svg);
+  background-size: cover;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+
+
+
+
+
+/* KITCHEN CUSTOM REFERENCE VIDEO */
+.kitchen__ref_video_refer {
+  margin-bottom: 60px;
+}
+
+
+
+
+
+/* KITCHEN REFERENCE PRODUCTS LIST */
+.kitchen__ref_products {
+  margin-bottom: 60px;
+}
+
+
+
+
+
+/*  */
+
+/* KITCHEN REFERENCE */
+.reference_kitchen {
+  width: calc(50% - 40px);
+}
+
+.reference_kitchen h2 {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #3e3a39;
+}
+
+.reference_kitchen p {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #3e3a39;
+}
+
+.reference__kitchen_top {
+  margin-bottom: 15px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.reference__kitchen_top .swiper-slide {
+  height: 400px;
+  overflow: hidden;
+}
+
+.reference__kitchen_top img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  max-height: 400px;
+}
+
+.reference__kitchen_bot img {
+  height: 80px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+/* KITCHEN REFERENCES MORE */
+.kitchen__refs_more {
+  margin-bottom: 60px;
+}
+
+.kitchen__refs_more ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  center;
+}
+
+.kitchen__refs_more .reference_kitchen {
+  margin: 0 20px;
+  width: calc(33.33% - 40px);
+}
+
+
+@media screen and (max-width: 1300px) {
+  .kitchen__refs_more .reference_kitchen {
+    margin-bottom: 30px;
+    width: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kitchen__refs_more .reference_kitchen {
+    width: calc(100% - 40px);
+  }
+}
+
+
+
+/* xz */

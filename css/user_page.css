@@ -11,8 +11,9 @@ body {
 }
 
 .user__page {
-  font-family: 'Open Sans', sans-serif;
+  margin-top: 40px;
   margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .user__menu_left {

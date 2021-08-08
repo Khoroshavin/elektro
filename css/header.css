@@ -355,20 +355,25 @@
 
 /* header bot firms */
 .header__bot_firms {
+	/* max-height: 31px; */
 	height: 31px;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 	background-color: #000;
+	display: flex;
+	align-items: center;
 }
 
 .header__firm_list {
 	max-width: 1558px;
 	display: flex;
-	height: 31px;
-	background-color: #fff;
+	/* height: 31px; */
+	/* background-color: #fff; */
+	background-color: #000;
 }
 
 .header__firm_list li {
-	height: 31px;
+	/* height: 31px; */
+	border: 0;
 }
 
 .header__firm_list a {
@@ -377,27 +382,21 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #fff;
+	border: 0;
 }
 
 .header__firm_list img {
 	height: 31px;
-	max-height: 31px;
+	/* max-height: 31px; */
+	max-width: 100%;
+	border: 0;
 }
 
 .header__firm_list img:hover {
 	opacity: .6;
 }
 
-.header__firm_list li:last-child>a {
-	border-right: 0;
-}
-
-.header__firm_list span {
-	margin-top: 1px;
-	font-size: 11px;
-	color: #d5d5d5;
-	white-space: nowrap;
-}
 
 /* login btn */
 .login__btn {
@@ -434,9 +433,19 @@
 		width: auto;
 	}
 
+	.header__firm_list {
+		justify-content: space-between;
+	}
+	.header__firm_list li {
+		/* width: ; */
+	}
 	.header__firm_list img {
-		height: 100%;
-		max-height: 31px;
+		height: auto;
+		width: 100%;
+	}
+
+	.header__bot_firms {
+		/* display: none; */
 	}
 }
 
@@ -485,7 +494,7 @@
 		height: auto;
 		position: absolute;
 		width: 100vw;
-		top: 131px;
+		top: 164px;
 		left: -100%;
 		opacity: 0;
 		z-index: 9;
@@ -611,8 +620,12 @@
 		top: 10px;
 	}
 
-	.header {
+	/* .header {
 		height: 142px;
+	} */
+
+	.header__mid_wrap {
+		height: auto;
 	}
 
 	.header__cart_link {
@@ -635,10 +648,10 @@
 		margin-left: 200px;
 	}
 
-	.header__bot_firms {
+	/* .header__bot_firms {
 		position: absolute;
-		bottom: -42px;
-	}
+		bottom: -36px;
+	} */
 }
 
 @media screen and (max-width: 1100px) {
@@ -673,6 +686,14 @@
 	.header__top_nav a {
 		font-size: 8px;
 		margin-right: 10px;
+	}
+
+	.header__bot_firms {
+		display: none;
+	}
+
+	.header__bot_wrap {
+		top: 133px;
 	}
 
 	.header__cart_link {
