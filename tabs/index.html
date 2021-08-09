@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excele</title>
+  <!-- reseter -->
+  <link rel="preload" href="../css/reseter.css" type="text/css" as="style"
+    onload="this.onload=null;this.rel='stylesheet';">
+  <!-- fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+    type="text/css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+  <link rel="preload" href="../css/excele.css" type="text/css" as="style"
+    onload="this.onload=null;this.rel='stylesheet';">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- TABS -->
+    <div class="tabs__menu">
+      <div class="nav-tabs">
+        <div data-tab="1" class="nav-tab active">Tab 1 
+          <button data-tabremove="1" class="btn__remove_tab"></button>
+        </div>
+        <!-- <div data-tab="2" class="nav-tab">Tab 2 
+          <button data-tabremove="2" class="btn__remove_tab"></button>
+        </div>
+        <div data-tab="3" class="nav-tab">Tab 3 
+          <button data-tabremove="3" class="btn__remove_tab"></button>
+        </div> -->
+      </div>
+      <button class="btn__add_tab"></button>
+    </div>
+    <div class="tab-content">
+       <div data-tabcontent="1" class="tab-panel active">
+        Tab content 1
+      </div>
+      <!--<div data-tabcontent="2" class="tab-panel">
+        Tab content 2
+      </div>
+      <div data-tabcontent="3" class="tab-panel">
+        Tab content 3
+      </div> -->
+    </div>
+
+  </main>
+
+
+  <script src="../js/tabs.js"></script>
+
+</body>
+
+</html>

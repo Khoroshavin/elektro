@@ -1,0 +1,67 @@
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tabs__menu {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+}
+
+.nav-tab {
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 20px 30px 20px 30px;
+  border: 2px solid#eee;
+  border-bottom: 0;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-tab.active {
+  background: #eee;
+  cursor: default;
+}
+
+.tab-content {
+  font-size: 18px;
+  background: #eee;
+}
+
+.tab-panel {
+  display: none;
+  padding: 30px;
+}
+
+.tab-panel.active {
+  display: flex;
+}
+
+
+/* CONTROLS */
+.btn__add_tab {
+  color: #4ad786;
+  width: 25px;
+	height: 25px;
+ 	background-image: url(../img/icons/plus.svg);
+}
+
+.btn__remove_tab {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+	height: 15px;
+ 	background-image: url(../img/icons/close.svg);
+}
